@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+    <meta name="description" content="Comprehensive TCOLE Transportation Code study tool for Basic Peace Officer Course (BPOC) Chapter 22. Interactive flashcards, practice tests, and progress tracking for Texas law enforcement training.">
+    <meta name="keywords" content="TCOLE, Transportation Code, BPOC, Texas law enforcement, police training, traffic laws, study tool">
+    <meta name="author" content="Transportation Code Study Tool">
+    <meta name="theme-color" content="#2a5298">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="TC Study Tool">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <!-- PWA Configuration -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMyYTUyOTgiLz4KPHN2ZyB4PSI0OCIgeT0iNDgiIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xOC45MiA2LjAxQzE4LjcyIDUuNDIgMTguMTYgNSAxNy41IDVINi41QzUuODQgNSA1LjI4IDUuNDIgNS4wOCA2LjAxTDMgMTJMMTIgMjFMMjEgMTJMMTguOTIgNi4wMVoiLz4KPC9zdmc+Cjwvc3ZnPgo=">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMyYTUyOTgiLz4KPHN2ZyB4PSI0OCIgeT0iNDgiIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xOC45MiA2LjAxQzE4LjcyIDUuNDIgMTguMTYgNSAxNy41IDVINi41QzUuODQgNSA1LjI4IDUuNDIgNS4wOCA2LjAxTDMgMTJMMTIgMjFMMjEgMTJMMTguOTIgNi4wMVoiLz4KPC9zdmc+Cjwvc3ZnPgo=">
+    
+    <title>TCOLE Transportation Code Study Tool - BPOC Chapter 22</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-car"></i> Transportation Code Study Tool</h1>
+                <div class="progress-overview">
+                    <div class="progress-item">
+                        <span class="progress-label">Study Progress</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="studyProgress"></div>
+                        </div>
+                        <span class="progress-text" id="studyProgressText">0%</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="flashcards">
+                <i class="fas fa-cards-blank"></i> Flashcards
+            </button>
+            <button class="nav-tab" data-tab="practice-test">
+                <i class="fas fa-clipboard-check"></i> Practice Test
+            </button>
+            <button class="nav-tab" data-tab="search">
+                <i class="fas fa-search"></i> Search & Browse
+            </button>
+            <button class="nav-tab" data-tab="notes">
+                <i class="fas fa-sticky-note"></i> Notes
+            </button>
+            <button class="nav-tab" data-tab="statistics">
+                <i class="fas fa-chart-bar"></i> Statistics
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Flashcards Tab -->
+            <div class="tab-content active" id="flashcards">
+                <div class="flashcard-container">
+                    <div class="flashcard-controls">
+                        <div class="category-filter">
+                            <label for="categorySelect">Category:</label>
+                            <select id="categorySelect">
+                                <option value="all">All Categories</option>
+                                <option value="penal-code">Penal Code</option>
+                                <option value="warning-devices">Warning Devices</option>
+                                <option value="registration">Registration</option>
+                                <option value="dealer-plates">Dealer Plates</option>
+                                <option value="license-plates">License Plates</option>
+                            </select>
+                        </div>
+                        <div class="difficulty-filter">
+                            <label for="difficultySelect">Difficulty:</label>
+                            <select id="difficultySelect">
+                                <option value="all">All Levels</option>
+                                <option value="basic">Basic</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flashcard-wrapper">
+                        <div class="flashcard" id="currentFlashcard">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front">
+                                    <div class="card-header">
+                                        <span class="card-number" id="cardNumber">1 / 50</span>
+                                        <span class="card-category" id="cardCategory">Traffic Violations</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 id="questionText">Click "Start Studying" to begin</h3>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="flip-btn" id="flipBtn">
+                                            <i class="fas fa-sync-alt"></i> Show Answer
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flashcard-back">
+                                    <div class="card-header">
+                                        <span class="card-number" id="cardNumberBack">1 / 50</span>
+                                        <span class="card-category" id="cardCategoryBack">Traffic Violations</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="answer-content" id="answerText">
+                                            Answer will appear here
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="flip-btn" id="flipBackBtn">
+                                            <i class="fas fa-sync-alt"></i> Show Question
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flashcard-navigation">
+                            <button class="nav-btn" id="prevCard">
+                                <i class="fas fa-chevron-left"></i> Previous
+                            </button>
+                            <div class="card-actions">
+                                <button class="action-btn easy" id="easyBtn">
+                                    <i class="fas fa-smile"></i> Easy
+                                </button>
+                                <button class="action-btn medium" id="mediumBtn">
+                                    <i class="fas fa-meh"></i> Medium
+                                </button>
+                                <button class="action-btn hard" id="hardBtn">
+                                    <i class="fas fa-frown"></i> Hard
+                                </button>
+                            </div>
+                            <button class="nav-btn" id="nextCard">
+                                Next <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="study-controls">
+                        <button class="primary-btn" id="startStudyBtn">
+                            <i class="fas fa-play"></i> Start Studying
+                        </button>
+                        <button class="secondary-btn" id="shuffleBtn">
+                            <i class="fas fa-random"></i> Shuffle Cards
+                        </button>
+                        <button class="secondary-btn" id="resetProgressBtn">
+                            <i class="fas fa-redo"></i> Reset Progress
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Test Tab -->
+            <div class="tab-content" id="practice-test">
+                <div class="test-container">
+                    <div class="test-setup" id="testSetup">
+                        <h2>Practice Test Setup</h2>
+                        <div class="test-options">
+                            <div class="option-group">
+                                <label for="testLength">Number of Questions:</label>
+                                <select id="testLength">
+                                    <option value="10">10 Questions</option>
+                                    <option value="25" selected>25 Questions</option>
+                                    <option value="50">50 Questions</option>
+                                    <option value="100">100 Questions</option>
+                                </select>
+                            </div>
+                            <div class="option-group">
+                                <label for="testCategory">Focus Area:</label>
+                                <select id="testCategory">
+                                    <option value="all">All Categories</option>
+                                    <option value="penal-code">Penal Code</option>
+                                    <option value="warning-devices">Warning Devices</option>
+                                    <option value="registration">Registration</option>
+                                    <option value="dealer-plates">Dealer Plates</option>
+                                    <option value="license-plates">License Plates</option>
+                                </select>
+                            </div>
+                            <div class="option-group">
+                                <label for="testMode">Test Mode:</label>
+                                <select id="testMode">
+                                    <option value="practice">Practice Mode (Show answers immediately)</option>
+                                    <option value="exam">Exam Mode (Score at end)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="primary-btn" id="startTestBtn">
+                            <i class="fas fa-play"></i> Start Practice Test
+                        </button>
+                    </div>
+
+                    <div class="test-interface" id="testInterface" style="display: none;">
+                        <div class="test-header">
+                            <div class="test-progress">
+                                <span id="currentQuestion">Question 1</span> of <span id="totalQuestions">25</span>
+                                <div class="test-progress-bar">
+                                    <div class="test-progress-fill" id="testProgressFill"></div>
+                                </div>
+                            </div>
+                            <div class="test-timer" id="testTimer">
+                                <i class="fas fa-clock"></i> <span id="timeDisplay">00:00</span>
+                            </div>
+                        </div>
+
+                        <div class="question-container">
+                            <div class="question-text" id="testQuestionText">
+                                Question will appear here
+                            </div>
+                            <div class="answers-container" id="answersContainer">
+                                <!-- Answers will be dynamically generated -->
+                            </div>
+                        </div>
+
+                        <div class="test-navigation">
+                            <button class="secondary-btn" id="prevQuestion">
+                                <i class="fas fa-chevron-left"></i> Previous
+                            </button>
+                            <button class="secondary-btn" id="flagQuestion">
+                                <i class="fas fa-flag"></i> Flag for Review
+                            </button>
+                            <button class="primary-btn" id="nextQuestion">
+                                Next <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="test-results" id="testResults" style="display: none;">
+                        <div class="results-hero">
+                            <div class="results-hero-content">
+                                <div class="results-icon">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <h2>Test Complete!</h2>
+                                <p class="results-subtitle">Here's how you performed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="results-summary">
+                            <div class="score-display">
+                                <div class="score-circle">
+                                    <div class="score-circle-inner">
+                                        <span class="score-percentage" id="scorePercentage">0%</span>
+                                        <span class="score-label">Score</span>
+                                    </div>
+                                    <div class="score-ring">
+                                        <svg class="progress-ring" width="140" height="140">
+                                            <circle class="progress-ring-circle" stroke="white" stroke-width="8" fill="transparent" r="62" cx="70" cy="70"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="score-details">
+                                    <div class="detail-card">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="detail-content">
+                                            <span class="detail-label">Correct Answers</span>
+                                            <span class="detail-value"><span id="correctAnswers">0</span> out of <span id="totalAnswers">0</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-card">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="detail-content">
+                                            <span class="detail-label">Time Taken</span>
+                                            <span class="detail-value" id="timeTaken">0:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-card" id="performanceCard">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-trophy"></i>
+                                        </div>
+                                        <div class="detail-content">
+                                            <span class="detail-label">Performance</span>
+                                            <span class="detail-value" id="performanceLevel">Excellent</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="results-insights">
+                                <h3><i class="fas fa-lightbulb"></i> Quick Insights</h3>
+                                <div class="insights-grid">
+                                    <div class="insight-card" id="strengthCard">
+                                        <div class="insight-icon strength">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="insight-content">
+                                            <h4>Strongest Area</h4>
+                                            <p id="strongestArea">Analyzing...</p>
+                                        </div>
+                                    </div>
+                                    <div class="insight-card" id="improvementCard">
+                                        <div class="insight-icon improvement">
+                                            <i class="fas fa-target"></i>
+                                        </div>
+                                        <div class="insight-content">
+                                            <h4>Areas to Improve</h4>
+                                            <p id="improvementArea">Analyzing...</p>
+                                        </div>
+                                    </div>
+                                    <div class="insight-card" id="recommendationCard">
+                                        <div class="insight-icon recommendation">
+                                            <i class="fas fa-graduation-cap"></i>
+                                        </div>
+                                        <div class="insight-content">
+                                            <h4>Study Recommendation</h4>
+                                            <p id="studyRecommendation">Analyzing...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="results-breakdown" id="resultsBreakdown">
+                            <!-- Enhanced results breakdown will be generated here -->
+                        </div>
+                        
+                        <div class="results-actions">
+                            <div class="action-group primary-actions">
+                                <button class="primary-btn" id="retakeTestBtn">
+                                    <i class="fas fa-redo"></i> Retake Test
+                                </button>
+                                <button class="secondary-btn" id="reviewMistakesBtn">
+                                    <i class="fas fa-eye"></i> Review All Questions
+                                </button>
+                            </div>
+                            <div class="action-group study-actions">
+                                <button class="study-action-btn" id="studyWeakAreasBtn">
+                                    <i class="fas fa-book-open"></i> Study Weak Areas
+                                </button>
+                                <button class="study-action-btn" id="takeNewTestBtn">
+                                    <i class="fas fa-plus"></i> New Test
+                                </button>
+                                <button class="study-action-btn" id="viewStatsBtn">
+                                    <i class="fas fa-chart-line"></i> View Statistics
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search & Browse Tab -->
+            <div class="tab-content" id="search">
+                <div class="search-container">
+                    <div class="search-header">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="searchInput" placeholder="Search transportation codes, regulations, or keywords...">
+                            <button class="search-btn" id="searchBtn">Search</button>
+                        </div>
+                        <div class="search-filters">
+                            <select id="searchCategory">
+                                <option value="all">All Categories</option>
+                                <option value="penal-code">Penal Code</option>
+                                <option value="warning-devices">Warning Devices</option>
+                                <option value="registration">Registration</option>
+                                <option value="dealer-plates">Dealer Plates</option>
+                                <option value="license-plates">License Plates</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search-results" id="searchResults">
+                        <div class="browse-categories">
+                            <h3>Browse by Category</h3>
+                            <div class="category-grid">
+                                <div class="category-card" data-category="penal-code">
+                                    <i class="fas fa-gavel"></i>
+                                    <h4>Penal Code</h4>
+                                    <p>Foundational definitions that enhance TRC violations</p>
+                                </div>
+                                <div class="category-card" data-category="warning-devices">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <h4>Warning Devices</h4>
+                                    <p>TRC 472 - Construction zones, barricades, and flaggers</p>
+                                </div>
+                                <div class="category-card" data-category="registration">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <h4>Registration</h4>
+                                    <p>TRC 502 - Vehicle registration requirements and exemptions</p>
+                                </div>
+                                <div class="category-card" data-category="dealer-plates">
+                                    <i class="fas fa-car-side"></i>
+                                    <h4>Dealer Plates</h4>
+                                    <p>TRC 503 - Metal plates, temporary tags, and dealer violations</p>
+                                </div>
+                                <div class="category-card" data-category="license-plates">
+                                    <i class="fas fa-id-badge"></i>
+                                    <h4>License Plates</h4>
+                                    <p>TRC 504 - Display requirements and plate violations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notes Tab -->
+            <div class="tab-content" id="notes">
+                <div class="notes-container">
+                    <div class="notes-header">
+                        <h2>Study Notes</h2>
+                        <button class="primary-btn" id="addNoteBtn">
+                            <i class="fas fa-plus"></i> Add Note
+                        </button>
+                    </div>
+                    <div class="notes-list" id="notesList">
+                        <div class="notes-placeholder">
+                            <i class="fas fa-sticky-note"></i>
+                            <p>No notes yet. Add your first note to get started!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Tab -->
+            <div class="tab-content" id="statistics">
+                <div class="stats-container">
+                    <div class="stats-header">
+                        <h2>Study Statistics</h2>
+                        <button class="secondary-btn" id="loadSampleDataBtn" style="font-size: 0.9em; padding: 8px 16px;">
+                            <i class="fas fa-chart-line"></i> Load Sample Data
+                        </button>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-cards-blank"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="totalCardsStudied">0</h3>
+                                <p>Cards Studied</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="totalStudyTime">0h 0m</h3>
+                                <p>Study Time</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="testsTaken">0</h3>
+                                <p>Tests Taken</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="averageScore">0%</h3>
+                                <p>Average Score</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="performance-charts">
+                        <div class="chart-container">
+                            <h3>Study Progress Over Time</h3>
+                            <canvas id="progressChart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <h3>Category Performance</h3>
+                            <canvas id="categoryChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modals -->
+        <div class="modal" id="noteModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="noteModalTitle">Add Note</h3>
+                    <button class="close-btn" id="closeNoteModal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="noteTitle" placeholder="Note title...">
+                    <textarea id="noteContent" placeholder="Write your note here..."></textarea>
+                    <select id="noteCategory">
+                        <option value="">Select category...</option>
+                        <option value="penal-code">Penal Code</option>
+                        <option value="warning-devices">Warning Devices</option>
+                        <option value="registration">Registration</option>
+                        <option value="dealer-plates">Dealer Plates</option>
+                        <option value="license-plates">License Plates</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button class="secondary-btn" id="cancelNoteBtn">Cancel</button>
+                    <button class="primary-btn" id="saveNoteBtn">Save Note</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Debug indicator for JavaScript functionality
+        console.log('🚀 JavaScript is running!');
+    </script>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
