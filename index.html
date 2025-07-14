@@ -10,6 +10,97 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="TC Study Tool">
+    <title>TCOLE Study Tool - Transportation Code, Criminal Procedure & More</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1><i class="fas fa-graduation-cap"></i> TCOLE Study Tool</h1>
+            <div class="header-controls">
+                <button class="secondary-btn" id="settingsBtn">
+                    <i class="fas fa-cog"></i> Settings
+                </button>
+            </div>
+        </header>
+
+        <!-- Content Loading Modal -->
+        <div class="modal" id="contentModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Load Study Content</h3>
+                    <button class="close-btn" id="closeContentModal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-instructions">
+                        <h4><i class="fas fa-info-circle"></i> How to Add Content</h4>
+                        <ol>
+                            <li>Open the appropriate content file in the <code>content-templates/</code> folder</li>
+                            <li>Copy your study handout content</li>
+                            <li>Paste it into the designated area in the text file</li>
+                            <li>Save the file and click "Load Content" below</li>
+                        </ol>
+                        <div class="file-options">
+                            <h4>Available Content Files:</h4>
+                            <div class="file-grid">
+                                <div class="file-option">
+                                    <i class="fas fa-gavel"></i>
+                                    <strong>penal-code-content.txt</strong>
+                                    <p>For Penal Code topics (PC 19, 22, 31, 42, 49, etc.)</p>
+                                </div>
+                                <div class="file-option">
+                                    <i class="fas fa-balance-scale"></i>
+                                    <strong>criminal-procedure-content.txt</strong>
+                                    <p>For Criminal Procedure topics (CCP Articles)</p>
+                                </div>
+                                <div class="file-option">
+                                    <i class="fas fa-car-crash"></i>
+                                    <strong>vehicle-traffic-stops-content.txt</strong>
+                                    <p>For Vehicle Search & Traffic Stop procedures</p>
+                                </div>
+                                <div class="file-option">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <strong>general-topics-content.txt</strong>
+                                    <p>For other TCOLE topics (report writing, patrol, ethics)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-loader">
+                        <h4>Load Content From Files:</h4>
+                        <div class="loader-buttons">
+                            <button class="load-btn" data-file="penal-code" data-path="content-templates/penal-code-content.txt">
+                                <i class="fas fa-gavel"></i> Load Penal Code
+                            </button>
+                            <button class="load-btn" data-file="criminal-procedure" data-path="content-templates/criminal-procedure-content.txt">
+                                <i class="fas fa-balance-scale"></i> Load Criminal Procedure
+                            </button>
+                            <button class="load-btn" data-file="vehicle-traffic-stops" data-path="content-templates/vehicle-traffic-stops-content.txt">
+                                <i class="fas fa-car-crash"></i> Load Vehicle & Traffic Stops
+                            </button>
+                            <button class="load-btn" data-file="general-topics" data-path="content-templates/general-topics-content.txt">
+                                <i class="fas fa-clipboard-list"></i> Load General Topics
+                            </button>
+                        </div>
+                        <div class="loading-status" id="loadingStatus" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Processing content...
+                        </div>
+                        <div class="loading-results" id="loadingResults" style="display: none;">
+                            <!-- Results will be displayed here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="secondary-btn" id="cancelContentBtn">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
@@ -19,7 +110,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMyYTUyOTgiLz4KPHN2ZyB4PSI0OCIgeT0iNDgiIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xOC45MiA2LjAxQzE4LjcyIDUuNDIgMTguMTYgNSAxNy41IDVINi41QzUuODQgNSA1LjI4IDUuNDIgNS4wOCA2LjAxTDMgMTJMMTIgMjFMMjEgMTJMMTguOTIgNi4wMVoiLz4KPC9zdmc+Cjwvc3ZnPgo=">
     <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMyYTUyOTgiLz4KPHN2ZyB4PSI0OCIgeT0iNDgiIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xOC45MiA2LjAxQzE4LjcyIDUuNDIgMTguMTYgNSAxNy41IDVINi41QzUuODQgNSA1LjI4IDUuNDIgNS4wOCA2LjAxTDMgMTJMMTIgMjFMMjEgMTJMMTguOTIgNi4wMVoiLz4KPC9zdmc+Cjwvc3ZnPgo=">
     
-    <title>TCOLE Transportation Code Study Tool - BPOC Chapter 22</title>
+    <title>TCOLE Study Tool - Comprehensive Law Enforcement Training</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -29,7 +120,7 @@
         <!-- Header -->
         <header class="header">
             <div class="header-content">
-                <h1><i class="fas fa-car"></i> Transportation Code Study Tool</h1>
+                <h1><i class="fas fa-badge-sheriff"></i> TCOLE Study Tool</h1>
                 <div class="progress-overview">
                     <div class="progress-item">
                         <span class="progress-label">Study Progress</span>
@@ -67,27 +158,35 @@
             <div class="tab-content active" id="flashcards">
                 <div class="flashcard-container">
                     <div class="flashcard-controls">
-                        <div class="category-filter">
-                            <label for="categorySelect">Category:</label>
-                            <select id="categorySelect">
-                                <option value="all">All Categories</option>
+                        <div class="main-category-filter">
+                            <label for="mainCategorySelect">Course:</label>
+                            <select id="mainCategorySelect">
+                                <option value="all">All Courses</option>
+                                <option value="transportation-code">Transportation Code</option>
                                 <option value="penal-code">Penal Code</option>
-                                <option value="warning-devices">Warning Devices</option>
-                                <option value="registration">Registration</option>
-                                <option value="dealer-plates">Dealer Plates</option>
-                                <option value="license-plates">License Plates</option>
+                                <option value="criminal-procedure">Criminal Procedure</option>
+                                <option value="general-topics">General Topics</option>
                             </select>
                         </div>
-                        <div class="difficulty-filter">
-                            <label for="difficultySelect">Difficulty:</label>
-                            <select id="difficultySelect">
-                                <option value="all">All Levels</option>
-                                <option value="basic">Basic</option>
-                                <option value="intermediate">Intermediate</option>
-                                <option value="advanced">Advanced</option>
+                        <div class="category-filter">
+                            <label for="categorySelect">Topic:</label>
+                            <select id="categorySelect">
+                                <option value="all">All Topics</option>
+                                <!-- Options will be populated dynamically based on main category -->
                             </select>
+                        </div>                            <div class="difficulty-filter">
+                                <label for="difficultySelect">Difficulty:</label>
+                                <select id="difficultySelect">
+                                    <option value="all">All Levels</option>
+                                    <option value="basic">Basic</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+                            <div class="filter-status" id="filterStatus">
+                                Showing all cards
+                            </div>
                         </div>
-                    </div>
 
                     <div class="flashcard-wrapper">
                         <div class="flashcard" id="currentFlashcard">
@@ -156,6 +255,9 @@
                         <button class="secondary-btn" id="resetProgressBtn">
                             <i class="fas fa-redo"></i> Reset Progress
                         </button>
+                        <button class="secondary-btn" id="loadContentBtn">
+                            <i class="fas fa-upload"></i> Load New Content
+                        </button>
                     </div>
                 </div>
             </div>
@@ -179,11 +281,7 @@
                                 <label for="testCategory">Focus Area:</label>
                                 <select id="testCategory">
                                     <option value="all">All Categories</option>
-                                    <option value="penal-code">Penal Code</option>
-                                    <option value="warning-devices">Warning Devices</option>
-                                    <option value="registration">Registration</option>
-                                    <option value="dealer-plates">Dealer Plates</option>
-                                    <option value="license-plates">License Plates</option>
+                                    <!-- Categories will be populated dynamically by JavaScript -->
                                 </select>
                             </div>
                             <div class="option-group">
@@ -358,50 +456,67 @@
                     <div class="search-header">
                         <div class="search-box">
                             <i class="fas fa-search"></i>
-                            <input type="text" id="searchInput" placeholder="Search transportation codes, regulations, or keywords...">
+                            <input type="text" id="searchInput" placeholder="Search TCOLE topics, laws, regulations, or keywords...">
                             <button class="search-btn" id="searchBtn">Search</button>
                         </div>
                         <div class="search-filters">
-                            <select id="searchCategory">
-                                <option value="all">All Categories</option>
+                            <select id="searchMainCategory">
+                                <option value="all">All Courses</option>
+                                <option value="transportation-code">Transportation Code</option>
                                 <option value="penal-code">Penal Code</option>
-                                <option value="warning-devices">Warning Devices</option>
-                                <option value="registration">Registration</option>
-                                <option value="dealer-plates">Dealer Plates</option>
-                                <option value="license-plates">License Plates</option>
+                                <option value="criminal-procedure">Criminal Procedure</option>
+                                <option value="general-topics">General Topics</option>
+                            </select>
+                            <select id="searchCategory">
+                                <option value="all">All Topics</option>
+                                <!-- Options will be populated dynamically -->
                             </select>
                         </div>
                     </div>
 
                     <div class="search-results" id="searchResults">
                         <div class="browse-categories">
-                            <h3>Browse by Category</h3>
-                            <div class="category-grid">
-                                <div class="category-card" data-category="penal-code">
-                                    <i class="fas fa-gavel"></i>
-                                    <h4>Penal Code</h4>
-                                    <p>Foundational definitions that enhance TRC violations</p>
+                            <h3>Browse by Course</h3>
+                            <div class="main-category-grid">
+                                <div class="main-category-card" data-main-category="transportation-code">
+                                    <div class="main-category-header">
+                                        <i class="fas fa-car"></i>
+                                        <h3>Transportation Code</h3>
+                                    </div>
+                                    <p>Vehicle operations, traffic laws, licensing, and equipment requirements</p>
+                                    <div class="subcategory-count">37 topics • 7 modules</div>
                                 </div>
-                                <div class="category-card" data-category="warning-devices">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                    <h4>Warning Devices</h4>
-                                    <p>TRC 472 - Construction zones, barricades, and flaggers</p>
+                                
+                                <div class="main-category-card" data-main-category="penal-code">
+                                    <div class="main-category-header">
+                                        <i class="fas fa-gavel"></i>
+                                        <h3>Penal Code</h3>
+                                    </div>
+                                    <p>Criminal offenses, punishment ranges, and elements of crimes</p>
+                                    <div class="subcategory-count">Ready for content • Multiple modules</div>
                                 </div>
-                                <div class="category-card" data-category="registration">
-                                    <i class="fas fa-clipboard-list"></i>
-                                    <h4>Registration</h4>
-                                    <p>TRC 502 - Vehicle registration requirements and exemptions</p>
+                                
+                                <div class="main-category-card" data-main-category="criminal-procedure">
+                                    <div class="main-category-header">
+                                        <i class="fas fa-balance-scale"></i>
+                                        <h3>Criminal Procedure</h3>
+                                    </div>
+                                    <p>Arrest procedures, search and seizure, evidence rules</p>
+                                    <div class="subcategory-count">Ready for content • Multiple modules</div>
                                 </div>
-                                <div class="category-card" data-category="dealer-plates">
-                                    <i class="fas fa-car-side"></i>
-                                    <h4>Dealer Plates</h4>
-                                    <p>TRC 503 - Metal plates, temporary tags, and dealer violations</p>
+                                
+                                <div class="main-category-card" data-main-category="general-topics">
+                                    <div class="main-category-header">
+                                        <i class="fas fa-clipboard-list"></i>
+                                        <h3>General Topics</h3>
+                                    </div>
+                                    <p>Report writing, patrol procedures, ethics, and professional standards</p>
+                                    <div class="subcategory-count">Ready for content • Multiple modules</div>
                                 </div>
-                                <div class="category-card" data-category="license-plates">
-                                    <i class="fas fa-id-badge"></i>
-                                    <h4>License Plates</h4>
-                                    <p>TRC 504 - Display requirements and plate violations</p>
-                                </div>
+                            </div>
+                            
+                            <div class="category-topics" id="categoryTopics" style="display: none;">
+                                <!-- Dynamically populated subcategories will appear here -->
                             </div>
                         </div>
                     </div>
@@ -515,6 +630,130 @@
                 </div>
             </div>
         </div>
+
+        <!-- Settings Modal -->
+        <div class="modal" id="settingsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-cog"></i> Settings</h3>
+                    <button class="close-btn" id="closeSettingsModal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-tabs">
+                        <button class="settings-tab active" data-tab="appearance">
+                            <i class="fas fa-palette"></i> Appearance
+                        </button>
+                        <button class="settings-tab" data-tab="study">
+                            <i class="fas fa-graduation-cap"></i> Study
+                        </button>
+                        <button class="settings-tab" data-tab="data">
+                            <i class="fas fa-database"></i> Data
+                        </button>
+                    </div>
+
+                    <div class="settings-content">
+                        <!-- Appearance Settings -->
+                        <div class="settings-panel active" id="appearance-panel">
+                            <h4><i class="fas fa-paint-brush"></i> Theme & Display</h4>
+                            <div class="setting-group">
+                                <label for="themeSelect">Theme:</label>
+                                <select id="themeSelect">
+                                    <option value="default">Default Blue</option>
+                                    <option value="dark">Dark Mode</option>
+                                    <option value="light">Light Mode</option>
+                                    <option value="police">Police Theme</option>
+                                </select>
+                            </div>
+                            <div class="setting-group">
+                                <label for="fontSizeSelect">Font Size:</label>
+                                <select id="fontSizeSelect">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                    <option value="xl">Extra Large</option>
+                                </select>
+                            </div>
+                            <div class="setting-group">
+                                <label>
+                                    <input type="checkbox" id="animationsToggle" checked>
+                                    Enable animations
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Study Settings -->
+                        <div class="settings-panel" id="study-panel">
+                            <h4><i class="fas fa-book-open"></i> Study Preferences</h4>
+                            <div class="setting-group">
+                                <label for="autoFlipTime">Auto-flip cards after (seconds):</label>
+                                <select id="autoFlipTime">
+                                    <option value="0">Disabled</option>
+                                    <option value="3">3 seconds</option>
+                                    <option value="5">5 seconds</option>
+                                    <option value="10">10 seconds</option>
+                                    <option value="15">15 seconds</option>
+                                </select>
+                            </div>
+                            <div class="setting-group">
+                                <label for="cardsPerSession">Cards per study session:</label>
+                                <select id="cardsPerSession">
+                                    <option value="10">10 cards</option>
+                                    <option value="20">20 cards</option>
+                                    <option value="50">50 cards</option>
+                                    <option value="0">All cards</option>
+                                </select>
+                            </div>
+                            <div class="setting-group">
+                                <label for="defaultDifficulty">Default difficulty filter:</label>
+                                <select id="defaultDifficulty">
+                                    <option value="">All difficulties</option>
+                                    <option value="easy">Easy only</option>
+                                    <option value="medium">Medium only</option>
+                                    <option value="hard">Hard only</option>
+                                </select>
+                            </div>
+                            <div class="setting-group">
+                                <label>
+                                    <input type="checkbox" id="shuffleOnStart" checked>
+                                    Shuffle cards at session start
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Data Management Settings -->
+                        <div class="settings-panel" id="data-panel">
+                            <h4><i class="fas fa-chart-bar"></i> Data Management</h4>
+                            <div class="setting-group">
+                                <button class="secondary-btn" id="exportDataBtn">
+                                    <i class="fas fa-download"></i> Export Study Data
+                                </button>
+                                <p class="setting-description">Download your progress and notes as a JSON file</p>
+                            </div>
+                            <div class="setting-group">
+                                <button class="secondary-btn" id="importDataBtn">
+                                    <i class="fas fa-upload"></i> Import Study Data
+                                </button>
+                                <input type="file" id="importDataFile" accept=".json" style="display: none;">
+                                <p class="setting-description">Upload a previously exported study data file</p>
+                            </div>
+                            <div class="setting-group danger-zone">
+                                <h5><i class="fas fa-exclamation-triangle"></i> Danger Zone</h5>
+                                <button class="danger-btn" id="resetAllDataBtn">
+                                    <i class="fas fa-trash"></i> Reset All Progress
+                                </button>
+                                <p class="setting-description">This will permanently delete all your study progress and notes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="secondary-btn" id="cancelSettingsBtn">Cancel</button>
+                    <button class="primary-btn" id="saveSettingsBtn">Save Settings</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -525,6 +764,8 @@
     </script>
 
     <script src="data.js"></script>
+    <script src="enhanced-data-structure.js"></script>
+    <script src="content-parser.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,75 @@
+TCOLE PENAL CODE STUDY CONTENT
+=================================
+
+INSTRUCTIONS: Simply copy and paste your study handout content below. 
+The system will automatically create flashcards and quiz questions from this content.
+
+Just paste your content here - no special formatting needed!
+Example format:
+
+PENAL CODE CHAPTER 22 - ASSAULT OFFENSES
+
+22.01 ASSAULT
+(a) A person commits an offense if the person:
+    (1) intentionally, knowingly, or recklessly causes bodily injury to another;
+    (2) intentionally or knowingly threatens another with imminent bodily injury; or
+    (3) intentionally or knowingly causes physical contact with another when the person knows or should reasonably believe that the other will regard the contact as offensive or provocative.
+
+(b) An offense under Subsection (a) is a Class C misdemeanor, except that the offense is a Class A misdemeanor if the offense is committed against a person the actor knows is a public servant while the public servant is lawfully discharging an official duty, or in retaliation for an exercise of official power or performance of an official duty as a public servant.
+
+22.02 AGGRAVATED ASSAULT
+(a) A person commits an offense if the person commits assault as defined in Section 22.01 and the person:
+    (1) causes serious bodily injury to another; or
+    (2) uses or exhibits a deadly weapon during the commission of the assault.
+
+(b) An offense under this section is a felony of the second degree, except that the offense is a felony of the first degree if the offense is committed:
+    (1) by a public servant acting under color of the servant's office or employment;
+    (2) against a person the actor knows is a public servant while the public servant is lawfully discharging an official duty, or in retaliation for an exercise of official power or performance of an official duty as a public servant;
+    (3) in retaliation against a witness, prospective witness, or informant;
+    (4) against a person the actor knows is a security officer while the security officer is performing a duty as a security officer; or
+    (5) against a person the actor knows is emergency services personnel while the person is providing emergency services.
+
+---
+
+PASTE YOUR STUDY HANDOUT CONTENT BELOW:
+=======================================
+
+PENAL CODE CHAPTER 22 - ASSAULT OFFENSES
+
+22.01 ASSAULT
+(a) A person commits an offense if the person:
+    (1) intentionally, knowingly, or recklessly causes bodily injury to another;
+    (2) intentionally or knowingly threatens another with imminent bodily injury; or
+    (3) intentionally or knowingly causes physical contact with another when the person knows or should reasonably believe that the other will regard the contact as offensive or provocative.
+
+(b) An offense under Subsection (a) is a Class C misdemeanor, except that the offense is a Class A misdemeanor if the offense is committed against a person the actor knows is a public servant while the public servant is lawfully discharging an official duty.
+
+22.02 AGGRAVATED ASSAULT
+(a) A person commits an offense if the person commits assault as defined in Section 22.01 and the person:
+    (1) causes serious bodily injury to another; or
+    (2) uses or exhibits a deadly weapon during the commission of the assault.
+
+(b) An offense under this section is a felony of the second degree, except that the offense is a felony of the first degree if the offense is committed against a person the actor knows is a public servant.
+
+PENAL CODE CHAPTER 31 - THEFT
+
+31.03 THEFT
+(a) A person commits an offense if he unlawfully appropriates property with intent to deprive the owner of property.
+
+(b) Appropriation of property is unlawful if:
+    (1) it is without the owner's effective consent;
+    (2) the property is stolen and the actor appropriates the property knowing it was stolen; or
+    (3) property in the custody of any law enforcement agency was explicitly represented by any law enforcement agent to the actor as being stolen and the actor appropriates the property believing it was stolen.
+
+(c) For purposes of Subsection (b):
+    (1) evidence that the actor has previously participated in recent transactions other than, but similar to, that which the prosecution seeks to prove is admissible for the purpose of showing knowledge or intent and the issues of knowledge or intent are raised by the actor's plea of not guilty;
+    (2) the testimony of an accomplice shall be corroborated by evidence that tends to connect the actor with the offense, and the corroboration is not sufficient if it merely shows the commission of the offense.
+
+PUNISHMENT RANGES:
+- Under $100: Class C misdemeanor
+- $100 to under $750: Class B misdemeanor  
+- $750 to under $2,500: Class A misdemeanor
+- $2,500 to under $30,000: State jail felony
+- $30,000 to under $150,000: Felony of the third degree
+- $150,000 to under $300,000: Felony of the second degree
+- $300,000 or more: Felony of the first degree

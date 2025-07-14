@@ -6164,187 +6164,224 @@ const studyData = {
         "penal-code": {
             name: "Penal Code",
             description: "Foundational definitions that enhance TRC violations",
-            icon: "fas fa-gavel"
+            icon: "fas fa-gavel",
+            color: "#dc3545"
         },
         "warning-devices": {
             name: "Warning Devices",
             description: "TRC 472 - Construction zones, barricades, and flaggers",
-            icon: "fas fa-exclamation-triangle"
+            icon: "fas fa-exclamation-triangle",
+            color: "#ffc107"
         },
         "registration": {
             name: "Registration",
             description: "TRC 502 - Vehicle registration requirements and exemptions",
-            icon: "fas fa-clipboard-list"
+            icon: "fas fa-clipboard-list",
+            color: "#007bff"
         },
         "dealer-plates": {
             name: "Dealer Plates",
             description: "TRC 503 - Metal plates, temporary tags, and dealer violations",
-            icon: "fas fa-car-side"
+            icon: "fas fa-car-side",
+            color: "#6f42c1"
         },
         "license-plates": {
             name: "License Plates",
             description: "TRC 504 - Display requirements and plate violations",
-            icon: "fas fa-id-badge"
+            icon: "fas fa-id-badge",
+            color: "#e83e8c"
         },
         "licensing": {
             name: "Driver's Licenses",
             description: "TRC 521 - Driver's license requirements, exemptions, and violations",
-            icon: "fas fa-id-card"
+            icon: "fas fa-id-card",
+            color: "#20c997"
         },
         "commercial-vehicles": {
             name: "Commercial Driver's Licenses",
             description: "TRC 522 - CDL requirements, classifications, and violations",
-            icon: "fas fa-truck"
+            icon: "fas fa-truck",
+            color: "#fd7e14"
         },
         "definitions": {
             name: "TRC Definitions",
             description: "TRC 541 - Fundamental definitions used throughout transportation code",
-            icon: "fas fa-book"
+            icon: "fas fa-book",
+            color: "#17a2b8"
         },
         "vehicle-definitions": {
             name: "Vehicle Classifications",
             description: "TRC 541 - Vehicle types and classifications",
-            icon: "fas fa-cars"
+            icon: "fas fa-cars",
+            color: "#28a745"
         },
         "general-provisions": {
             name: "General Provisions",
             description: "TRC 542 - General traffic law provisions and authority",
-            icon: "fas fa-balance-scale"
+            icon: "fas fa-balance-scale",
+            color: "#6c757d"
         },
         "arrest-prosecution": {
             name: "Arrest & Prosecution",
             description: "TRC 543 - Procedures for arrest and prosecution of traffic violators",
-            icon: "fas fa-handcuffs"
+            icon: "fas fa-handcuffs",
+            color: "#343a40"
         },
         "traffic-control": {
             name: "Traffic Signs & Signals",
             description: "TRC 544 - Traffic control devices, signs, signals, and markings",
-            icon: "fas fa-traffic-light"
+            icon: "fas fa-traffic-light",
+            color: "#007bff"
         },
         "vehicle-operations": {
             name: "Vehicle Operations",
             description: "TRC 545 - Basic vehicle operation rules and roadway positioning",
-            icon: "fas fa-road"
+            icon: "fas fa-road",
+            color: "#495057"
         },
         "passing": {
             name: "Passing Rules",
             description: "TRC 545 - Safe passing procedures and requirements",
-            icon: "fas fa-arrow-left"
+            icon: "fas fa-arrow-left",
+            color: "#6f42c1"
         },
         "speed": {
             name: "Speed Regulations",
             description: "TRC 545 - Speed limits and reasonable/prudent speed requirements",
-            icon: "fas fa-tachometer-alt"
+            icon: "fas fa-tachometer-alt",
+            color: "#dc3545"
         },
         "following": {
             name: "Following Distance",
             description: "TRC 545 - Safe following distance requirements",
-            icon: "fas fa-car-crash"
+            icon: "fas fa-car-crash",
+            color: "#ffc107"
         },
         "lane-usage": {
             name: "Lane Usage",
             description: "TRC 545 - Lane discipline and roadway positioning rules",
-            icon: "fas fa-road"
+            icon: "fas fa-road",
+            color: "#17a2b8"
         },
         "motorcycle-operations": {
             name: "Motorcycle Operations",
             description: "TRC 545 - Special rules for motorcycle operation",
-            icon: "fas fa-motorcycle"
+            icon: "fas fa-motorcycle",
+            color: "#fd7e14"
         },
         "turning": {
             name: "Turning Rules",
             description: "TRC 545 - Proper turning procedures and requirements",
-            icon: "fas fa-share"
+            icon: "fas fa-share",
+            color: "#20c997"
         },
         "signaling": {
             name: "Signaling Requirements",
             description: "TRC 545 - Turn signal and hand signal requirements",
-            icon: "fas fa-hand-paper"
+            icon: "fas fa-hand-paper",
+            color: "#e83e8c"
         },
         "right-of-way": {
             name: "Right-of-Way",
             description: "TRC 545 - Right-of-way rules at intersections",
-            icon: "fas fa-hand-point-right"
+            icon: "fas fa-hand-point-right",
+            color: "#28a745"
         },
         "emergency-vehicles": {
             name: "Emergency Vehicles",
             description: "TRC 546 - Operation of authorized emergency vehicles and signal requirements",
-            icon: "fas fa-ambulance"
+            icon: "fas fa-ambulance",
+            color: "#dc3545"
         },
         "vehicle-equipment": {
             name: "Vehicle Equipment",
             description: "TRC 547 - Vehicle equipment definitions, requirements, and exemptions",
-            icon: "fas fa-tools"
+            icon: "fas fa-tools",
+            color: "#6c757d"
         },
         "lighting": {
             name: "Vehicle Lighting",
             description: "TRC 547 - Comprehensive lighting requirements, restrictions, and standards",
-            icon: "fas fa-lightbulb"
+            icon: "fas fa-lightbulb",
+            color: "#ffc107"
         },
         "vehicle-inspections": {
             name: "Vehicle Inspections",
             description: "TRC 548 - Vehicle inspection requirements and exemptions",
-            icon: "fas fa-clipboard-check"
+            icon: "fas fa-clipboard-check",
+            color: "#007bff"
         },
         "collision-investigation": {
             name: "Collision Investigation",
             description: "TRC 550 - Collision reporting, investigation authority, and driver duties",
-            icon: "fas fa-car-crash"
+            icon: "fas fa-car-crash",
+            color: "#343a40"
         },
         "bicycle-operations": {
             name: "Bicycle Operations",
             description: "TRC 551 - Bicycle rights, duties, and safety equipment requirements",
-            icon: "fas fa-bicycle"
+            icon: "fas fa-bicycle",
+            color: "#17a2b8"
         },
         "low-powered-vehicles": {
             name: "Low-Powered Vehicles",
             description: "TRC 551 & 551A - NEVs, golf carts, EPAMDs, motor-assisted scooters, and off-highway vehicles",
-            icon: "fas fa-golf-ball"
+            icon: "fas fa-golf-ball",
+            color: "#20c997"
         },
         "pedestrians": {
             name: "Pedestrians",
             description: "TRC 552 & 552A - Pedestrian rights, duties, and positioning requirements",
-            icon: "fas fa-walking"
+            icon: "fas fa-walking",
+            color: "#28a745"
         },
         "miscellaneous-provisions": {
             name: "Miscellaneous Provisions",
             description: "TRC 600 - Material removal and highway cleanup responsibilities",
-            icon: "fas fa-broom"
+            icon: "fas fa-broom",
+            color: "#6f42c1"
         },
         "financial-responsibility": {
             name: "Financial Responsibility",
             description: "TRC 601 - Motor vehicle insurance and financial responsibility requirements",
-            icon: "fas fa-shield-alt"
+            icon: "fas fa-shield-alt",
+            color: "#007bff"
         },
         "size-weight": {
             name: "Size and Weight",
             description: "TRC 621 - Vehicle size, weight, and dimension limitations",
-            icon: "fas fa-ruler-combined"
+            icon: "fas fa-ruler-combined",
+            color: "#fd7e14"
         },
         "motorcycle-helmets": {
             name: "Motorcycle Helmets",
             description: "TRC 661 - Protective headgear requirements for motorcycle operators and passengers",
-            icon: "fas fa-motorcycle"
+            icon: "fas fa-motorcycle",
+            color: "#e83e8c"
         },
         "privileged-parking": {
             name: "Privileged Parking",
             description: "TRC 681 - Disabled parking regulations and enforcement",
-            icon: "fas fa-wheelchair"
+            icon: "fas fa-wheelchair",
+            color: "#17a2b8"
         },
         "abandoned-vehicles": {
             name: "Abandoned Vehicles",
             description: "TRC 683 - Abandoned motor vehicle definitions and removal authority",
-            icon: "fas fa-car-crash"
+            icon: "fas fa-car-crash",
+            color: "#6c757d"
         },
         "implied-consent": {
             name: "Implied Consent",
             description: "TRC 724 - DWI specimen collection and refusal procedures",
-            icon: "fas fa-vial"
+            icon: "fas fa-vial",
+            color: "#dc3545"
         },
         "litter": {
             name: "Litter",
             description: "HSC 365 - Litter definitions, disposal prohibitions, and penalties",
-            icon: "fas fa-trash"
+            icon: "fas fa-trash",
+            color: "#28a745"
         }
     },
 
