@@ -1087,13 +1087,51 @@ if (typeof studyData !== 'undefined' && typeof tcoleStudyData !== 'undefined') {
         console.log(`✅ Added ${tcoleStudyData.practiceQuestions.length} vehicle traffic stops practice questions`);
     }
     
-    // Add the vehicle-traffic-stops category to studyData categories
+    // Add new categories to studyData categories
     studyData.categories = studyData.categories || {};
     studyData.categories['vehicle-traffic-stops'] = {
         name: "Vehicle & Traffic Stops",
         description: "Arrest, Search, & Seizure for Vehicles & Traffic Stops",
         icon: "fas fa-car-crash",
         color: "#dc3545"
+    };
+    
+    // Add Penal Code categories
+    studyData.categories['penal-code'] = {
+        name: "Penal Code",
+        description: "Texas Penal Code - Assault, Theft, Property Crimes, Animal Laws, Firearms",
+        icon: "fas fa-gavel",
+        color: "#6f42c1"
+    };
+    studyData.categories['assault-offenses'] = {
+        name: "Assault Offenses",
+        description: "PC 22.01-22.02 Simple and Aggravated Assault",
+        icon: "fas fa-fist-raised",
+        color: "#dc3545"
+    };
+    studyData.categories['theft-offenses'] = {
+        name: "Theft Offenses", 
+        description: "PC 31.03 Theft and punishment ranges",
+        icon: "fas fa-hand-holding",
+        color: "#fd7e14"
+    };
+    studyData.categories['animal-cruelty'] = {
+        name: "Animal Cruelty Laws",
+        description: "PC 42.091, 42.10, 42.105, 21.09 Animal protection laws",
+        icon: "fas fa-paw",
+        color: "#28a745"
+    };
+    studyData.categories['property-crimes'] = {
+        name: "Property Crimes",
+        description: "PC 30.01-30.07 Criminal Trespass and related offenses",
+        icon: "fas fa-home",
+        color: "#17a2b8"
+    };
+    studyData.categories['firearms-laws'] = {
+        name: "Firearms Laws",
+        description: "PC 30.06-30.07 Handgun license holder trespass",
+        icon: "fas fa-crosshairs",
+        color: "#6610f2"
     };
     
     console.log(`📊 FINAL Total flashcards after merge: ${studyData.flashcards.length}`);
