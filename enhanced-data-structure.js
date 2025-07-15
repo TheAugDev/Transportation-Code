@@ -67,59 +67,39 @@ const tcoleStudyData = {
         
         "penal-code": {
             name: "Penal Code",
-            description: "PC - Criminal offenses, punishment ranges, and elements of crimes",
+            description: "Texas Penal Code - Assault, Theft, Property Crimes, Animal Laws, Firearms",
             icon: "fas fa-gavel",
-            color: "#dc3545",
-            modules: ["Assault & Family Violence", "Property Crimes", "Public Order", "Weapons", "Drugs"],
-            subCategories: {
+            color: "#6f42c1",
+            subcategories: {
                 "assault-offenses": {
                     name: "Assault Offenses",
-                    description: "PC 22 - Simple Assault, Aggravated Assault, Family Violence",
-                    icon: "fas fa-hand-rock",
-                    color: "#dc3545",
-                    module: "Assault & Family Violence"
-                },
-                "homicide-offenses": {
-                    name: "Homicide Offenses", 
-                    description: "PC 19 - Murder, Manslaughter, Criminally Negligent Homicide",
-                    icon: "fas fa-skull-crossbones",
-                    color: "#343a40",
-                    module: "Assault & Family Violence"
+                    description: "PC 22.01-22.02 Simple and Aggravated Assault",
+                    icon: "fas fa-fist-raised",
+                    color: "#dc3545"
                 },
                 "theft-offenses": {
-                    name: "Theft Offenses",
-                    description: "PC 31 - Theft, Robbery, Burglary, Unauthorized Use",
-                    icon: "fas fa-mask",
-                    color: "#6f42c1",
-                    module: "Property Crimes"
+                    name: "Theft Offenses", 
+                    description: "PC 31.03 Theft and punishment ranges",
+                    icon: "fas fa-hand-holding",
+                    color: "#fd7e14"
                 },
-                "drug-offenses": {
-                    name: "Drug Offenses",
-                    description: "HSC 481 - Controlled Substances Act violations",
-                    icon: "fas fa-pills",
-                    color: "#17a2b8",
-                    module: "Drugs"
+                "animal-cruelty": {
+                    name: "Animal Cruelty Laws",
+                    description: "PC 42.091, 42.10, 42.105, 21.09 Animal protection laws",
+                    icon: "fas fa-paw",
+                    color: "#28a745"
                 },
-                "weapon-offenses": {
-                    name: "Weapon Offenses",
-                    description: "PC 46 - Unlawful Carrying, Prohibited Weapons",
-                    icon: "fas fa-gun",
-                    color: "#495057",
-                    module: "Weapons"
+                "property-crimes": {
+                    name: "Property Crimes",
+                    description: "PC 30.01-30.07 Criminal Trespass and related offenses",
+                    icon: "fas fa-home",
+                    color: "#17a2b8"
                 },
-                "public-order": {
-                    name: "Public Order",
-                    description: "PC 42 - Disorderly Conduct, Public Intoxication, Riot",
-                    icon: "fas fa-users",
-                    color: "#ffc107",
-                    module: "Public Order"
-                },
-                "dwi-offenses": {
-                    name: "DWI Offenses",
-                    description: "PC 49 - DWI, Intoxication Assault, Intoxication Manslaughter",
-                    icon: "fas fa-wine-bottle",
-                    color: "#fd7e14",
-                    module: "DWI & Intoxication"
+                "firearms-laws": {
+                    name: "Firearms Laws",
+                    description: "PC 30.06-30.07 Handgun license holder trespass",
+                    icon: "fas fa-crosshairs",
+                    color: "#6610f2"
                 }
             }
         },
