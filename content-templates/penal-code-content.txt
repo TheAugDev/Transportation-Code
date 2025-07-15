@@ -34,42 +34,2179 @@ PENAL CODE CHAPTER 22 - ASSAULT OFFENSES
 PASTE YOUR STUDY HANDOUT CONTENT BELOW:
 =======================================
 
-PENAL CODE CHAPTER 22 - ASSAULT OFFENSES
-
-22.01 ASSAULT
-(a) A person commits an offense if the person:
-    (1) intentionally, knowingly, or recklessly causes bodily injury to another;
-    (2) intentionally or knowingly threatens another with imminent bodily injury; or
-    (3) intentionally or knowingly causes physical contact with another when the person knows or should reasonably believe that the other will regard the contact as offensive or provocative.
-
-(b) An offense under Subsection (a) is a Class C misdemeanor, except that the offense is a Class A misdemeanor if the offense is committed against a person the actor knows is a public servant while the public servant is lawfully discharging an official duty.
-
-22.02 AGGRAVATED ASSAULT
-(a) A person commits an offense if the person commits assault as defined in Section 22.01 and the person:
-    (1) causes serious bodily injury to another; or
-    (2) uses or exhibits a deadly weapon during the commission of the assault.
-
-(b) An offense under this section is a felony of the second degree, except that the offense is a felony of the first degree if the offense is committed against a person the actor knows is a public servant.
-
-PENAL CODE CHAPTER 31 - THEFT
-
-31.03 THEFT
-(a) A person commits an offense if he unlawfully appropriates property with intent to deprive the owner of property.
-
-(b) Appropriation of property is unlawful if:
-    (1) it is without the owner's effective consent;
-    (2) the property is stolen and the actor appropriates the property knowing it was stolen; or
-    (3) property in the custody of any law enforcement agency was explicitly represented by any law enforcement agent to the actor as being stolen and the actor appropriates the property believing it was stolen.
-
-(c) For purposes of Subsection (b):
-    (1) evidence that the actor has previously participated in recent transactions other than, but similar to, that which the prosecution seeks to prove is admissible for the purpose of showing knowledge or intent and the issues of knowledge or intent are raised by the actor's plea of not guilty;
-    (2) the testimony of an accomplice shall be corroborated by evidence that tends to connect the actor with the offense, and the corroboration is not sufficient if it merely shows the commission of the offense.
-
-PUNISHMENT RANGES:
-- Under $100: Class C misdemeanor
-- $100 to under $750: Class B misdemeanor  
-- $750 to under $2,500: Class A misdemeanor
-- $2,500 to under $30,000: State jail felony
-- $30,000 to under $150,000: Felony of the third degree
-- $150,000 to under $300,000: Felony of the second degree
-- $300,000 or more: Felony of the first degree
+•Instructor Intro if needed 
+Introduction 
+Property and Trespassing Offenses
+ Chapters 28, 30, and 42
+ Types of Property Offenses
+ Burglary 
+Theft
+ Criminal Mischief 
+Forgery/Fraud
+ Identity Theft
+ Officers should use the victim’s reasonable value 
+estimate for affected property
+ Professional Criminal(s) / Thief:
+ Profit motive: may commit burglary, white collar, vehicle theft, 
+agricultural, and arson crimes
+ Operate to minimize chances of observation / lack of eyewitnesses
+ Requires planning, direction, and operating skills.
+ Type of property stolen may be important clue as they may be 
+traced when stolen property is recovered
+ “Achilles Heel” of Burglary/Theft is disposal of the property. 
+Often work in conjunction with criminal receivers (fences)
+ • One who receives and disposes of stolen property on a regular basis.
+ Semi-professional (unskilled) thief:
+ Profit still underlying motive, but this type may be more interested 
+in getting money for drugs
+ Targets are determined more by opportunity (cruising robber)
+ Less involved in planning or preparation
+ Less rational than "professional" counterpart
+ More likely to resort to violence against victim
+ Presents a special danger when interrupted and cornered
+ More prone to violence to try to effect escape
+ Burglars
+ Same motivation as professional thief
+ Ability to gain entry to premises by stealth or defeating locks, alarms
+ Ability to plan, direct, and execute an operation
+ Business sense - ability to distinguish between valuable and worthless 
+items during burglary
+ Connections to dispose of fruits of the crime
+ • residential premises
+ • safe burglary
+ Type of burglary may give clues to the suspect identity
+ • commercial premises
+ • vehicle
+ •Direct students to their handouts 
+•Unit Goal: Crimes against property and persons and characteristics of these crimes.  
+Presentation 
+32.7. Discuss various types of property offenses and characteristics of these types of crimes.  
+An accomplished thief not only completes the crime but successfully disposes of the property. 
+The “Achilles’ Heel” (weakness) of property crime is the disposal of the stolen property. 
+Professional Criminal(s) / Professional thief / Penal Code 31.03  
+• Profit motive: operate to minimize chances of observation.  
+• Lack of eyewitnesses.  
+• May be traced when stolen property is recovered.  
+• This type requires planning, direction, and operating skills.  
+• The type of property stolen may be an important clue.  
+• Often work in conjunction with criminal receivers or fences: one who receives and disposes 
+of stolen property on a regular basis.  
+• May also commit the crimes of burglary, white collar crimes, vehicle theft, agricultural 
+crimes, and arson.  
+Semi-professional (unskilled) thief:  
+• Profit still underlying motive, but this type may be more interested in getting money for 
+drugs.  
+• Targets are determined more by opportunity (cruising robber)  
+• Less involved in planning or preparation  
+• More likely to resort to violence against victim.  
+• Presents a special danger when interrupted and cornered.  
+• More prone to violence to try to effect escape.  
+• Less rational than "professional" counterpart  
+Burglar:  
+• Same motivation as professional thief  
+• Has ability to gain entry to premises by stealth or defeating locks, alarms.  
+• Ability to plan, direct, and execute an operation.  
+• Has business sense - ability to distinguish between valuable and worthless items during 
+burglary.  
+• Connections to dispose of fruits of the crime.  
+• Type of burglary committed may give a clue to suspect identity.  
+• Residential premises, Safe burglary, Commercial premises, and Vehicles 
+32.8. Identify the characteristics of a street thief.  
+Patrol Officers Encounter Street Thieves More Often
+ Street thieves may carry weapons & be reckless to avoid arrest
+ • Usually stealing for trading material to procure narcotics or alcohol
+ • Most dangerous auto thieves
+ Professional thief: rarely armed to avoid higher punishments
+ • Will try to outwit the officer: 
+• Interview techniques & attention to detail will help to detect
+ CHAPTER 28: ARSON & PROPERTY 
+DAMAGE OR DESTRUCTION
+ Sec. 28.01. Definitions
+ (3)  "Property" means: 
+(A)  real property;
+ (B)  tangible or intangible personal property, 
+including anything severed from land;  or
+ (C) document, including money, that represents or 
+embodies anything of value.
+ 28.05.  ACTOR'S INTEREST IN PROPERTY
+ It is NO defense to prosecution that the actor has an interest 
+in the property damaged or destroyed if another person also 
+has an interest that the actor is not entitled to infringe.
+ 28.06: AMOUNT OF PECUNIARY LOSS.  
+(a)  The amount of pecuniary loss under this chapter, if the property is 
+destroyed, is:
+ (1)  the fair market value of the property at the time and place of the 
+destruction;  or
+ (2)  if the fair market value of the property cannot be ascertained, 
+the cost of replacing the property within a reasonable time after the 
+destruction.
+ (b)  The amount of pecuniary loss under this chapter, if the property is 
+damaged, is the cost of repairing or restoring the damaged property 
+within a reasonable time after the damage occurred.
+ Street Thieves:   
+• often carry weapons and take reckless chances to avoid apprehension.  
+• are usually stealing for trading material to procure narcotics or alcohol.  
+• are the most dangerous auto thieves.  
+Uniformed officers encounter "street" thieves more often than the truly professional car thief.  
+The truly professional thief will rarely be armed since he would get more time for a weapon 
+charge than the theft charge. He will try to use his mind to outwit his captor. The better an 
+officer becomes at questioning a suspect and catching him in a lie, the better that officer's 
+chances are he will catch a professional car thief.  
+8.15. Define and apply the elements of crimes against property  
+28.01. DEFINITIONS.  
+(3) "Property" means: 
+(A) real property; 
+(B) tangible or intangible personal property, including anything severed from land; or 
+(C) a document, including money, that represents or embodies anything of value. 
+28.05. ACTOR'S INTEREST IN PROPERTY. It is no defense to prosecution under this chapter that 
+the actor has an interest in the property damaged or destroyed if another person also has an 
+interest that the actor is not entitled to infringe. 
+28.06. AMOUNT OF PECUNIARY LOSS. (a) The amount of pecuniary loss under this chapter, if 
+the property is destroyed, is: 
+(1) the fair market value of the property at the time and place of the destruction; or 
+(2) if the fair market value of the property cannot be ascertained, the cost of replacing the 
+property within a reasonable time after the destruction. 
+(b) The amount of pecuniary loss under this chapter, if the property is damaged, is the cost of 
+repairing or restoring the damaged property within a reasonable time after the damage 
+occurred. 
+28.06 Amount of Pecuniary Loss
+ (c)  The amount of pecuniary loss under this chapter for documents, 
+other than those having a readily ascertainable market value, is:
+ (1)  the amount due and collectible at maturity less any part that has 
+been satisfied, if the document constitutes evidence of a debt;  or
+ (2)  the greatest amount of economic loss that the owner might 
+reasonably suffer by virtue of the destruction or damage if the 
+document is other than evidence of a debt.
+ 28.06 Amount of Pecuniary Loss
+ (d)  If the amount of pecuniary loss cannot be ascertained by the criteria 
+set forth in Subsections (a) through (c), the amount of loss is deemed to 
+be greater than $750 but less than $2,500.
+ (e)  If the actor proves by a preponderance of the evidence that he gave 
+consideration for or had a legal interest in the property involved, the 
+value of the interest so proven shall be deducted from:
+ (1)  the amount of pecuniary loss if the property is destroyed;  or
+ (2)  the amount of pecuniary loss to the extent of an amount equal to 
+the ratio the value of the interest bears to the total value of the 
+property, if the property is damaged.
+ Basic Value LOSS Ladder Chart
+ Offense Level
+ Class C
+ Class B
+ Class A
+ State Jail Felony
+ 3rd Degree Felony
+ 2nd Degree Felony
+ 1st Degree Felony
+ Value of  Loss
+ $0.00 > $100
+ $100 < $750
+ $750 < $2500
+ $2500 < $30,000   
+$30,000 < $150,000
+ $150,000 < $300,000
+ $300,000 or more
+ Sec. 28.03.  CRIMINAL MISCHIEF
+ Conduct: Offense if a person:
+ (a) Without the effective consent of an owner:
+ (1) intentionally or knowingly damages or 
+destroys the tangible property of the owner;
+ (2) intentionally/knowingly tampers with 
+tangible property, causing $ loss or substantial 
+inconvenience to the owner/3rd person;  
+(3) Or intentionally or knowingly makes 
+markings, including inscriptions, slogans, 
+drawings, or paintings, on tangible property
+ * Offense levels follow the theft ladder unless 
+it is a SPECIAL ITEM or SITUATION (see 
+following slides)
+ Defenses, Definitions, & 
+Enhancements
+ (k) (1-2) do not apply if the 
+property was a head of cattle, 
+bison, or horse killed when in: 
+(1) actual official discharge of 
+duties of the United States armed 
+or State military forces or
+ (2)  regular agricultural labor 
+duties and practices.
+ Criminal Mischief Offense Level’s Chart
+ Level
+ Class C 
+Class C
+ Class B
+ Class B
+ Class A
+ Class A
+ State Jail 
+Felony
+ SJF
+ Value
+ $0 to $100
+ $100 to $750
+ $750 to $2500
+ $2500 to 
+$30,000
+ < $2500
+ < $30,000
+ Special item or situation
+ or causes a substantial inconvenience
+ Or whole/part impairment (installation/removal), 
+interruption, or diversion of any public water supply
+ a public or private school, higher education institution; 
+place of worship; human burial; public monument; or 
+community center that provides medical, social, or 
+educational programs; & the loss is $750 to $30,000
+ habitation damaged by a firearm or explosive weapon
+ fence containing cattle, bison, horses, sheep, swine, 
+goats, exotic livestock or poultry, or game animals
+ whole/part impairment (installation/removal), diversion, or 
+interruption of flood control property; or public gas supply, 
+communications, transportation, or other service; or
+ motor vehicle damaged, destroyed, or tampered with during a 
+removal or attempted one of a catalytic converter from it
+ (c) The amount of pecuniary loss under this chapter for documents, other than those having a 
+readily ascertainable market value, is: 
+(1) the amount due and collectible at maturity less any part that has been satisfied, if the 
+document constitutes evidence of a debt; or 
+(2) the greatest amount of economic loss that the owner might reasonably suffer by virtue of 
+the destruction or damage if the document is other than evidence of a debt. 
+(d) If the amount of pecuniary loss cannot be ascertained by the criteria set forth in 
+Subsections (a) through (c), the amount of loss is deemed to be greater than $750 but less 
+than $2,500. 
+(e) If the actor proves by a preponderance of the evidence that he gave consideration for or 
+had a legal interest in the property involved, the value of the interest so proven shall be 
+deducted from: 
+(1) the amount of pecuniary loss if the property is destroyed; or 
+(2) the amount of pecuniary loss to the extent of an amount equal to the ratio the value of the 
+interest bears to the total value of the property, if the property is damaged. 
+28.03.  CRIMINAL MISCHIEF.   
+(a)  A person commits an offense if, without the effective consent of the owner: (1)  he 
+intentionally or knowingly damages or destroys the tangible property of the owner; (2)  he 
+intentionally or knowingly tampers with the tangible property of the owner and causes 
+pecuniary loss or substantial inconvenience to the owner or a third person;  or (3)  he 
+intentionally or knowingly makes markings, including inscriptions, slogans, drawings, or 
+paintings, on the tangible property of the owner. 
+(k)  Subsection (a)(1) or (2) does not apply if the tangible personal property of the owner was 
+a head of cattle or bison killed, or a horse killed, in the course of the actor’s: (1)  actual 
+discharge of official duties as a member of the United States armed forces or the state military 
+forces as defined by Section 437.001, Government Code; or (2)  regular agricultural labor 
+duties and practices. 
+(14) "Texas military forces" means the Texas National Guard, the Texas State Guard, and any 
+other military force organized under state law 
+* Offense levels follow the value ladder unless it is a SPECIAL ITEM (noted in the charts and 
+below) 
+(b)  Except as provided by Subsections (f) and (h), an offense under this section is: 
+(1)  a Class C misdemeanor if: (A)  the amount of pecuniary loss is less than $100; or (B)  
+except as provided in Subdivision (3)(A) or (3)(B), it causes substantial inconvenience to 
+others; 
+(2)  a Class B misdemeanor if the amount of pecuniary loss is $100 or more but less 
+than $750; 
+(3)  a Class A misdemeanor if: (A)  the amount of pecuniary loss is  $750 or more but 
+less than $2,500; or (B)  the actor causes in whole or in part impairment or interruption 
+of any public water supply, or causes to be diverted in whole, in part, or in any manner, 
+Criminal Mischief Offense Level’s Chart
+ Level
+ 3rd Degree 
+Felony
+ 3°F
+ 2nd
+ 2°F
+ Degree 
+Felony
+ 1st Degree 
+Felony
+ Value
+ $30,000 to 
+$150,000
+ $150,000 to 
+$300,000
+ Special item or situation
+ discharge a firearm, other weapon or by any other 
+meanscauses death of 1 or more cattle/bison/horses
+ • Whole/part impairment, interruption, or diversion 
+of property/device used for public power supply or 
+transportation communications; or
+ • Whole/partly impairment or interruption 
+of access to an automated teller
+ $300,000 or 
+more
+ 1°F
+ • Mad Cow Disease
+ 28.03 Criminal Mischief Continued 
+(c)  It shall be presumed that a person who is receiving the economic benefit of 
+public communications, water, gas, or power supply, has knowingly tampered 
+with the tangible property if the communication or supply has been:
+ (1)  diverted from passing through a metering device;  or
+ (2)  prevented from being correctly registered by a metering device;  or
+ (3)  activated by any device installed to obtain public communications, 
+public water, gas, or power supply without a metering device.
+ including installation or removal of any device for any such purpose, any public water 
+supply, regardless of the amount of the pecuniary loss; 
+(4)  a state jail felony if the amount of pecuniary loss is: (A)  $2,500 or more but less than 
+$30,000; (B)  less than $2,500, if the property damaged  or destroyed is a habitation and if 
+the damage or destruction is caused by a firearm or explosive weapon; (C)  less than $2,500, 
+if the property was a fence used for the production or containment of:  
+(i)  cattle, bison, horses, sheep, swine, goats, exotic livestock, or exotic 
+poultry; or 
+(ii)  game animals as that term is defined by Section 63.001, Parks and 
+Wildlife Code; or 
+(D)  less than $30,000 and the actor (i)  causes wholly or partly impairment 
+or interruption of property used for flood control purposes or a dam or 
+of public communications, public transportation, public gas or power supply, 
+or other public service; or (ii)  causes to be diverted wholly, partly, or 
+in any manner, including installation or removal of any device for any 
+such purpose, any public communications or public gas or power supply; or  
+(E) less than $30,000, if the property is a motor vehicle that is damaged, destroyed, or 
+tampered with during the removal or attempted removal of a catalytic converter from the 
+motor vehicle; 
+(5) a felony of the third degree if: (A) the amount of the pecuniary loss is $30,000 or more but 
+less than $150,000; (B) the actor, by discharging a firearm or other weapon or by any other 
+means, causes the death of one or more head of cattle or bison or one or more horses; (C) the 
+actor causes wholly or partly impairment or interruption of access to an automated teller 
+machine, regardless of the amount of the pecuniary loss; or (D) the amount of pecuniary loss 
+is less than $150,000 and the actor: (i) causes wholly or partly impairment or interruption of 
+property used for public power supply; or (ii) causes to be diverted wholly, partly, or in any 
+manner, including installation or removal of any device for any such purpose, any public 
+power supply; 
+(6) a felony of the second degree if the amount of pecuniary loss is $150,000 or more but less 
+than $300,000; or 
+(7) a felony of the first degree if the amount of pecuniary loss is $300,000 or more. 
+(i) Notwithstanding Subsection (b), an offense under this section is a felony of the first degree 
+if the property is livestock and the damage is caused by introducing bovine spongiform 
+encephalopathy, commonly known as mad cow disease, or a disease listed in rules adopted by 
+the Texas Animal Health Commission under Section 161.041(a), Agriculture Code. In this 
+subsection, "livestock" has the meaning assigned by Section 161.001, Agriculture Code. 
+(j) Notwithstanding Subsection (b), an offense under this section is a felony of the third degree 
+if: (1) the tangible property damaged, destroyed, or tampered with is transportation 
+communications equipment or a transportation communications device; and (2) the amount 
+of the pecuniary loss to the tangible property is less than $150,000. 
+(c) For the purposes of this section, it shall be presumed that a person who is receiving the 
+economic benefit of public communications, public water, gas, or power supply, has 
+knowingly tampered with the tangible property of the owner if the communication or supply 
+has been: 
+(1) diverted from passing through a metering device; or 
+(2) prevented from being correctly registered by a metering device; or 
+(3) activated by any device installed to obtain public communications, public water, gas, or 
+power supply without a metering device. 
+28.03 Criminal Mischief Continued
+ (e) When more than one item of tangible property, belonging to one or 
+more owners, is damaged, destroyed, or tampered with, pursuant to one 
+scheme or continuing course of conduct: 
+• conduct may be considered as one offense & amounts of pecuniary 
+loss may be aggregated in determining the grade of the offense.
+ 28.08 Graffiti
+ (e)  In this section:
+ (1)  "Aerosol paint" means an aerosolized paint product.
+ (2)  "Etching or engraving device" means a device that makes a 
+delineation or impression on tangible property, regardless of the 
+manufacturer's intended use for that device.
+ (3)  "Indelible marker" means a device that makes a mark with a paint 
+or ink product that is specifically formulated to be more difficult to 
+erase, wash out, or remove than ordinary paint or ink products.
+ (5)  "School" means a private or public elementary or secondary 
+school.
+ Sec. 28.08.  GRAFFITI. 
+Conduct: Offense if a person:
+ (a) without the effective consent of the owner, 
+intentionally or knowingly makes markings, 
+including inscriptions, slogans, drawings, or 
+paintings, on the tangible property with:
+ (1)  paint;
+ (2)  an indelible marker; or
+ (3)  an etching or engraving device.
+ Defenses, Definitions, & 
+Enhancements
+ Graffiti Offense Level’s Chart
+ Level
+ Class C
+ Class B
+ Class A
+ State Jail 
+Felony
+ SJF
+ Value
+ $0 to $100
+ $100 to 
+$750
+ $750 to 
+$2500
+ $2500 to 
+$30,000
+ Special item or situation
+ Class C 
+Class B
+ Class A
+ $750 - $30,000 AND is a public/private school, 
+higher education institution; place of worship; 
+human burial; public monument; or community 
+center that provides medical, social, or 
+educational programs
+ (e) When more than one item of tangible property, belonging to one or more owners, is 
+damaged, destroyed, or tampered with in violation of this section pursuant to one scheme or 
+continuing course of conduct, the conduct may be considered as one offense, and the 
+amounts of pecuniary loss to property resulting from the damage to, destruction of, or 
+tampering with the property may be aggregated in determining the grade of the offense. 
+(e) In this section: 
+(1) "Aerosol paint" means an aerosolized paint product. 
+(2) "Etching or engraving device" means a device that makes a delineation or impression on 
+tangible property, regardless of the manufacturer's intended use for that device. 
+(3) "Indelible marker" means a device that makes a mark with a paint or ink product that is 
+specifically formulated to be more difficult to erase, wash out, or remove than ordinary paint 
+or ink products. 
+(4) "Institution of higher education" has the meaning assigned by Section 481.134, Health and 
+Safety Code. 
+(5) "School" means a private or public elementary or secondary school. 
+Sec. 28.08.  GRAFFITI.   
+(a)  A person commits an offense if, without the effective consent of the owner, the person 
+intentionally or knowingly makes markings, including inscriptions, slogans, drawings, or 
+paintings, on the tangible property of the owner with: 
+(1)  paint; 
+(2)  an indelible marker; or 
+(3)  an etching or engraving device. 
+(b)  Except as provided by Subsection (d), an offense under this section is: 
+(1) a Class C misdemeanor if the amount of pecuniary loss is less than $100; 
+(2)  a Class B misdemeanor if the amount of pecuniary loss is $100 or more but less 
+than $750; 
+(3)  a Class A misdemeanor if the amount of pecuniary loss is $750 or more but less 
+than $2,500; 
+(4)  a state jail felony if the amount of pecuniary loss is $2,500 or more but less than 
+$30,000; 
+(d)  An offense under this section is a state jail felony if: 
+(1)  the marking is made on a school, an institution of higher education, a place of 
+worship or human burial, a public monument, or a community center that provides 
+medical, social, or educational programs;  and 
+(2)  the amount of the pecuniary loss to real property or to tangible personal property 
+is $750 or more but less than $30,000. 
+Graffiti Offense Level’s Chart
+ Level
+ Value
+ 3rd Degree Felony $30,000 to 
+$150,000
+ 2nd Degree Felony $150,000 to 
+$300,000
+ 1st Degree Felony $300,000 or 
+more
+ Special item or situation
+ 3°F
+ 2°F
+ 1°F
+ 28.08 Graffiti Continued
+ (c)  When more than one item of tangible property, belonging to one or 
+more owners, is marked in violation pursuant to one scheme or 
+continuing course of conduct, the conduct may be considered as one 
+offense, and the amounts of pecuniary loss may be aggregated in 
+determining the grade of the offense.
+ 28.04.  RECKLESS DAMAGE OR 
+DESTRUCTION
+ Conduct: Offense if a person:
+ a) without the effective consent of the 
+owner, he recklessly damages or destroys 
+property of the owner.
+ Defenses, Definitions, & 
+Enhancements
+ Class C 
+Sec. 28.07.  INTERFERENCE WITH 
+RAILROAD PROPERTY
+ (a) (1)  "Railroad property" means:
+ (A)  a train, locomotive, railroad car, caboose, work equipment, 
+rolling stock, safety device, switch, or connection that is owned, 
+leased, operated, or possessed by a railroad;  or
+ (B)  a railroad track, rail, bridge, trestle, or right-of-way owned or 
+used by a railroad.
+ (2)  "Tamper" means to move, alter, or interfere with 
+railroad property.
+ Sec. 28.07.  INTERFERENCE WITH 
+RAILROAD PROPERTY (b)
+ Conduct: Offense if a person:
+ (1) throws an object or discharges a firearm or 
+weapon at a train or rail-mounted work 
+equipment; or
+ c) Class B Misd
+ (2) without the effective consent of the owner:
+ (A)  enters or remains on railroad property, 
+knowing that it is railroad property; (Video)
+ (B)  tampers with railroad property;
+ (C) places an obstruction on a railroad track or 
+right-of-way;  or
+ (D) cause in any way the derailment of a train, rail 
+car, or other rail property that moves on tracks.
+ Defenses, Definitions, & 
+Enhancements
+ F3  if causes bodily injury
+ d) Class 
+C Misd
+ (f) no offense if entry is an   
+employee or labor rep, 
+allowed by the Railway Labor 
+Act (45 U.S.C. 151).
+ These follow 
+theft ladder
+ (b)  Except as provided by Subsection (d), an offense under this section is: 
+(5)  a felony of the third degree if the amount of pecuniary loss is $30,000 or more but 
+less than $150,000; 
+(6)  a felony of the second degree if the amount of pecuniary loss is $150,000 or more 
+but less than $300,000;  or 
+(7)  a felony of the first degree if the amount of pecuniary loss is $300,000 or more. 
+c) When more than one item of tangible property, belonging to one or more owners, is 
+marked in violation of this section pursuant to one scheme or continuing course of conduct, 
+the conduct may be considered as one offense, and the amounts of pecuniary loss to property 
+resulting from the marking of the property may be aggregated in determining the grade of the 
+offense. 
+Sec. 28.04.  RECKLESS DAMAGE OR DESTRUCTION.   
+(a)  A person commits an offense if, without the effective consent of the owner, he recklessly 
+damages or destroys property of the owner. 
+(b)  An offense under this section is a Class C misdemeanor 
+28.07. INTERFERENCE WITH RAILROAD PROPERTY. (a) In this section: (1) "Railroad property" 
+means: 
+(A) a train, locomotive, railroad car, caboose, work equipment, rolling stock, safety device, 
+switch, or connection that is owned, leased, operated, or possessed by a railroad; or 
+(B) a railroad track, rail, bridge, trestle, or right-of-way owned or used by a railroad. 
+(2) "Tamper" means to move, alter, or interfere with railroad property. 
+28.07.  INTERFERENCE WITH RAILROAD PROPERTY (b)  A person commits an offense if the 
+person: 
+(1)  throws an object or discharges a firearm or weapon at a train or rail-mounted 
+work equipment;  or  
+(2)  without the effective consent of the owner: 
+(A)  enters or remains on railroad property, knowing that it is railroad property; 
+(Video) 
+(B)  tampers with railroad property; 
+(C)  places an obstruction on a railroad track or right-of-way;  or 
+(D)  causes in any manner the derailment of a train, railroad car, or other railroad 
+property that moves on tracks. 
+(c)  An offense under Subsection (b)(1) is a Class B misdemeanor unless the person causes 
+bodily injury to another, in which event the offense is a felony of the third degree. 
+(d)  An offense under Subsection (b)(2)(A) is a Class C misdemeanor. 
+(e)  An offense under Subsection (b)(2)(B), (b)(2)(C), or (b)(2)(D) is a Class C misdemeanor 
+unless the person causes pecuniary loss of $100 or more, in which event the offense is: 
+(1)  a Class B misdemeanor if the amount of pecuniary loss is $100 or more but less 
+than $750; 
+(2)  a Class A misdemeanor if the amount of pecuniary loss is $750 or more but less 
+than $2,500; 
+(3)  a state jail felony if the amount of pecuniary loss is $2,500 or more but less than 
+$30,000;  
+(4)  a felony of the third degree if the amount of the pecuniary loss is $30,000 or more 
+but less than $150,000; 
+(5)  a felony of the second degree if the amount of pecuniary loss is $150,000 or more 
+but less than $300,000;  or 
+(6)  a felony of the first degree if the amount of the pecuniary loss is $300,000 or more. 
+(f)  The conduct described in Subsection (b)(2)(A) is not an offense under this section if it is 
+undertaken by an employee of the railroad or by a representative of a labor organization 
+which represents or is seeking to represent the employees of the railroad as long as the 
+employee or representative has a right to engage in such conduct under the Railway Labor Act 
+(45 U.S.C. Section 151 et seq.). 
+Sec. 28.01. Definitions
+ (1)  "Habitation" means a structure or vehicle that is adapted for the 
+overnight accommodation of persons and includes:
+ (A) each separately secured or occupied portion of the structure or 
+vehicle; and
+ (B) each structure appurtenant to or connected with the structure or 
+vehicle.
+ (2)  "Building" means any structure or enclosure intended for use or 
+occupation as a habitation or for some purpose of trade, manufacture, 
+ornament, or use.
+ (4)  "Vehicle" includes any device in, on, or by which any person or 
+property is or may be propelled, moved, or drawn in the normal course 
+of commerce or transportation.
+ Sec. 28.01. Definitions
+ (5) "Open-space land" means real property that is 
+undeveloped for the purpose of human habitation.
+ (6)  "Controlled burning" means the burning of unwanted 
+vegetation with the consent of the owner of the property 
+on which the vegetation is located and in such a manner 
+that the fire is controlled and limited to a designated area.  
+Sec. 28.02.  ARSON (a)
+ Conduct: Offense if a person:
+ (a) starts a fire, regardless, if it continues, or an 
+explosion with intent to destroy or damage:
+ (1) any vegetation, fence, or structure on 
+open-space land; or
+ (2) any building/habitation/vehicle & knows:   
+Defenses, Definitions, & 
+Enhancements
+ (b) Exception to (a)(1) a controlled 
+burning of open-space land.
+ (c) Defense to (a)(2)(A) if the actor 
+obtained a permit or other written 
+authorization prior to starting it, 
+(A) it is in an incorporated city/town;
+ (B) it’s insured for damage/destruction;
+ (C) it’s under mortgage/other secur. interest;
+ (D) it is on another’s property;  
+(E) within it is another’s property; or
+ (F) is RECKLESS the burning/explosion 
+will endanger someone’s life or property
+ d) 2°F unless it is shown at trial that
+ 1°F there is BI or death or the 
+intended target was a 
+habitation or place of assembly 
+or worship.
+ 8.01. DEFINITIONS. In this chapter:  
+(1) "Habitation" means a structure or vehicle that is adapted for the overnight 
+accommodation of persons and includes: (A) each separately secured or occupied portion of 
+the structure or vehicle; and (B) each structure appurtenant to or connected with the 
+structure or vehicle. 
+(2) "Building" means any structure or enclosure intended for use or occupation as a habitation 
+or for some purpose of trade, manufacture, ornament, or use. 
+(4) "Vehicle" includes any device in, on, or by which any person or property is or may be 
+propelled, moved, or drawn in the normal course of commerce or transportation. 
+(5) "Open-space land" means real property that is undeveloped for the purpose of human 
+habitation. 
+(6) "Controlled burning" means the burning of unwanted vegetation with the consent of the 
+owner of the property on which the vegetation is located and in such a manner that the fire is 
+controlled and limited to a designated area. 
+28.02.  ARSON.   
+(a)  A person commits an offense if the person starts a fire, regardless of whether the fire 
+continues after ignition, or causes an explosion with intent to destroy or damage: (1) any 
+vegetation, fence, or structure on open-space land; or (2)  any building, habitation, or vehicle: 
+(A)  knowing that it is within the limits of an incorporated city or town; 
+(B)  knowing that it is insured against damage or destruction; 
+(C)  knowing that it is subject to a mortgage or other security interest; 
+(D)  knowing that it is located on property belonging to another; 
+(E)  knowing that it has located within it property belonging to another;  or 
+(F)  when the person is reckless about whether the burning or explosion will endanger the 
+life of some individual or the safety of the property of another. 
+That was Arson (a)
+ there are other subsections
+ Sec. 28.02.  ARSON
+ Conduct: Offense if a person:
+ (a-1) if recklessly starts a fire or causes an 
+explosion while manufacturing or attempting 
+a controlled substance & it damages any 
+building, habitation, or vehicle.
+ (a-2) if the person intentionally starts a fire or 
+causes an explosion and:
+ (1) recklessly damages or destroys a building 
+belonging to another; or
+ (2) recklessly causes another person to suffer 
+bodily injury or death.
+ Defenses, Definitions, & 
+Enhancements
+ e) SJF unless at trial it’s shown that
+ 3°F BI or death was suffered
+ f) SJF
+ (g) If conduct violates (a-1) or (a-2) & 
+another of this section or another PC 
+section, the actor may be prosecuted 
+under either of the subsections here 
+or the other PC subsection 
+Arson (a-1)
+ SJF +
+ Arson (a-2)
+ Typical Offenses with Property Damage Chart
+ Instrument
+ Property
+ Culpability
+ Intent to destroy / 
+damage unlawfully
+ Arson
+ Vegetation, fence, 
+struct on open-land or
+ building, habitation, or 
+vehicle
+ these
+ Reckless when endanger 
+life or property safety 
+Reckless making of 
+controlled substances
+ Intentionally starts & 
+then reckless
+ damages any building, 
+habitation, or vehicle 
+dmg/dest building or
+ causes B/I or death
+ Fire / 
+Explosion
+ Enhancements
+ Habitation or 
+Worship Places
+ bodily injury or 
+death occurs
+ (b) It is an exception to the application of Subsection (a)(1) that the fire or explosion was a 
+part of the controlled burning of open-space land. 
+(c) It is a defense to prosecution under Subsection (a)(2)(A) that prior to starting the fire or 
+causing the explosion, the actor obtained a permit or other written authorization granted in 
+accordance with a city ordinance, if any, regulating fires and explosions. 
+(d) An offense under Subsection (a) is a felony of the second degree, except that the offense is 
+a felony of the first degree if it is shown on the trial of the offense that: (1) bodily injury or 
+death was suffered by any person by reason of the commission of the offense; or (2) the 
+property intended to be damaged or destroyed by the actor was a habitation or a place of 
+assembly or worship. 
+28.02.  ARSON.   
+(a-1)  A person commits an offense if the person recklessly starts a fire or causes an explosion 
+while manufacturing or attempting to manufacture a controlled substance and the fire or 
+explosion damages any building, habitation, or vehicle. 
+(a-2)  A person commits an offense if the person intentionally starts a fire or causes an 
+explosion and in so doing: 
+(1)  recklessly damages or destroys a building belonging to another; or (2)  recklessly 
+causes another person to suffer bodily injury or death. 
+(e) An offense under Subsection (a-1) is a state jail felony, except that the offense is a felony 
+of the third degree if it is shown on the trial of the offense that bodily injury or death was 
+suffered by any person by reason of the commission of the offense. 
+(f) An offense under Subsection (a-2) is a state jail felony. 
+Typical Offenses with Property Damage Chart
+ Culpability Property Instrument Enhancements
+ Arson
+ Intent to destroy / 
+damage unlawfully
+ these
+ Reckless when endanger 
+life or property safety 
+Veg-tion, fence, struct 
+on open-land or 
+building, habitation, or 
+vehicle Fire / 
+Explosion
+ Habitation or 
+Worship Places
+ bodily injury or 
+death occurs
+ Reckless making of 
+controlled substances
+ damages any building, 
+habitation, or vehicle 
+Intentionally starts & 
+then reckless
+ dmg/destbuilding or
+ causes B/I or death
+ Criminal 
+Mischief
+ intentionally and 
+knowingly
+ any property w/o 
+consent
+ damage/destroy, 
+tampers w/ $ loss 
+or substantial 
+inconvenience , 
+or makes 
+markings 
+Livestock/game animals 
+fencing, habit. with 
+firearm/explosive, pub 
+utilities. If $750 at 
+worship, burial; center 
+w/ medical, social, or 
+educ. progs; or pub 
+monuments, & schools
+ Reckless 
+Damage reckless any property w/o 
+consent
+ Damages / 
+destroys Class C only
+ Graffiti intentionally and 
+knowingly
+ any property w/o 
+consent
+ Marking: paint, 
+marker, or 
+etching/engraving
+ $750 & worship, burial; 
+center w/ social 
+medical, or educ progs; 
+pub monument; schools
+ 
+ 
+Select your team below
+ A.Group A
+ B. Group B
+ C.Group C
+ D.Group D
+ E. Group E
+ F. Group F
+ 
+ 
+High Schoolers Jared and Aaron go to the rival high school and use chalk to mark-up the 
+outer walls of the school with insulting slogans and lewd drawings, which will cost about 
+$300 to clean up. (1)
+ A. Criminal Mischief C
+ B. Criminal Mischief B
+ C. Criminal Mischief A
+ D. Criminal Mischief Felony
+ E. Graffiti C
+ F. Graffiti B
+ G. Graffiti A
+ H. Graffiti Felony
+ I. Reckless Damage
+ J. Arson
+ The Rivals Rivalry
+ 
+ 
+Afterwards Jared and Aaron split up to go home.  On Aaron’s way home, he throws a 
+match inside a dumpster which catches the trash inside on fire.  The fire department 
+responds to put out the fire.  The cost to the city in manpower is $1,300. (2)
+ A. Criminal Mischief C
+ B. Criminal Mischief B
+ C. Criminal Mischief A
+ D. Criminal Mischief Felony
+ E. Graffiti C
+ F. Graffiti B
+ G. Graffiti A
+ H. Graffiti Felony
+ I. Reckless Damage
+ J. Arson
+ The Rivals Rivalry
+ 
+ 
+After getting drunk at home, Aaron goes back out and spray paints more slogans on the 
+school’s walls, which causes $500 in damage. Afterwards, he stops by the local cemetery 
+and uses a permanent marker to write profanity on the tombstones of one of his former 
+teachers, which causes $250 in damage. (3)
+ A. Criminal Mischief C
+ B. Criminal Mischief B
+ C. Criminal Mischief A
+ D. Criminal Mischief Felony
+ E. Graffiti C
+ F. Graffiti B
+ G. Graffiti A
+ H. Graffiti Felony
+ I. Reckless Damage
+ J. Arson
+ The Rivals Rivalry
+ 
+ 
+Aaron then toilet papers and throws eggs at 9 houses in his neighborhood area (clean-up 
+will be $50 per location). (4)
+ A. Criminal Mischief C
+ B. Criminal Mischief B
+ C. Criminal Mischief A
+ D. Criminal Mischief Felony
+ E. Graffiti C
+ F. Graffiti B
+ G. Graffiti A
+ H. Graffiti Felony
+ I. Reckless Damage
+ J. Arson
+ The Rivals Rivalry
+ 
+ 
+The Rivals Rivalry
+ On his way home, Aaron spray paints City Hall with various slogans and obscenities.  
+This results in $500 of damage to the location. (5)
+ I.
+ J.
+ A. Criminal Mischief C
+ B. Criminal Mischief B
+ C. Criminal Mischief A
+ D. Criminal Mischief Felony
+ E. Graffiti C
+ F. Graffiti B
+ G. Graffiti A
+ H. Graffiti Felony
+ Reckless Damage
+ Arson
+ Participant Leaders
+ Points
+ Participant
+ Points
+ Participant
+ Team Scores
+ Points
+ Team
+ Points
+ Team
+ 42.09. CRUELTY TO 
+LIVESTOCK ANIMALS: Definitions
+ Conduct: Offense if a person:
+ (b) In this section:
+ (1) Abandon = abandoning the animal in the person's 
+custody without making reasonable arrangements for 
+assumption of custody by another person.
+ (2) "Cruel manner" a manner that causes or permits 
+unjustified or unwarranted pain or suffering.
+ (7) Torture: any act causing unjustifiable pain/suffering.
+ (3) "Custody" = responsibility for the health, safety, and 
+welfare of the animal subject to the person's care and 
+control, regardless of ownership of the livestock animal.
+ (4) "Depredation" = loss of/damage to agricultural crops, 
+livestock, poultry, wildlife, or personal property.
+ Defense Arguments & 
+Enhancements
+ (5) "Livestock animal" means:
+ (A) cattle, sheep, swine, goats, ratites, or 
+poultry commonly raised for consumption;
+ (B) a horse, pony, mule, donkey, or hinny;
+ (C) native or nonnative hoofstock raised 
+under agriculture practices; or
+ (D) native or nonnative fowl commonly 
+raised under agricultural practices.
+ (6) Necessary food, water, or care: food, 
+water, or care required to maintain the 
+livestock animal in a state of good health.
+ (8) "Trip" means to use an object to cause a 
+horse to fall or lose its balance.
+ 42.09. CRUELTY TO LIVESTOCK ANIMALS
+ Conduct: Offense if a person:
+ (a) (1) SJF  
+(a)intentionally or knowingly:
+ (1) tortures a livestock animal;
+ (2) fails unreasonably to provide necessary food, 
+water, or care for the animal in their custody;
+ (3) abandons unreasonably a livestock animal in 
+the person's custody;
+ (4) transports or confines a livestock animal in a 
+cruel and unusual manner;
+ (a)(1) 3°F w/2 convicts 
+(a) (2,3,4) Class A except
+ (a) (2,3,4) SJF w/2 prior convictions
+ Defense Arguments & 
+Enhancements
+ (e) Defense = engaged in bona fide 
+scientific research experimentation
+ (f) exception: (1) generally accepted & 
+lawful form of:
+ (A) fishing, hunting, or trapping; or
+ (B) wildlife management, depredation 
+control, or shooting preserve 
+practices, regulated by law; or
+ (2) animal husbandry or agriculture 
+practice
+ (g) No civil cause of action for 
+damages/enforcement of this section.
+ Torture: ant act causing unjustifiable 
+pain or suffering
+ 42.09. CRUELTY TO LIVESTOCK ANIMALS.(b) (1) "Abandon" includes abandoning a livestock 
+animal in the person's custody without making reasonable arrangements for assumption of 
+custody by another person. 
+(2) "Cruel manner" includes a manner that causes or permits unjustified or unwarranted pain 
+or suffering. 
+(3) "Custody" includes responsibility for the health, safety, and welfare of a livestock animal 
+subject to the person's care and control, regardless of ownership of the livestock animal. 
+(4) "Depredation" has the meaning assigned by Section 71.001, Parks and Wildlife Code. 
+(5) "Livestock animal" means: (A) cattle, sheep, swine, goats, ratites, or poultry commonly 
+raised for human consumption; (B) a horse, pony, mule, donkey, or hinny; (C) native or 
+nonnative hoofstock raised under agriculture practices; or (D) native or nonnative fowl 
+commonly raised under agricultural practices. 
+(6) "Necessary food, water, or care" includes food, water, or care provided to the extent 
+required to maintain the livestock animal in a state of good health. 
+(7) "Torture" includes any act that causes unjustifiable pain or suffering. 
+(8) "Trip" means to use an object to cause a horse to fall or lose its balance. 
+42.09. CRUELTY TO LIVESTOCK ANIMALS. (a) A person commits an offense if the person 
+intentionally or knowingly: 
+(1) tortures a livestock animal; 
+(2) fails unreasonably to provide necessary food, water, or care for a livestock animal in the 
+person's custody; 
+(3) abandons unreasonably a livestock animal in the person's custody; 
+(4) transports or confines a livestock animal in a cruel and unusual manner; 
+(c) An offense under Subsection (a)(2), (3), (4), or (9) is a Class A misdemeanor, except that the 
+offense is a state jail felony if the person has previously been convicted two times under this 
+section, two times under Section 42.092, or one time under this section and one time under 
+Section 42.092. An offense under Subsection (a)(1), (5), (6), (7), or (8) is a state jail felony, 
+except that the offense is a felony of the third degree if the person has previously been 
+convicted two times under this section, two times under Section 42.092, or one time under 
+this section and one time under Section 42.092.e) It is a defense to prosecution for an offense 
+under this section that the actor was engaged in bona fide experimentation for scientific 
+research. 
+(f) It is an exception to the application of this section that the conduct engaged in by the actor 
+is a generally accepted and otherwise lawful: 
+(1) form of conduct occurring solely for the purpose of or in support of: (A) fishing, hunting, or 
+trapping; or (B) wildlife management, wildlife or depredation control, or shooting preserve 
+practices as regulated by state and federal law; or 
+(2) animal husbandry or agriculture practice involving livestock animals. 
+(g) This section does not create a civil cause of action for damages or enforcement of this 
+section. 
+42.09. CRUELTY TO LIVESTOCK ANIMALS
+ Conduct: Offense if a person:
+ (5) administers poison to a livestock animal, other 
+than cattle, horses, sheep, swine, or goats, 
+belonging to another without legal authority or the 
+owner's effective consent;
+ (6) causes one livestock animal to fight with 
+another livestock animal or with an animal as 
+defined by Section 42.092;
+ Defense Arguments & 
+Enhancements
+ (7) uses a live livestock animal as a lure in dog race 
+training or in dog coursing on a racetrack;
+ (8) trips a horse; or
+ (9) seriously overworks a livestock animal.
+ (d) (a)(8) defense= actor tripped the 
+horse for the purpose of identifying 
+the ownership of the horse or giving 
+veterinary care to the horse.
+ (a) (5-8) SJF 
+(a)(5-8) 3°F w/2 prior convictions 
+(a) (9) Class A
+ (a) (9) SJF w/ 2 prior convictions
+ 42.092. CRUELTY TO 
+NONLIVESTOCK ANIMALS
+ Definitions
+ (2) "Animal" means a domesticated living creature, including stray or feral cat or dog, 
+and a wild living creature previously captured. The term does not include an uncaptured 
+wild living creature or a livestock animal.
+ (9) Trap-Neuter-Return Program: nonlethal population control practice where an animal 
+is, by a Veterinarian: trapped, evaluated, vaccinated, sterilized, marked whether by 
+notching or tipping one ear or otherwise; & returned to the trap location.
+ (10) "Veterinarian" shall have the same meaning as set forth in Section 801.002, 
+Occupations Code.
+ 42.09. CRUELTY TO LIVESTOCK ANIMALS. (a) A person commits an offense if the person 
+intentionally or knowingly: 
+(5) administers poison to a livestock animal, other than cattle, horses, sheep, swine, or goats, 
+belonging to another without legal authority or the owner's effective consent; 
+(6) causes one livestock animal to fight with another livestock animal or with an animal as 
+defined by Section 42.092; 
+(7) uses a live livestock animal as a lure in dog race training or in dog coursing on a racetrack; 
+(8) trips a horse; or 
+(9) seriously overworks a livestock animal. 
+(c) An offense under (9) is a Class A misdemeanor, except that the offense is a state jail felony 
+if the person has previously been convicted two times under this section, two times under 
+Section 42.092, or one time under this section and one time under Section 42.092. An offense 
+under (5-8) is a state jail felony, except that the offense is a felony of the third degree if the 
+person has previously been convicted two times under this section, two times under Section 
+42.092, or one time under this section and one time under Section 42.092. 
+(d) It is a defense to prosecution under Subsection (a)(8) that the actor tripped the horse for 
+the purpose of identifying the ownership of the horse or giving veterinary care to the horse. 
+42.092. CRUELTY TO NONLIVESTOCK ANIMALS. (a) In this section: 
+(2) "Animal" means a domesticated living creature, including any stray or feral cat or dog, and 
+a wild living creature previously captured. The term does not include an uncaptured wild living 
+creature or a livestock animal. 
+(9) "Trap-Neuter-Return Program" means a nonlethal population control practice in which an 
+animal is: (A) trapped; (B) evaluated by a veterinarian; (C) if unvaccinated, vaccinated by a 
+veterinarian; (D) if unsterilized, sterilized by a veterinarian; (E) marked by a veterinarian, 
+whether by notching or tipping one ear or otherwise; and (F) returned to the trap location. 
+(10) "Veterinarian" shall have the same meaning as set forth in Section 801.002, Occupations 
+Code. 
+42.092. CRUELTY TO NONLIVESTOCK ANIMALS
+ Conduct: Offense if a person:
+ (b)intentionally, knowingly, or recklessly:
+ (1) Tortures or cruelly kills or causes SBI to an animal;
+ (2) without effective consent, kills, administers poison to, 
+or causes SBI to an animal;
+ (3) fails unreasonably to provide necessary food, water, 
+care, or shelter for an animal in the person's custody;
+ (4) abandons an animal unreasonably in the person's 
+custody;
+ (5) transports or confines an animal in a cruel manner;
+ (6) without effective consent, causes bodily injury to an 
+animal;
+ (9) seriously overworks an animal.
+ Defense Arguments & 
+Enhancements
+ (c-1) 3°F for (1
+2) except
+ (c-1) 2°F for (1-2) w/prior (1,2,7,8) or 
+42.09 conviction
+ (e) Defense (b)(2) or (6) if the animal was:
+ (1) on someone’s property injuring / 
+killing their livestock, damaging crops, & 
+was killed/injured when discovered; or
+ (2) killed/injured within a public servant 
+duty or electricity/gas public work efforts
+ (c) Class A for (3-6)(9) except
+ (c) SJF for w/2 prior convictions here or 42.09 or 
+any combo
+ (e-1) Defense (b)(4) a stray/feral animal 
+(not wild) was released/returned pursuant 
+to a Trap-Neuter-Return Program.
+ (e-2) Defense for (b)(4) that the actor 
+released or returned a previously trapped 
+wild living creature in accordance with 
+Texas wildlife laws and regulations.
+ 42.092. CRUELTY TO NONLIVESTOCK ANIMALS.  
+(b) A person commits an offense if the person intentionally, knowingly, or recklessly: 
+(1) tortures an animal or in a cruel manner kills or causes serious bodily injury to an animal; 
+(2) without the owner's effective consent, kills, administers poison to, or causes serious bodily 
+injury to an animal; 
+(3) fails unreasonably to provide necessary food, water, care, or shelter for an animal in the 
+person's custody; 
+(4) abandons unreasonably an animal in the person's custody; 
+(5) transports or confines an animal in a cruel manner; 
+(6) without the owner's effective consent, causes bodily injury to an animal; or  
+(9) seriously overworks an animal. 
+(c) An offense under Subsection (b)(3), (4), (5), (6), or (9) is a Class A misdemeanor, except 
+that the offense is a state jail felony if the person has previously been convicted two times 
+under this section, two times under Section 42.09, or one time under this section and one 
+time under Section 42.09. 
+(c-1) An offense under Subsection (b)(1) or (2) is a felony of the third degree, except that the 
+offense is a felony of the second degree if the person has previously been convicted under 
+Subsection (b)(1), (2), (7), or (8) or under Section 42.09. 
+42.092. CRUELTY TO NONLIVESTOCK ANIMALS
+ Conduct: Offense if a person:
+ (b)intentionally, knowingly, or recklessly:
+ (7) causes one animal to fight another animal, if 
+either is not a dog; or
+ (8) uses a live animal as a lure in dog race training 
+or in dog coursing on a racetrack; or
+ Defense Arguments & 
+Enhancements
+ (c-2) SJF for (7-8) except
+ (c-2) 3°F for prior conviction here or 42.09
+ 42.092. CRUELTY TO NONLIVESTOCK ANIMALS
+ Defenses
+ Conduct: Offense if a person:
+ Defense Arguments & 
+Enhancements
+ (d) defense that:
+ (1) reasonable fear of bodily injury to actor/another by a “dangerous wild animal” HSC822.101
+ (2) the actor was engaged in bona fide experimentation for scientific research.
+ (f) It is an exception to the application of this section that it is a generally accepted and otherwise 
+lawful:
+ (1) form of conduct occurring solely for the purpose of or in support of: (A) fishing, hunting, or 
+trapping; or
+ (B) wildlife management, wildlife or depredation control, or shooting preserve practices as 
+regulated by state and federal law; or
+ (2) animal husbandry or agriculture practice involving livestock animals.
+ (g) This section does not create a civil cause of action for damages or enforcement of the section.
+ 38.151. INTERFERENCE WITH POLICE 
+SERVICE ANIMALS (PSA)
+ Conduct: Offense if a person:
+ (c)(1) Class C 
+(b) recklessly:
+ (1) taunts, torments, or strikes a police service animal;
+ (2) throws an object or substance at a PSA;
+ (3) interferes/obstructs a PSA/Handler/Rider when one:
+ (A) inhibits/restricts the handler’s/rider's control; or
+ (B) deprives the handler/rider of control of the animal;
+ (4) releases a police service animal from its control area 
+(5) enters the PSA’s control area without effect consent, 
+includes placing food/other object/substance in the area;
+ (6) injures or kills a PSA; or
+ (7) conduct likely to injure/kill, including administering 
+or setting a poison, trap, or any other object/substance.
+ (c)(2)Class B
+ Definitions & punishment levels
+ (a) 
+(3) "Police service animal" means a dog, horse, 
+or other domesticated animal that is specially
+ (2) "Handler or rider" means a peace officer, 
+corrections officer/jailer specially trained to use 
+a PSA trained for use by a handler or rider.
+ (1) "Area of control" includes vehicle/trailer/ 
+kennel/pen/yard.
+ (c3) Class A for (b) 3-5
+ (c4) SJF: injure/conduct likely to
+ (c5) 2°F kills/conduct likely to
+ (c5) 2°F material & permanent 
+injury affecting its police service or 
+conduct likely to
+ 42.092. CRUELTY TO NONLIVESTOCK ANIMALS. (b) A person commits an offense if the person 
+intentionally, knowingly, or recklessly: 
+(7) causes one animal to fight with another animal, if either animal is not a dog; or 
+(8) uses a live animal as a lure in dog race training or in dog coursing on a racetrack  
+(c-2) An offense under Subsection (b)(7) or (8) is a state jail felony, except that the offense is a 
+felony of the third degree if the person has previously been convicted under this section or 
+under Section 42.09. 
+(e) It is a defense to prosecution under Subsection (b)(2) or (6) that: (1) the animal was 
+discovered on the person's property in the act of or after injuring or killing the person's 
+livestock animals or damaging the person's crops and that the person killed or injured the 
+animal at the time of this discovery; or (2) the person killed or injured the animal within the 
+scope of the person's employment as a public servant or in furtherance of activities or 
+operations associated with electricity transmission or distribution, electricity generation or 
+operations associated with the generation of electricity, or natural gas delivery. 
+(e-1) It is a defense to prosecution under Subsection (b)(4) that the actor released or returned 
+a stray or feral animal which is not a wild living creature pursuant to a Trap-Neuter-Return 
+Program. 
+(e-2) It is a defense to prosecution under Subsection (b)(4) that the actor released or returned 
+a previously trapped wild living creature in accordance with Texas wildlife laws and 
+regulations. 
+(d) It is a defense to prosecution under this section that: (1) the actor had a reasonable fear of 
+bodily injury to the actor or to another person by a dangerous wild animal as defined by 
+Section 822.101, Health and Safety Code; or (2) the actor was engaged in bona fide 
+experimentation for scientific research. 
+(f) It is an exception to the application of this section that the conduct engaged in by the actor 
+is a generally accepted and otherwise lawful: (1) form of conduct occurring solely for the 
+purpose of or in support of: (A) fishing, hunting, or trapping; or (B) wildlife management, 
+wildlife or depredation control, or shooting preserve practices as regulated by state and 
+federal law; or (2) animal husbandry or agriculture practice involving livestock animals. 
+(g) This section does not create a civil cause of action for damages or enforcement of the 
+section. 
+38.151. INTERFERENCE WITH POLICE SERVICE ANIMALS  
+(a) In this section: (1) "Area of control" includes a vehicle, trailer, kennel, pen, or yard. (2) 
+"Handler or rider" means a peace officer, corrections officer, or jailer who is specially trained 
+to use a police service animal for law enforcement, corrections, prison or jail security, or 
+investigative purposes. (3) "Police service animal" means a dog, horse, or other domesticated 
+animal that is specially trained for use by a handler or rider. 
+(b) A person commits an offense if the person recklessly: 
+(1) taunts, torments, or strikes a police service animal; 
+(2) throws an object or substance at a police service animal; 
+(3) interferes with or obstructs a police service animal or interferes with or obstructs the 
+handler or rider of a police service animal in a manner that: (A) inhibits or restricts the 
+handler's or rider's control of the animal; or (B) deprives the handler or rider of control of the 
+animal; 
+(4) releases a police service animal from its area of control; 
+(5) enters the area of control of a police service animal without the effective consent of the 
+handler or rider, including placing food or any other object or substance into that area; 
+(6) injures or kills a police service animal; or 
+(7) engages in conduct likely to injure or kill a police service animal, including administering or 
+setting a poison, trap, or any other object or substance. 
+(c) An offense under this section is: (1) a Class C misdemeanor if the person commits an 
+offense under Subsection (b)(1); (2) a Class B misdemeanor if the person commits an offense 
+under Subsection (b)(2); (3) a Class A misdemeanor if the person commits an offense under 
+Subsection (b)(3), (4), or (5);  
+(4) except as provided by Subdivision (5), a state jail felony if the person commits an offense 
+under Subsection (b)(6) or (7) by injuring a police service animal or by engaging in conduct 
+likely to injure the animal; or  
+(5) a felony of the second degree if the person commits an offense under Subsection (b)(6) or 
+(7) by: (A) killing a police service animal or engaging in conduct likely to kill the animal; (B) 
+injuring a police service animal in a manner that materially and permanently affects the ability 
+of the animal to perform as a police service animal; or (C) engaging in conduct likely to injure a 
+police service animal in a manner that would materially and permanently affect the ability of 
+the animal to perform as a police service animal. 
+42.091. ATTACK ON ASSISTANCE ANIMAL
+ Conduct: Offense if a person:
+ (a) intentionally, knowingly, or recklessly attacks, 
+injures, or kills an assistance animal or
+ (b) incites/permits an animal, owned by/in one’s 
+custody, to attack, injure, or kill an assistance 
+animal and
+ as a result of the person's conduct, the assistance 
+animal is attacked, injured, or killed.
+ Class A if attacks
+ SJF if injures
+ 3°F  if kills
+ Defense Arguments & 
+Enhancements
+ d) Court shall order a convict under (a) to 
+make restitution to the owner for:
+ (1) related veterinary or medical bills;
+ (2) the cost of:
+ (A) replacing the assistance animal; or
+ (B) retraining an injured assistance animal 
+by a generally recognized, reputable, & 
+competent organization to provide the 
+special equipment/training; and
+ (3) any other expense reasonably incurred 
+related to the offense.
+ (1) Assistance animal (121.002, Human Resources Code) 
+K-9 specially trained/equipped to help a person with a 
+disability and is used by a person with a disability.
+ 42.10. DOG FIGHTING
+ Conduct: Offense if a person:
+ (a) intentionally or knowingly:(1) causes a dog to fight 
+with another dog;
+ (2) participates in the earnings/operates a facility used for 
+dog fighting;
+ (3) uses or permits another to use any real estate, 
+building, room, tent, arena, or other property for dog 
+fighting;
+ (4) owns or possesses dog-fighting equipment w/intent 
+the equipment be used to train a dog for fighting or in 
+furtherance of dog fighting;
+ (5) owns or trains a dog w/intent it be used in an 
+exhibition of dog fighting; or
+ (6) attends as a spectator an exhibition of dog fighting.
+ (b)(1) "Dog fighting“ any situation in which one dog 
+attacks or fights with another dog.
+ Defense Arguments & 
+Enhancements
+ (c) A conviction under Subsection (a)(2) or 
+(3) may be had upon the uncorroborated 
+testimony of a party to the offense.
+ (a)(1-3)SJF 
+(a)(4-6)  Class A 
+(d) It is a defense to prosecution under 
+(a)(1) that the actor caused a dog to fight 
+with another dog to protect livestock, other 
+property, or a person from the other dog, 
+and for no other purpose.
+ (b)(2) "Dog-fighting equipment" per CCP 
+18.18(g).
+ 42.091. ATTACK ON ASSISTANCE ANIMAL. (a) A person commits an offense if the person 
+intentionally, knowingly, or recklessly attacks, injures, or kills an assistance animal. 
+(b) A person commits an offense if the person intentionally, knowingly, or recklessly incites or 
+permits an animal owned by or otherwise in the custody of the actor to attack, injure, or kill 
+an assistance animal and, as a result of the person's conduct, the assistance animal is 
+attacked, injured, or killed. 
+(c) An offense under this section is a: (1) Class A misdemeanor if the actor or an animal owned 
+by or otherwise in the custody of the actor attacks an assistance animal; (2) state jail felony if 
+the actor or an animal owned by or otherwise in the custody of the actor injures an assistance 
+animal; or (3) felony of the third degree if the actor or an animal owned by or otherwise in the 
+custody of the actor kills an assistance animal. 
+(d) A court shall order a defendant convicted of an offense under Subsection (a) to make 
+restitution to the owner of the assistance animal for: 
+(1) related veterinary or medical bills;  
+(2) the cost of: (A) replacing the assistance animal; or (B) retraining an injured assistance 
+animal by an organization generally recognized by agencies involved in the rehabilitation of 
+persons with disabilities as reputable and competent to provide special equipment for or 
+special training to an animal to help a person with a disability; and 
+(3) any other expense reasonably incurred as a result of the offense. 
+(e) In this section: (1) "Assistance animal" has the meaning assigned by Section 121.002, 
+Human Resources Code. (2) "Custody" has the meaning assigned by Section 42.09. 
+42.10. DOG FIGHTING. (a) A person commits an offense if the person intentionally or 
+knowingly: 
+(1) causes a dog to fight with another dog; 
+(2) participates in the earnings of or operates a facility used for dog fighting; 
+(3) uses or permits another to use any real estate, building, room, tent, arena, or other 
+property for dog fighting; 
+(4) owns or possesses dog-fighting equipment with the intent that the equipment be used to 
+train a dog for dog fighting or in furtherance of dog fighting; 
+(5) owns or trains a dog with the intent that the dog be used in an exhibition of dog fighting; 
+or 
+(6) attends as a spectator an exhibition of dog fighting. 
+(b) In this section: (1) "Dog fighting" means any situation in which one dog attacks or fights 
+with another dog. (2) "Dog-fighting equipment" has the meaning assigned by Article 18.18(g), 
+Code of Criminal Procedure. 
+(c) A conviction under Subsection (a)(2) or (3) may be had upon the uncorroborated testimony 
+of a party to the offense. 
+(d) It is a defense to prosecution under Subsection (a)(1) that the actor caused a dog to fight 
+with another dog to protect livestock, other property, or a person from the other dog, and for 
+no other purpose. 
+(e) An offense under Subsection (a)(4), (5), or (6) is a Class A misdemeanor. An offense under 
+Subsection (a)(1), (2), or (3) is a state jail felony. 
+42.105. COCKFIGHTING
+ Definitions
+ Terms:
+ (1) "Bridle" means a leather device designed to fit over the head and beak of a cock to 
+prevent the cock from injuring another cock.
+ (2) "Cock" means the male of any type of domestic fowl.
+ (3) "Cockfighting" any situation in which one cock attacks or fights with another cock.
+ (4) "Gaff" means an artificial steel spur designed to attach to the leg of a cock to replace or 
+supplement the cock's natural spur.
+ (5) "Slasher" means a steel weapon resembling a curved knife blade designed to attach to 
+the foot of a cock.
+ 42.105. COCKFIGHTING
+ Conduct: Offense if a person:
+ (b)(1-2)SJF 
+(b) knowingly:
+ (1) causes a cock to fight with another cock;
+ (2) participates in the earnings of a cockfight;
+ (3) uses or permits another to use any real estate, 
+building, room, tent, arena, or other property for 
+cockfighting;
+ (4) owns or trains a cock with the intent that the 
+cock be used in an exhibition of cockfighting;
+ (5) manufactures, buys, sells, barters, exchanges, 
+possesses, advertises, or otherwise offers a gaff, 
+slasher, or other sharp implement designed for 
+attachment to a cock with the intent that the 
+implement be used in cockfighting; or
+ (6) attends as a spectator an exhibition of 
+cockfighting.
+ (b)(3-5)  Class A 
+Defense Arguments & 
+Enhancements
+ (c) affirmative defense (1) occurred solely for 
+the purpose/support of breeding for poultry 
+shows when judged by its appearance; or
+ (2) was incidental to collecting bridles, gaffs, 
+or slashers.
+ (d) affirmative defense not available under (c) 
+if evidence shows the actor is also engaging in 
+use of the cocks for cockfighting.
+ (e) defense (1) actor was engaged in bona fide 
+experimentation for scientific research; or
+ (2) conduct is generally accepted & otherwise 
+lawful animal husbandry or agriculture 
+practice involving livestock animals.
+ (f) It is an exception (b)(6) if actor is 15 years 
+of age or younger.
+ (b)(6)Class C 
+(b)(6)  Class A w/prior conviction
+ 21.09. BESTIALITY
+ Conduct: Offense if a person:
+ Defense Arguments & 
+Enhancements
+ (a)(1) knowingly engages in contact between:
+ (A) the person's mouth, anus, or genitals and the anus 
+or genitals of an animal; or
+ (B) the person's anus/genitals & the animal’s mouth;
+ (2) fondles or touches the anus/genitals of an animal that 
+is not a generally accepted or lawful animal husbandry / 
+veterinary practice, includes touch thru clothing;
+ (3) causes an animal to contact the person’s seminal fluid;
+ (4) inserts any part of a person's body or any object into 
+the anus/genitals of an animal that is not a generally 
+accepted and lawful animal husbandry/veterinary practice;
+ (5) possesses, sells, transfers, purchases, or otherwise 
+obtains an animal with the intent that the animal be used 
+for conduct described by Subdivision (1), (2), (3), or (4);
+ SJF
+ 42.105. COCKFIGHTING. (a) In this section: 
+(1) "Bridle" means a leather device designed to fit over the head and beak of a cock to prevent 
+the cock from injuring another cock. 
+(2) "Cock" means the male of any type of domestic fowl. 
+(3) "Cockfighting" means any situation in which one cock attacks or fights with another cock. 
+(4) "Gaff" means an artificial steel spur designed to attach to the leg of a cock to replace or 
+supplement the cock's natural spur. 
+(5) "Slasher" means a steel weapon resembling a curved knife blade designed to attach to the 
+foot of a cock. 
+42.105. COCKFIGHTING. (b) A person commits an offense if the person knowingly: 
+(1) causes a cock to fight with another cock; 
+(2) participates in the earnings of a cockfight; 
+(3) uses or permits another to use any real estate, building, room, tent, arena, or other 
+property for cockfighting; 
+(4) owns or trains a cock with the intent that the cock be used in an exhibition of cockfighting; 
+(5) manufactures, buys, sells, barters, exchanges, possesses, advertises, or otherwise offers a 
+gaff, slasher, or other sharp implement designed for attachment to a cock with the intent that 
+the implement be used in cockfighting; or 
+(6) attends as a spectator an exhibition of cockfighting. 
+(c) It is an affirmative defense to prosecution under this section that the actor's conduct: (1) 
+occurred solely for the purpose of or in support of breeding cocks for poultry shows in which a 
+cock is judged by the cock's physical appearance; or (2) was incidental to collecting bridles, 
+gaffs, or slashers. 
+(d) An affirmative defense to prosecution is not available under Subsection (c) if evidence 
+shows that the actor is also engaging in use of the cocks for cockfighting. 
+(e) It is a defense to prosecution for an offense under this section that: (1) the actor was 
+engaged in bona fide experimentation for scientific research; or (2) the conduct engaged in by 
+the actor is a generally accepted and otherwise lawful animal husbandry or agriculture 
+practice involving livestock animals. 
+(f) It is an exception to the application of Subsection (b)(6) that the actor is 15 years of age or 
+younger at the time of the offense. 
+(g) An offense under Subsection (b)(1) or (2) is a state jail felony. An offense under Subsection 
+(b)(3), (4), or (5) is a Class A misdemeanor. An offense under Subsection (b)(6) is a Class C 
+misdemeanor, except that the offense is a Class A misdemeanor if it is shown on the trial of 
+the offense that the person has been previously convicted of an offense under that 
+subdivision. 
+21.09. BESTIALITY. (a) A person commits an offense if the person knowingly: 
+(1) engages in an act involving contact between: (A) the person's mouth, anus, or genitals and 
+the anus or genitals of an animal; or (B) the person's anus or genitals and the mouth of the 
+animal;  
+(2) fondles or touches the anus or genitals of an animal in a manner that is not a generally 
+accepted and otherwise lawful animal husbandry or veterinary practice, including touching 
+through clothing; 
+(3) causes an animal to contact the seminal fluid of the person; 
+(4) inserts any part of a person's body or any object into the anus or genitals of an animal in a 
+manner that is not a generally accepted and otherwise lawful animal husbandry or veterinary 
+practice; 
+(5) possesses, sells, transfers, purchases, or otherwise obtains an animal with the intent that 
+the animal be used for conduct described by Subdivision (1), (2), (3), or (4); 
+21.09. BESTIALITY
+ Conduct: Offense if a person:
+ (6) organizes, promotes, conducts, or participates as 
+an observer of conduct under (1), (2), (3), or (4);
+ (7) causes a person to engage or aids a person in 
+conduct under (1), (2), (3), or (4);
+ (8) permits conduct under (1), (2), (3), or (4) to occur 
+on any premises under the person's control;
+ (9) engages in conduct under (1), (2), (3), or (4) in the 
+presence of a child younger than 18 years of age; or
+ (10) advertises, offers, or accepts the offer of an 
+animal with the intent that the animal be used in this 
+state for conduct under (1), (2), (3), or (4).
+ Defense Arguments & 
+Enhancements
+ SJF
+ 2°F (a)(9) or if SBI or 
+Death to animal
+ CHAPTER 30.01 Definitions
+ BURGLARY & CRIMINAL TRESPASS
+ (1)  "Habitation" means a structure or vehicle that is adapted for the 
+overnight accommodation of persons, and includes:
+ (A)  each separately secured or occupied portion of the structure or vehicle; &
+ (B) each structure appurtenant to or connected with the structure or vehicle.
+ (2)  "Building" = any enclosed structure intended for use or occupation 
+as a habitation or for trade, manufacture, ornament, or use.
+ (3) "Vehicle" = any device in, on, or by which any person or property is 
+or may be propelled, moved, or drawn in the normal course of 
+commerce or transportation, except devices classified as "habitation."
+ 30.05.  CRIMINAL TRESPASS
+ Entry and Notice
+ (b) Entry: entire body & notice: 
+(A) oral/written communication from 
+owner or person with apparent authority; 
+(B) fencing/enclosure to exclude 
+intruders/contain livestock; 
+(C) sign(s): notifying forbidden entry, 
+(E) visible cultivating crops for humans 
+being harvested, or marketable at the 
+time of entry.
+ Other Notices
+ (D) purple paint on trees/posts: 
+(i) vertical lines at least 8 inches 
+in length &1 inch in width;
+ (ii) bottom of mark at least 3 feet 
+from ground & no more than 5;
+ (iii) AND placed at readily visible 
+locations for any approaching 
+the property and no more than:
+ (a) 100 ft. apart on forest land; 
+(b) 1,000 apart on other land; 
+21.09. BESTIALITY. (a) A person commits an offense if the person knowingly: 
+(6) organizes, promotes, conducts, or participates as an observer of conduct described by 
+Subdivision (1), (2), (3), or (4); 
+(7) causes a person to engage or aids a person in engaging in conduct described by Subdivision 
+(1), (2), (3), or (4); 
+(8) permits conduct described by Subdivision (1), (2), (3), or (4) to occur on any premises 
+under the person's control; 
+(9) engages in conduct described by Subdivision (1), (2), (3), or (4) in the presence of a child 
+younger than 18 years of age; or 
+(10) advertises, offers, or accepts the offer of an animal with the intent that the animal be 
+used in this state for conduct described by Subdivision (1), (2), (3), or (4). 
+(b) An offense under this section is a state jail felony, unless the offense is committed under 
+Subsection (a)(9) or results in serious bodily injury or death of the animal, in which event the 
+offense is a felony of the second degree. 
+(1)  "Habitation" means a structure or vehicle that is adapted for the overnight 
+accommodation of persons, and includes: 
+(A)  each separately secured or occupied portion of the structure or vehicle; & 
+(B) each structure appurtenant to or connected with the structure or vehicle (Tennison v. 
+State, 1983: appurtenant to or connected with). 
+(2)  "Building" means any enclosed structure intended for use or occupation as a habitation or 
+for some purpose of trade, manufacture, ornament, or use. 
+(3)  "Vehicle" includes any device in, on, or by which any person or property is or may be 
+propelled, moved, or drawn in the normal course of commerce or transportation, except such 
+devices as are classified as "habitation." 
+30.05.  CRIMINAL TRESPASS.  (b)  For purposes of this section: 
+(1)  "Entry" means the intrusion of the entire body. 
+OR
+ (2)  "Notice" means: (A)  oral or written communication by the owner or someone with 
+apparent authority to act for the owner; (B)  fencing or other enclosure obviously designed to 
+exclude intruders or to contain livestock; (C)  a sign or signs posted on the property or at the 
+entrance to the building, reasonably likely to come to the attention of intruders, indicating 
+that entry is forbidden;  (D)  the placement of identifying purple paint marks on trees or posts 
+on the property, provided that the marks are: 
+(i)  vertical lines of not less than eight inches in length and not less than one inch in width; 
+(ii)  placed so that the bottom of the mark is not less than three feet from the ground or 
+more than five feet from the ground;  and 
+(iii)  placed at locations that are readily visible to any person approaching the property 
+and no more than: (a)  100 feet apart on forest land;  or (b)  1,000 feet apart on land 
+other than forest land;  or 
+(E)  the visible presence on the property of a crop grown for human consumption that is under 
+cultivation, in the process of being harvested, or marketable if harvested at the time of entry. 
+30.05.  CRIMINAL TRESPASS
+ Conduct: Offense if a person:
+ (a) enters/remains on or in another’s property, 
+without effective consent and the person:
+ (1) had notice that the entry was forbidden; or
+ (2) received notice to depart but failed to go.
+ * includes land, recreational vehicle park, a 
+building, an aircraft, or other vehicle 
+d) 1) Class B
+ Punishment Levels
+ d) 2) Class C:
+ • agricultural land & in 100 feet 
+of the land boundary; or 
+• residential land & in 100 feet of 
+protected freshwater area.
+ Sec. 30.05.  CRIMINAL TRESPASS
+ Conduct: Offense if a person:
+ (a) enters/remains on or in another’s property, 
+without effective consent and the person:
+ (1) had notice that the entry was forbidden; or
+ (2) received notice to depart but failed to go.
+ * includes land, recreational vehicle park, a 
+building, an aircraft, or other vehicle 
+d) 3) Class A:
+ Punishment Levels
+ • While carrying a deadly weapon
+ • Habitation or shelter center
+ • Treatment center in a general 
+residential operation 
+• Superfund site 
+• Critical infrastructure facility, or
+ • Higher education institution, if
+ Trial shows any previous conviction type for 
+remaining at a higher education institution or 
+an Education Code 51.204 offense about 
+trespassing at a higher education institution
+ 30.05.  CRIMINAL TRESPASS
+ Conduct: Offense if a person:
+ (a) enters/remains on or in another’s property, 
+without effective consent and the person:
+ (1) had notice that the entry was forbidden; or
+ (2) received notice to depart but failed to go.
+ * includes land, recreational vehicle park, a 
+building, an aircraft, or other vehicle 
+Punishment Levels
+ d) 4) Felony 3rd Degree:
+ • If trial shows it was part of a PC 
+20.05(a)(2), Smuggling of 
+Persons offense when the actor
+ • encourages or induces one to 
+enter or remain in the US in 
+violation of federal law by 
+concealing, harboring, or 
+shielding them from detection
+ Sec. 30.05.  CRIMINAL TRESPASS
+ Higher Education Institution or 
+Critical Infrastructure Facility:
+ (d-2 & h) If the state seeks either of these 
+Class A punishment increases, the defense at 
+trial may raise for the offense or past 
+conviction that the defendant:
+ • Engaged in 1st Amendment free speech at 
+the higher education institution or
+ • A critical infrastructure facility entry or 
+remaining was part of a peaceful/lawful 
+assembly, including attempts to exercise 
+state/federal labor law rights
+ Class A:
+ Punishment Level
+ • Higher education institution and 
+trial shows a previous applicable 
+conviction; or
+ • Critical infrastructure facility
+ • If proved by a preponderance, then the 
+punishment increase would not apply.
+ (a) A person commits an offense if the person enters or remains on or in property of another, 
+including residential land, agricultural land, a recreational vehicle park, a building, a general 
+residential operation operating as a residential treatment center, or an aircraft or other 
+vehicle, without effective consent and the person: (1) had notice that the entry was 
+forbidden; or (2) received notice to depart but failed to do so. 
+(d)  Subject to Subsection (d-3), an offense under this section is: 
+(1)  a Class B misdemeanor, except as provided by (2) and (3); 
+(2) a Class C misdemeanor, except as provided by Subdivisions (3) and (4), if the offense is 
+committed: (A) on agricultural land and within 100 feet of the boundary of the land; or (B) on 
+residential land and within 100 feet of a protected freshwater area; 
+(d) (3) an offense under this section is a Class A misdemeanor if:  
+(A)  the offense is committed: (i)  in a habitation or a shelter center; (ii)  on a Superfund 
+site; or (iii)  on or in a critical infrastructure facility; or 
+(B)  the offense is committed on or in property of an institution of higher education and 
+it is shown on the trial of the offense that the person has previously been convicted of: 
+(i)  an offense under this section relating to entering or remaining on or in property of an 
+institution of higher education; or (ii)  an offense under Section 51.204(b)(1), Education 
+Code, ((Trespass, Damage, Defacement)) relating to trespassing on the grounds of an 
+institution of higher education; or 
+(C)  the person carries a deadly weapon during the commission of the offense; or 
+(D) the offense is committed on the property of or within a general residential operation 
+operating as a residential treatment center. 
+(d-1)  For the purposes of Subsection (d)(3)(B), a person has previously been convicted of an 
+offense described by that paragraph if the person was adjudged guilty of the offense or 
+entered a plea of guilty or nolo contendere in return for a grant of deferred adjudication 
+community supervision, regardless of whether the sentence for the offense was ever imposed 
+or whether the sentence was probated and the person was subsequently discharged from 
+deferred adjudication community supervision. 
+(d) Subject to Subsection (d-3), an offense under this section is: 
+(4) a felony of the third degree if it is shown on the trial of the offense that the defendant 
+committed the offense in the course of committing an offense under Section 20.05(a)(2). 
+(d-2)  At the punishment stage of a trial in which the attorney representing the state seeks the 
+increase in punishment provided by Subsection (d)(3)(B), the defendant may raise the issue as 
+to whether, at the time of the instant offense or the previous offense, the defendant was 
+engaging in speech or expressive conduct protected by the First Amendment to the United 
+States Constitution or Section 8, Article I, Texas Constitution.  If the defendant proves the 
+issue in the affirmative by a preponderance of the evidence, the increase in punishment 
+provided by Subsection (d)(3)(B) does not apply. 
+(h) At the punishment stage of a trial in which the attorney representing the state seeks the 
+increase in punishment provided by Subsection (d)(3)(A)(iii), the defendant may raise the issue 
+as to whether the defendant entered or remained on or in a critical infrastructure facility as 
+part of a peaceful or lawful assembly, including an attempt to exercise rights guaranteed by 
+state or federal labor laws. If the defendant proves the issue in the affirmative by a 
+preponderance of the evidence, the increase in punishment provided by Subsection 
+(d)(3)(A)(iii) does not apply. 
+30.05 Criminal Trespass Continued
+ (7)  "Critical infrastructure facility" means one of the following, if 
+completely enclosed by a fence or other physical barrier that is obviously 
+designed to exclude intruders:
+ (A)  a chemical manufacturing facility;
+ (B)  a refinery;
+ (C)  an electrical power generating facility, substation, switching station, electrical control 
+center, or electrical transmission or distribution facility;
+ (D)  a water intake structure, water treatment facility, wastewater treatment plant, or pump 
+station;
+ (E)  a natural gas transmission compressor station;
+ (F)  a liquid natural gas terminal or storage facility;
+ (G)  a telecommunications central switching office;
+ (H)  a port, railroad switching yard, trucking terminal, or other freight transportation 
+facility;
+ (I)  a gas processing plant, including a plant used in the processing, treatment, or 
+fractionation of natural gas; or
+ (J)  a transmission facility used by a federally licensed radio or television station.
+ 30.05 Criminal Trespass Continued
+ (3)  "Shelter center" defined under 51.002, Human Resources Code.
+ (4)  "Forest land" means land on which the trees are potentially valuable 
+for timber products.
+ (5) "Agricultural land" has the meaning assigned by Section 75.001, 
+Civil Practice and Remedies Code.
+ (6)  "Superfund site" means a facility that:
+ (A)  is on the National Priorities List established under 105 of the 
+federal Comprehensive Environmental Response, Compensation, 
+and Liability Act of 1980 (42 U.S.C. Section 9605);  or
+ (B)  is listed on the state registry established under Section 361.181, 
+Health and Safety Code.
+ 30.05 Criminal Trespass Continued
+ (8)  "Protected freshwater area" has the meaning assigned by Section 90.001, 
+Parks and Wildlife Code.
+ (10)  "Recreational vehicle park" means a tract of land that has rental spaces for 
+two or more recreational vehicles, as defined by Section 522.004, 
+Transportation Code.
+ (11) "Residential land" means real property improved by a dwelling and zoned 
+for or otherwise authorized for single-family or multifamily use.
+ (12)  “Institution of higher education” has the meaning assigned by Section 
+61.003, Education Code.
+ (13) "General residential operation" has the meaning assigned by Section 
+42.002, Human Resources Code.
+ 30.05.  CRIMINAL TRESPASS: 
+Firearms Postings
+ Firearms Notice
+ (c) A person may provide notice that firearms 
+are prohibited by posting a sign at each 
+entrance to the property that:
+ (1) has language identical or substantially 
+similar to: "Pursuant to Section 30.05, Penal 
+Code (criminal trespass), a person may not 
+enter this property with a firearm";
+ Punishment levels
+ (d-3) Class C: not to exceed $200 
+for a forbidden firearm or other 
+weapon entry UNLESS
+ (2) in both English and Spanish;
+ (3) in contrasting colors with block letters at 
+least one inch in height; and
+ (4) displayed in a conspicuous manner clearly 
+visible to the public.
+ Class A: trial shows that after entry 
+the actor received personal notice 
+from the owner/other w/authority & 
+if reasonably unable to understand, 
+other personal notice, reasonable for 
+the circumstances; and then failed 
+to depart.
+ (7) "Critical infrastructure facility" means one of the following, if completely enclosed by a 
+fence or other physical barrier that is obviously designed to exclude intruders: 
+(A) a chemical manufacturing facility;  
+(B) a refinery; 
+(C) an electrical power generating facility, substation, switching station, electrical control 
+center, or electrical transmission or distribution facility; 
+(D) a water intake structure, water treatment facility, wastewater treatment plant, or pump 
+station; 
+(E) a natural gas transmission compressor station; 
+(F) a liquid natural gas terminal or storage facility; 
+(G) a telecommunications central switching office; 
+(H) a port, railroad switching yard, trucking terminal, or other freight transportation facility; 
+(I) a gas processing plant, including a plant used in the processing, treatment, or fractionation 
+of natural gas; or 
+(J) a transmission facility used by a federally licensed radio or television station. 
+(3) "Shelter center" has the meaning assigned by Section 51.002, Human Resources Code. 
+(4) "Forest land" means land on which the trees are potentially valuable for timber products. 
+(5) "Agricultural land" has the meaning assigned by Section 75.001, Civil Practice and 
+Remedies Code. 
+(6) "Superfund site" means a facility that: (A) is on the National Priorities List established 
+under Section 105 of the federal Comprehensive Environmental Response, Compensation, and 
+Liability Act of 1980 (42 U.S.C. Section 9605); or (B) is listed on the state registry established 
+under Section 361.181, Health and Safety Code. 
+(8) "Protected freshwater area" has the meaning assigned by Section 90.001, Parks and 
+Wildlife Code. 
+(10) "Recreational vehicle park" has the meaning assigned by Section 13.087, Water Code. 
+(11) "Residential land" means real property improved by a dwelling and zoned for or 
+otherwise authorized for single-family or multifamily use. 
+(12) "Institution of higher education" has the meaning assigned by Section 61.003, Education 
+Code. 
+(13) "General residential operation" has the meaning assigned by Section 42.002, Human 
+Resources Code. 
+30.05.  CRIMINAL TRESPASS.   
+(c)  A person may provide notice that firearms are prohibited on the property by posting a sign 
+at each entrance to the property that:  
+(1)  includes language that is identical to or substantially similar to the following: "Pursuant to 
+Section 30.05, Penal Code (criminal trespass), a person may not enter this property with a 
+firearm"; 
+(2)  includes the language described by Subdivision (1) in both English and Spanish; 
+(3)  appears in contrasting colors with block letters at least one inch in height; and 
+(4) is displayed in a conspicuous manner clearly visible to the public.  
+(d-3)  An offense under this section is a Class C misdemeanor punishable by a fine not to 
+exceed $200 if the person enters the property, land, or building with a firearm or other 
+weapon and the sole basis on which entry on the property or land or in the building was 
+forbidden is that entry with a firearm or other weapon was forbidden, except that the offense 
+is a Class A misdemeanor if it is show on the trial of the offense that, after entering the 
+property, land, or building with the firearm or other weapon, the actor: 
+(1)  personally received from the owner of the property or another person with 
+apparent authority to act for the owner notice that entry with a firearm or other 
+weapon was forbidden, as given through: (A)  notice under Subsection (b)(2)(A), 
+including oral or written communication; or (B)  if the actor is unable to reasonably 
+understand the notice described by Paragraph (A), other personal notice that is 
+reasonable under the circumstances; and 
+(2)  subsequently failed to depart.  
+30.05 Criminal Trespass Non-applicability
+ (i) This section does not apply if:
+ (1) basis for entry on the property, land, or building was forbidden is that 
+entry with a handgun or other weapon was forbidden; and
+ (2)  the actor at the time of the offense was a peace officer, including a 
+commissioned peace officer of a recognized state, or 
+• a special investigator under CCP 2.122, 
+• regardless of whether the peace officer or special investigator was engaged 
+in the actual discharge of an official duty while carrying the weapon.
+ (9)  "Recognized state" means another state with which the attorney general of 
+this state, with the approval of the governor of this state, negotiated an 
+agreement after determining that the other state:
+ (A)  has firearm proficiency requirements for peace officers; and
+ (B)  fully recognizes the right of peace officers commissioned in this state to 
+carry weapons in the other state.
+ (i) This section does not apply if: (1) the basis on which entry on the property or land or in the 
+building was forbidden is that entry with a handgun or other weapon was forbidden; and (2) 
+the actor at the time of the offense was a peace officer, including a commissioned peace 
+officer of a recognized state, or a special investigator under Article 2A.002, Code of Criminal 
+Procedure, regardless of whether the peace officer or special investigator was engaged in the 
+actual discharge of an official duty while carrying the weapon. 
+(9) "Recognized state" means another state with which the attorney general of this state, with 
+the approval of the governor of this state, negotiated an agreement after determining that 
+the other state: (A) has firearm proficiency requirements for peace officers; and (B) fully 
+recognizes the right of peace officers commissioned in this state to carry weapons in the other 
+state. 
+30.05 Criminal Trespass Defenses (e)
+ (1) firefighter or emergency medical services personnel acting in the lawful 
+discharge of an official duty under exigent circumstances;
+ (2) a person who was an employee or agent of:
+ (i) an electric utility;
+ (ii) a telecommunications;
+ (iii) a video service provider or cable service provider;
+ (iv) a gas utility; or
+ (v) a pipeline used for the transportation or sale of oil, gas, or related products; 
+and performing a duty within the scope of that employment or agency; or
+ (3) a person employed by or acting as agent for an entity that had, or that 
+reasonably believed had, effective consent or authorization provided by law; & 
+performing a duty within the scope of that employment or agency.
+ 30.05 Criminal Trespass Defenses (f)
+ (f) It is a defense to prosecution under this section that:
+ (1) the basis on which entry on the property or land or in the building 
+was forbidden is that entry with a handgun was forbidden; and
+ (2) the person was carrying:
+ (A) a license issued under Chapter 411, Government Code, to carry 
+a handgun; and
+ (B) a handgun:
+ (i) in a concealed manner; or
+ (ii) in a holster.
+ (e) It is a defense to prosecution under this section that the actor at the time of the offense 
+was: 
+(1) a firefighter or emergency medical services personnel, as defined by Section 773.003, 
+Health and Safety Code, acting in the lawful discharge of an official duty under exigent 
+circumstances; 
+(2) a person who was: (A) an employee or agent of: (i) an electric utility, as defined by Section 
+31.002, Utilities Code; (ii) a telecommunications provider, as defined by Section 51.002, 
+Utilities Code; (iii) a video service provider or cable service provider, as defined by Section 
+66.002, Utilities Code; (iv) a gas utility, as defined by Section 101.003, Utilities Code, which for 
+the purposes of this subsection includes a municipally owned utility as defined by that section; 
+(v) a gas utility, as defined by Section 121.001, Utilities Code; (vi) a pipeline used for the 
+transportation or sale of oil, gas, or related products; or (vii) an electric cooperative or 
+municipally owned utility, as defined by Section 11.003, Utilities Code; and 
+(B) performing a duty within the scope of that employment or agency; or 
+(3) a person who was: (A) employed by or acting as agent for an entity that had, or that the 
+person reasonably believed had, effective consent or authorization provided by law to enter 
+the property; and (B) performing a duty within the scope of that employment or agency. 
+"Emergency medical services personnel" means: (A) emergency care attendant; (B) 
+emergency medical technicians; (C) advanced emergency medical technicians; (D) emergency 
+medical technicians--paramedic; or (E) licensed paramedic. 
+(f) It is a defense to prosecution under this section that: 
+(1) the basis on which entry on the property or land or in the building was forbidden is that 
+entry with a handgun was forbidden; and 
+(2) the person was carrying: (A) a license issued under Subchapter H, Chapter 411, 
+Government Code, to carry a handgun; and (B) a handgun: (i) in a concealed manner; or (ii) in 
+a holster. 
+30.05 Criminal Trespass Defenses 
+for Rental Type Property (f-1 thru f-4)
+ It is a defense to prosecution under this section that:
+ (1) the basis on which entry on the property was forbidden is that entry with 
+a firearm or firearm ammunition was forbidden;
+ (2) the actor is: 
+F-1 an owner of an apartment in a condominium regime, an owner of a 
+condominium unit, a tenant or guest of an owner of these, or a guest of a 
+tenant of an owner of these;
+ F-2 a tenant of a leased premises or the tenant's guest; 
+F-3 a tenant of a manufactured home lot or the tenant's guest; or
+ F-4 a guest of a hotel
+ 30.05 Criminal Trespass Defenses 
+for Rental Type Property (f-1 thru f-4)
+ It is a defense if (3) the actor:
+ (A) carries or stores a firearm or firearm ammunition in the condominium 
+apartment, unit owner's apartment or unit, tenant's rental unit, tenant's 
+manufactured home, or actor's hotel room;
+ (B) carries a firearm or firearm ammunition directly en route to or from the 
+above locations;
+ (C) carries a firearm or firearm ammunition directly en route to or from the 
+actor's vehicle located in a parking area provided for residents or guests of 
+the above; or
+ (D) carries or stores a firearm or firearm ammunition in the actor's vehicle 
+located in a parking area provided for residents or guests of the above; AND
+ (4) the actor is not otherwise prohibited by law from possessing a firearm 
+or firearm ammunition.
+ 30.05 Criminal Trespass Defenses Continued
+ (g) Defense under this section that the actor entered a railroad switching 
+yard or any part of a railroad switching yard and was at that time an 
+employee or a representative of employees exercising a right under the 
+Railway Labor Act (45 U.S.C. Section 151 et seq.).
+ (f-1) It is a defense to prosecution under this section that: 
+(1) the basis on which entry on the property was forbidden is that entry with a firearm or 
+firearm ammunition was forbidden;  
+(2) the actor is: 
+(A) an owner of an apartment in a condominium regime governed by Chapter 81, Property 
+Code; 
+(B) an owner of a condominium unit governed by Chapter 82, Property Code; 
+(C) a tenant or guest of an owner described by Paragraph (A) or (B); or 
+(D) a guest of a tenant of an owner described by Paragraph (A) or (B); 
+(f-2) It is a defense to prosecution under this section that: 
+(1) the basis on which entry on a leased premises governed by Chapter 92, Property Code, was 
+forbidden is that entry with a firearm or firearm ammunition was forbidden; 
+(2) the actor is a tenant of the leased premises or the tenant's guest; 
+(f-3) It is a defense to prosecution under this section that: 
+(1) the basis on which entry on a leased premises governed by Chapter 94, Property Code, was 
+forbidden is that entry with a firearm or firearm ammunition was forbidden; 
+(2) the actor is a tenant of a manufactured home lot or the tenant's guest; 
+(f-4) It is a defense to prosecution under this section that: 
+(1) the conduct occurred on hotel property, and the basis on which entry on that property was 
+forbidden is that entry with a firearm or firearm ammunition was forbidden; 
+(2) the actor is a guest of a hotel, as defined by Section 2155.101, Occupations Code; and 
+(f-1) It is a defense to prosecution under this section that: 
+(3) the actor: (A) carries or stores a firearm or firearm ammunition in the condominium 
+apartment or unit owner's apartment or unit; (B) carries a firearm or firearm ammunition 
+directly en route to or from the condominium apartment or unit owner's apartment or unit; 
+(C) carries a firearm or firearm ammunition directly en route to or from the actor's vehicle 
+located in a parking area provided for residents or guests of the condominium property; or (D) 
+carries or stores a firearm or firearm ammunition in the actor's vehicle located in a parking 
+area provided for residents or guests of the condominium property; and 
+(4) the actor is not otherwise prohibited by law from possessing a firearm or firearm 
+ammunition. 
+(f-2) It is a defense to prosecution under this section that: 
+(3) the actor: (A) carries or stores a firearm or firearm ammunition in the tenant's rental unit; 
+(B) carries a firearm or firearm ammunition directly en route to or from the tenant's rental 
+unit; (C) carries a firearm or firearm ammunition directly en route to or from the actor's 
+vehicle located in a parking area provided for tenants or guests by the landlord of the leased 
+premises; or (D) carries or stores a firearm or firearm ammunition in the actor's vehicle 
+located in a parking area provided for tenants or guests by the landlord of the leased 
+premises; and 
+(4) the actor is not otherwise prohibited by law from possessing a firearm or firearm 
+ammunition. 
+(f-3) It is a defense to prosecution under this section that: 
+(3) the actor: (A) carries or stores a firearm or firearm ammunition in the tenant's 
+manufactured home; (B) carries a firearm or firearm ammunition directly en route to or from 
+the tenant's manufactured home; (C) carries a firearm or firearm ammunition directly en 
+route to or from the actor's vehicle located in a parking area provided for tenants or tenants' 
+guests by the landlord of the leased premises; or (D) carries or stores a firearm or firearm 
+ammunition in the actor's vehicle located in a parking area provided for tenants or tenants' 
+guests by the landlord of the leased premises; and 
+(4) the actor is not otherwise prohibited by law from possessing a firearm or firearm 
+ammunition. 
+(f-4) It is a defense to prosecution under this section that: 
+(3) the actor: (A) carries or stores a firearm or firearm ammunition in the actor's hotel room; 
+(B) carries a firearm or firearm ammunition directly en route to or from the hotel or the 
+actor's hotel room; (C) carries a firearm or firearm ammunition directly en route to or from 
+the actor's vehicle located on the hotel property, including a vehicle in a parking area provided 
+for hotel guests; or (D) carries or stores a firearm or firearm ammunition in the actor's vehicle 
+located on the hotel property, including a vehicle in a parking area provided for hotel guests. 
+(g)  It is a defense to prosecution under this section that the actor entered a railroad switching 
+yard or any part of a railroad switching yard and was at that time an employee or a 
+representative of employees exercising a right under the Railway Labor Act (45 U.S.C. Section 
+151 et seq.) 
+30.06. TRESPASS BY LICENSE HOLDER WITH A 
+CONCEALED HANDGUN
+ Conduct: Offense if a license holder:
+ (a)(1) carries a concealed handgun on another’s 
+property without effective consent; and
+ (2)  received notice that the entry was forbidden.
+ (b) Receives notice = property owner/someone with 
+apparent authority provides by oral/written comm. 
+(3) Written = 
+(A) card/document with language identical: 
+"Pursuant to Section 30.06, Penal Code Trespass by 
+license holder with a concealed handgun, a person 
+licensed under . . . may not enter this property with 
+a concealed handgun"; or
+ (B) sign posted with the above lang. in English & 
+Spanish; in contrasting colors with block letters at 
+least 1 inch high; and displayed conspicuously and 
+clearly visible to the public.
+ Defense Arguments & 
+Enhancements
+ d) Class C not to exceed $200, UNLESS
+ Class A if trials shows there was personal 
+oral notice & actor did not depart
+ (e) Exception if property is owned/leased 
+by gov’t entity &not a 46.03 proh. premise
+ (f) Defense if license holder is volunteer 
+emergency services personnel under 46.01.
+ (f-1) Defense: 1st responder who:
+ (1) has an unexpired completion cert;
+ (2) engaged in actual duty discharge; &
+ (3) employed/supervised by municipality/ 
+county
+ (g) Defense: holder was personally given 
+oral notice & promptly departed
+ NOT Binding
+ 30.06. TRESPASS BY LICENSE HOLDER WITH A CONCEALED HANDGUN. (a) A license holder 
+commits an offense if the license holder: 
+(1) carries a concealed handgun under the authority of Subchapter H, Chapter 411, 
+Government Code, on property of another without effective consent; and 
+(2) received notice that entry on the property by a license holder with a concealed handgun 
+was forbidden. 
+(b) For purposes of this section, a person receives notice if the owner of the property or 
+someone with apparent authority to act for the owner provides notice to the person by oral 
+or written communication. 
+(d) An offense under this section is a Class C misdemeanor punishable by a fine not to exceed 
+$200, except that the offense is a Class A misdemeanor if it is shown on the trial of the offense 
+that, after entering the property, the license holder was personally given the notice by oral 
+communication described by Subsection (b) and subsequently failed to depart. 
+(e) It is an exception to the application of this section that the property on which the license 
+holder carries a handgun is owned or leased by a governmental entity and is not a premises or 
+other place on which the license holder is prohibited from carrying the handgun under Section 
+46.03. 
+(f) It is a defense to prosecution under this section that the license holder is volunteer 
+emergency services personnel, as defined by Section 46.01. 
+(f-1) It is a defense to prosecution under this section that the license holder is a first 
+responder, as defined by Section 46.01, who: 
+(1) holds an unexpired certificate of completion under Section 411.1883, Government Code, 
+at the time of engaging in the applicable conduct; 
+(2) was engaged in the actual discharge of the first responder's duties while carrying the 
+handgun; and 
+(3) was employed or supervised by a municipality or county to which Chapter 179, Local 
+Government Code, applies. 
+(g) It is a defense to prosecution under this section that the license holder was personally 
+given notice by oral communication described by Subsection (b) and promptly departed from 
+the property. 
+(c) In this section: 
+(1) "Entry" has the meaning assigned by Section 30.05(b). 
+(2) "License holder" has the meaning assigned by Section 46.03. 
+(3) "Written communication" means: 
+(A) a card or other document on which is written language identical to the following: 
+"Pursuant to Section 30.06, Penal Code (trespass by license holder with a concealed handgun), 
+a person licensed under Subchapter H, Chapter 411, Government Code (handgun licensing 
+law), may not enter this property with a concealed handgun"; or 
+(B) a sign posted on the property that: 
+(i) includes the language described by Paragraph (A) in both English and Spanish; 
+(ii) appears in contrasting colors with block letters at least one inch in height; and 
+(iii) is displayed in a conspicuous manner clearly visible to the public. 
+Legally Binding
+ 30.06 TRESPASS BY CONCEALED LICENSE HOLDER: 
+Has the Same Defenses found in the Criminal Trespass Law
+ for Owners of & Rental Type Property Tenant/Guests (e-1 thru e-4)
+ 1) owner of an apartment in a condominium regime, an owner of a condominium unit, a tenant or guest 
+of an owner of these, or a guest of a tenant of an owner of these;
+ 2) a tenant of a leased premises or the tenant's guest; 
+3) a tenant of a manufactured home lot or the tenant's guest; or
+ 4) a guest of a hotel
+ (e-1) It is a defense to prosecution under this section that: 
+(1) the license holder is: (A) an owner of an apartment in a condominium regime governed by 
+Chapter 81, Property Code; (B) an owner of a condominium unit governed by Chapter 82, 
+Property Code; (C) a tenant or guest of an owner described by Paragraph (A) or (B); or (D) a 
+guest of a tenant of an owner described by Paragraph (A) or (B); and 
+(2) the license holder: (A) carries or stores a handgun in the condominium apartment or unit 
+owner's apartment or unit; (B) carries a handgun directly en route to or from the 
+condominium apartment or unit owner's apartment or unit; (C) carries a handgun directly en 
+route to or from the license holder's vehicle located in a parking area provided for residents or 
+guests of the condominium property; or (D) carries or stores a handgun in the license holder's 
+vehicle located in a parking area provided for residents or guests of the condominium 
+property. 
+(e-2) It is a defense to prosecution under this section that: 
+(1) the license holder is a tenant of a leased premises governed by Chapter 92, Property Code, 
+or the tenant's guest; and 
+(2) the license holder: (A) carries or stores a handgun in the tenant's rental unit; (B) carries a 
+handgun directly en route to or from the tenant's rental unit; (C) carries a handgun directly en 
+route to or from the license holder's vehicle located in a parking area provided for tenants or 
+guests by the landlord of the leased premises; or (D) carries or stores a handgun in the license 
+holder's vehicle located in a parking area provided for tenants or guests by the landlord of the 
+leased premises. 
+(e-3) It is a defense to prosecution under this section that: 
+(1) the license holder is a tenant of a manufactured home lot governed by Chapter 94, 
+Property Code, or the tenant's guest; and 
+(2) the license holder: (A) carries or stores a handgun in the tenant's manufactured home; (B) 
+carries a handgun directly en route to or from the tenant's manufactured home; (C) carries a 
+handgun directly en route to or from the license holder's vehicle located in a parking area 
+provided for tenants or tenants' guests by the landlord of the leased premises; or (D) carries 
+or stores a handgun in the license holder's vehicle located in a parking area provided for 
+tenants or tenants' guests by the landlord of the leased premises. 
+(e-4) It is a defense to prosecution under this section that the license holder is a guest of a 
+hotel, as defined by Section 2155.101, Occupations Code, and the license holder: 
+(1) carries or stores a handgun in the license holder's hotel room; 
+(2) carries a handgun directly en route to or from the hotel or the license holder's hotel room; 
+(3) carries a handgun directly en route to or from the license holder's vehicle located on the 
+hotel property, including a vehicle in a parking area provided for hotel guests; or 
+(4) carries or stores a handgun in the license holder's vehicle located on the hotel property, 
+including a vehicle in a parking area provided for hotel guests. 
+30.07. TRESPASS BY LICENSE HOLDER WITH AN 
+OPENLY CARRIED HANDGUN
+ Conduct: Offense if a license holder:
+ (a)(1) openly carries a handgun on another’s 
+property without effective consent; and 
+(2) received notice that the entry was forbidden.
+ (b) Receives notice is the same
+ (3) Written = (A) card/document with language 
+identical: "Pursuant to Section 30.07, Penal Code 
+(trespass by license holder with an openly carried 
+handgun), a person licensed under . . . may not 
+enter this property with a handgun that is carried 
+openly"; or
+ (B) sign posted with the above lang. in English & 
+Spanish; in with the same contrasting colors and 
+block letters
+ Defenses & Enhancements
+ d) Class C not to exceed $200, UNLESS
+ Class A if trials shows there was personal 
+oral notice & actor did not depart
+ (e) Exception if owned/leased by a gov’t 
+entity & not a 46.03 prohibited premise
+ (e-1 thru 4) same rental type property 
+defenses
+ (f) NO defense that it was in a holster
+ (g) Defense for volunteer emergency 
+services 
+(g-1) Same Defenses for 1st responders with 
+current license, on duty municipal/county
+ (g) Defense: if personally given oral notice 
+and promptly departed from the property.
+ 30.07. TRESPASS BY LICENSE HOLDER WITH AN OPENLY CARRIED HANDGUN. (a) A license 
+holder commits an offense if the license holder: 
+(1) openly carries a handgun under the authority of Subchapter H, Chapter 411, Government 
+Code, on property of another without effective consent; and 
+(2) received notice that entry on the property by a license holder openly carrying a handgun 
+was forbidden. 
+(b) For purposes of this section, a person receives notice if the owner of the property or 
+someone with apparent authority to act for the owner provides notice to the person by oral 
+or written communication. 
+(d) An offense under this section is a Class C misdemeanor punishable by a fine not to exceed 
+$200, except that the offense is a Class A misdemeanor if it is shown on the trial of the offense 
+that, after entering the property, the license holder was personally given the notice by oral 
+communication described by Subsection (b) and subsequently failed to depart. 
+(e) It is an exception to the application of this section that the property on which the license 
+holder openly carries the handgun is owned or leased by a governmental entity and is not a 
+premises or other place on which the license holder is prohibited from carrying the handgun 
+under Section 46.03. 
+(e-1) It is a defense to prosecution under this section that: 
+(1) the license holder is: (A) an owner of an apartment in a condominium regime governed by 
+Chapter 81, Property Code; (B) an owner of a condominium unit governed by Chapter 82, 
+Property Code; (C) a tenant or guest of an owner described by Paragraph (A) or (B); or (D) a 
+guest of a tenant of an owner described by Paragraph (A) or (B); and 
+(2) the license holder: (A) carries or stores a handgun in the condominium apartment or unit 
+owner's apartment or unit; (B) carries a handgun directly en route to or from the 
+condominium apartment or unit owner's apartment or unit; (C) carries a handgun directly en 
+route to or from the license holder's vehicle located in a parking area provided for residents or 
+guests of the condominium property; or (D) carries or stores a handgun in the license holder's 
+vehicle located in a parking area provided for residents or guests of the condominium 
+property. 
+(e-2) It is a defense to prosecution under this section that: 
+(1) the license holder is a tenant of a leased premises governed by Chapter 92, Property Code, 
+or the tenant's guest; and 
+(2) the license holder: (A) carries or stores a handgun in the tenant's rental unit; (B) carries a 
+handgun directly en route to or from the tenant's rental unit; (C) carries a handgun directly en 
+route to or from the license holder's vehicle located in a parking area provided for tenants or 
+guests by the landlord of the leased premises; or (D) carries or stores a handgun in the license 
+holder's vehicle located in a parking area provided for tenants or guests by the landlord of the 
+leased premises. 
+(e-3) It is a defense to prosecution under this section that: 
+(1) the license holder is a tenant of a manufactured home lot governed by Chapter 94, 
+Property Code, or the tenant's guest; and 
+(2) the license holder: (A) carries or stores a handgun in the tenant's manufactured home; (B) 
+carries a handgun directly en route to or from the tenant's manufactured home; (C) carries a 
+handgun directly en route to or from the license holder's vehicle located in a parking area 
+provided for tenants or tenants' guests by the landlord of the leased premises; or (D) carries 
+or stores a handgun in the license holder's vehicle located in a parking area provided for 
+tenants or tenants' guests by the landlord of the leased premises. 
+(e-4) It is a defense to prosecution under this section that the license holder is a guest of a 
+hotel, as defined by Section 2155.101, Occupations Code, and the license holder: 
+(1) carries or stores a handgun in the license holder's hotel room; 
+(2) carries a handgun directly en route to or from the hotel or the license holder's hotel room; 
+(3) carries a handgun directly en route to or from the license holder's vehicle located on the 
+hotel property, including a vehicle in a parking area provided for hotel guests; or 
+(4) carries or stores a handgun in the license holder's vehicle located on the hotel property, 
+including a vehicle in a parking area provided for hotel guests. 
+(f) It is not a defense to prosecution under this section that the handgun was carried in a 
+holster. 
+(g) It is a defense to prosecution under this section that the license holder is volunteer 
+emergency services personnel, as defined by Section 46.01. 
+(g-1) It is a defense to prosecution under this section that the license holder is a first 
+responder, as defined by Section 46.01, who: 
+(1) holds an unexpired certificate of completion under Section 411.1883, Government Code, 
+at the time of engaging in the applicable conduct; 
+(2) was engaged in the actual discharge of the first responder's duties while carrying the 
+handgun; and 
+(3) was employed or supervised by a municipality or county to which Chapter 179, Local 
+Government Code, applies. 
+Legally Binding
+ (h) It is a defense to prosecution under this section that the license holder was personally 
+given notice by oral communication described by Subsection (b) and promptly departed from 
+the property. 
+(c) In this section: 
+(1) "Entry" has the meaning assigned by Section 30.05(b). 
+(2) "License holder" has the meaning assigned by Section 46.03. 
+(3) "Written communication" means: 
+(A) a card or other document on which is written language identical to the following: 
+"Pursuant to Section 30.07, Penal Code (trespass by license holder with an openly carried 
+handgun), a person licensed under Subchapter H, Chapter 411, Government Code (handgun 
+licensing law), may not enter this property with a handgun that is carried openly"; or 
+(B) a sign posted on the property that: 
+(i) includes the language described by Paragraph (A) in both English and Spanish; 
+(ii) appears in contrasting colors with block letters at least one inch in height; and 
+(iii) is displayed in a conspicuous manner clearly visible to the public at each entrance to the 
+property. 
+Questions
+ Escalating Offenses for Property and Trespass 
+Read the scenario up to the next number, then stop and select the best highest offense, if any 
+apply, that you have up to that point.  Then, keeping in mind what you just read, continue to 
+the next number and do the same.  Use the letter choices on slide above for your selections.  
+Access the scenario via handout or the self poling software 
+Conclusion 
+•Q/A session? 
+•Review Game/Quiz? 

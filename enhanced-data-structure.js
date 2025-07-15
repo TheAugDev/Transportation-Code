@@ -785,7 +785,258 @@ const tcoleStudyData = {
             explanation: "Collins v. Virginia (2018) ruled that the automobile exception doesn't allow warrantless searches of vehicles within a home's curtilage.",
             objective: "Curtilage search restrictions",
             module: "Module 2"
-        }
+        },
+        // PENAL CODE FLASHCARDS - Comprehensive Coverage
+        {
+            id: "pc001",
+            mainCategory: "penal-code",
+            category: "assault-offenses",
+            question: "What are the three ways a person can commit Assault under PC 22.01(a)?",
+            answer: "1) Intentionally, knowingly, or recklessly causes bodily injury to another; 2) Intentionally or knowingly threatens another with imminent bodily injury; 3) Intentionally or knowingly causes physical contact when the person knows/should believe the other will regard it as offensive or provocative.",
+            difficulty: "basic",
+            objective: "Understand basic assault elements",
+            module: "Penal Code"
+        },
+        {
+            id: "pc002",
+            mainCategory: "penal-code",
+            category: "assault-offenses",
+            question: "What is the punishment for Aggravated Assault under PC 22.02?",
+            answer: "Felony of the second degree, EXCEPT it becomes a felony of the first degree if committed against a public servant, by a public servant under color of office, in retaliation against witnesses, against security officers on duty, or against emergency services personnel.",
+            difficulty: "intermediate",
+            objective: "Know aggravated assault punishment levels",
+            module: "Penal Code"
+        },
+        {
+            id: "pc003",
+            mainCategory: "penal-code",
+            category: "theft-offenses",
+            question: "What are the theft punishment ranges based on property value?",
+            answer: "Under $100: Class C; $100-$750: Class B; $750-$2,500: Class A; $2,500-$30,000: State jail felony; $30,000-$150,000: 3rd degree felony; $150,000-$300,000: 2nd degree felony; $300,000+: 1st degree felony.",
+            difficulty: "intermediate",
+            objective: "Know theft punishment ranges",
+            module: "Penal Code"
+        },
+        {
+            id: "pc004",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            question: "What is the punishment for attacking an assistance animal under PC 42.091?",
+            answer: "Class A misdemeanor if actor attacks; State jail felony if actor injures; Felony of the 3rd degree if actor kills an assistance animal. Court must order restitution for vet bills, replacement/retraining costs, and other reasonable expenses.",
+            difficulty: "intermediate",
+            objective: "Know assistance animal protection laws",
+            module: "Penal Code"
+        },
+        {
+            id: "pc005",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            question: "What are the punishment levels for Dog Fighting under PC 42.10?",
+            answer: "PC 42.10(a)(1), (2), (3) - causing dogs to fight, participating in earnings, or using property for dog fighting: State jail felony. PC 42.10(a)(4), (5), (6) - equipment possession, training dogs, or attending as spectator: Class A misdemeanor.",
+            difficulty: "intermediate",
+            objective: "Distinguish dog fighting offense levels",
+            module: "Penal Code"
+        },
+        {
+            id: "pc006",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            question: "What is the defense for dog fighting under PC 42.10(d)?",
+            answer: "It is a defense to prosecution under (a)(1) that the actor caused a dog to fight with another dog to protect livestock, other property, or a person from the other dog, and for no other purpose.",
+            difficulty: "advanced",
+            objective: "Know defenses to animal fighting charges",
+            module: "Penal Code"
+        },
+        {
+            id: "pc007",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            question: "What are the punishment levels for Cockfighting under PC 42.105?",
+            answer: "PC 42.105(b)(1), (2) - causing cocks to fight or participating in earnings: State jail felony. PC 42.105(b)(3), (4), (5) - property use, training, or equipment: Class A misdemeanor. PC 42.105(b)(6) - spectating: Class C (Class A with prior conviction).",
+            difficulty: "intermediate",
+            objective: "Know cockfighting punishment structure",
+            module: "Penal Code"
+        },
+        {
+            id: "pc008",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            question: "What is the punishment for Bestiality under PC 21.09?",
+            answer: "State jail felony, EXCEPT it becomes a felony of the 2nd degree if committed under (a)(9) in presence of a child under 18, OR if it results in serious bodily injury or death of the animal.",
+            difficulty: "intermediate",
+            objective: "Know bestiality offense levels",
+            module: "Penal Code"
+        },
+        {
+            id: "pc009",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            question: "What are the key definitions for property crimes under PC 30.01?",
+            answer: "Habitation: structure/vehicle for overnight accommodation (includes separately secured portions). Building: enclosed structure for habitation, trade, manufacture, ornament, or use. Vehicle: device for propelling/moving persons/property (except habitations).",
+            difficulty: "basic",
+            objective: "Understand property crime definitions",
+            module: "Penal Code"
+        },
+        {
+            id: "pc010",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            question: "What constitutes 'Notice' for Criminal Trespass under PC 30.05?",
+            answer: "Notice includes: oral/written communication by owner; fencing to exclude intruders; posted signs; purple paint marks (8+ inches, 1+ inch wide, 3-5 feet high, 100 feet apart on forest/1000 feet on other land); or visible crops under cultivation.",
+            difficulty: "intermediate",
+            objective: "Know trespass notice requirements",
+            module: "Penal Code"
+        },
+        {
+            id: "pc011",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            question: "What are the punishment levels for Criminal Trespass under PC 30.05?",
+            answer: "Class B misdemeanor (basic); Class C (agricultural/residential land within 100 ft); Class A (habitation, deadly weapon, critical infrastructure, higher education with prior, shelter center, treatment center, Superfund site); 3rd degree felony (if part of smuggling offense).",
+            difficulty: "advanced",
+            objective: "Know trespass punishment escalations",
+            module: "Penal Code"
+        },
+        {
+            id: "pc012",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            question: "What is a 'Critical Infrastructure Facility' under PC 30.05?",
+            answer: "Chemical manufacturing, refinery, electrical facilities, water treatment, gas compressor stations, LNG terminals, telecommunications switching, ports/transportation hubs, gas processing plants, or federally licensed radio/TV transmission facilities - all completely enclosed by obvious barriers.",
+            difficulty: "advanced",
+            objective: "Identify critical infrastructure for enhanced penalties",
+            module: "Penal Code"
+        },
+        {
+            id: "pc013",
+            mainCategory: "penal-code",
+            category: "firearms-laws",
+            question: "What are the punishment levels for PC 30.06 (Concealed Handgun Trespass)?",
+            answer: "Class C misdemeanor (fine not exceeding $200), EXCEPT Class A misdemeanor if trial shows that after entry, the license holder received personal oral notice and failed to depart.",
+            difficulty: "intermediate",
+            objective: "Know concealed carry trespass penalties",
+            module: "Penal Code"
+        },
+        {
+            id: "pc014",
+            mainCategory: "penal-code",
+            category: "firearms-laws",
+            question: "What are the defenses for rental property under PC 30.06 and 30.07?",
+            answer: "Defenses exist for: condominium owners/tenants/guests, leased premises tenants/guests, manufactured home tenants/guests, and hotel guests - when carrying/storing in their unit/room, en route to/from unit/vehicle, or in designated parking areas.",
+            difficulty: "advanced",
+            objective: "Know rental property firearm defenses",
+            module: "Penal Code"
+        },
+        {
+            id: "pc015",
+            mainCategory: "penal-code",
+            category: "firearms-laws",
+            question: "What is the key difference between PC 30.06 and PC 30.07?",
+            answer: "PC 30.06 applies to CONCEALED handgun carry by license holders; PC 30.07 applies to OPENLY carried handguns by license holders. Both require specific notice language and have similar penalty structures, but 30.07 specifies that carrying in a holster is NOT a defense.",
+            difficulty: "intermediate",
+            objective: "Distinguish concealed vs open carry trespass",
+            module: "Penal Code"
+        },
+        {
+            id: "pc016",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            question: "What are the defenses for utility workers under PC 30.05(e)?",
+            answer: "Defenses include: firefighters/EMS under exigent circumstances; employees/agents of electric, telecommunications, video/cable, gas utilities, or pipelines performing duties; persons employed by entities with effective consent/authorization performing duties within scope.",
+            difficulty: "advanced",
+            objective: "Know utility worker trespass defenses",
+            module: "Penal Code"
+        },
+        {
+            id: "pc017",
+            mainCategory: "penal-code",
+            category: "firearms-laws",
+            question: "What are the requirements for valid firearm prohibition signs under PC 30.05?",
+            answer: "Must include specific language 'Pursuant to Section 30.05, Penal Code (criminal trespass), a person may not enter this property with a firearm'; in English and Spanish; contrasting colors; block letters at least one inch high; conspicuously displayed and clearly visible.",
+            difficulty: "intermediate",
+            objective: "Know firearm sign requirements",
+            module: "Penal Code"
+        },
+        {
+            id: "pc018",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            question: "What is the railway worker defense under PC 30.05(g)?",
+            answer: "It is a defense to prosecution that the actor entered a railroad switching yard or any part of a railroad switching yard and was at that time an employee or representative of employees exercising a right under the Railway Labor Act (45 U.S.C. Section 151 et seq.).",
+            difficulty: "advanced",
+            objective: "Know specialized worker defenses",
+            module: "Penal Code"
+        },
+        {
+            id: "pc019",
+            mainCategory: "penal-code",
+            category: "firearms-laws",
+            question: "What are the peace officer exceptions under PC 30.05(i)?",
+            answer: "Section does not apply if basis for entry prohibition was handgun/weapon and actor was a peace officer (including from recognized states) or special investigator under CCP 2.122, regardless of whether engaged in official duty. Recognized states must have firearm proficiency requirements and reciprocity.",
+            difficulty: "advanced",
+            objective: "Know peace officer firearm exceptions",
+            module: "Penal Code"
+        },
+        {
+            id: "pc020",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            question: "What constitutes 'Entry' for trespass purposes under PC 30.05(b)?",
+            answer: "Entry means the intrusion of the entire body. Partial entry (like reaching an arm through a window) would not constitute entry for trespass purposes under this definition.",
+            difficulty: "basic",
+            objective: "Understand entry definition for trespass",
+            module: "Penal Code"
+        },
+        {
+            id: "pc021",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            question: "What are the affirmative defenses for cockfighting equipment under PC 42.105(c)?",
+            answer: "Affirmative defenses: 1) Conduct occurred solely for breeding cocks for poultry shows judged by appearance; 2) Was incidental to collecting bridles, gaffs, or slashers. NOT available if evidence shows actor also engaging in cockfighting use.",
+            difficulty: "advanced",
+            objective: "Know cockfighting equipment defenses",
+            module: "Penal Code"
+        },
+        {
+            id: "pc022",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            question: "What is the age exception for cockfighting spectating under PC 42.105(f)?",
+            answer: "It is an exception to application of PC 42.105(b)(6) (attending as spectator) if the actor is 15 years of age or younger at the time of the offense.",
+            difficulty: "intermediate",
+            objective: "Know age exceptions in animal fighting laws",
+            module: "Penal Code"
+        },
+        {
+            id: "pc023",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            question: "What are the First Amendment protections for higher education trespass under PC 30.05(d-2)?",
+            answer: "At punishment stage, defendant may raise issue whether they were engaging in speech/expressive conduct protected by 1st Amendment or Texas Constitution Article I, Section 8. If proven by preponderance, the Class A enhancement doesn't apply.",
+            difficulty: "advanced",
+            objective: "Know constitutional protections in trespass cases",
+            module: "Penal Code"
+        },
+        {
+            id: "pc024",
+            mainCategory: "penal-code",
+            category: "firearms-laws",
+            question: "What are the first responder defenses under PC 30.06 and 30.07?",
+            answer: "Defense for first responders who: 1) Hold unexpired completion certificate under Gov Code 411.1883; 2) Were engaged in actual discharge of duties while carrying; 3) Were employed/supervised by municipality/county under Local Gov Code Chapter 179.",
+            difficulty: "advanced",
+            objective: "Know first responder firearm defenses",
+            module: "Penal Code"
+        },
+        {
+            id: "pc025",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            question: "What is the labor rights defense for critical infrastructure under PC 30.05(h)?",
+            answer: "At punishment stage, defendant may raise issue whether entry/remaining was part of peaceful/lawful assembly, including exercising state/federal labor law rights. If proven by preponderance, the Class A enhancement for critical infrastructure doesn't apply.",
+            difficulty: "advanced",
+            objective: "Know labor law protections in trespass",
+            module: "Penal Code"
+        },
     ], // Will be populated from existing data
     
     // Content loading functions
@@ -875,3 +1126,265 @@ if (typeof studyData !== 'undefined' && typeof tcoleStudyData !== 'undefined') {
     console.log('studyData available:', typeof studyData !== 'undefined');
     console.log('tcoleStudyData available:', typeof tcoleStudyData !== 'undefined');
 }
+
+// PENAL CODE PRACTICE QUESTIONS
+        {
+            id: "pcq001",
+            mainCategory: "penal-code",
+            category: "assault-offenses",
+            difficulty: "basic",
+            type: "multiple-choice",
+            question: "What mental states are required for causing bodily injury under PC 22.01 Assault?",
+            options: [
+                "Intentionally, knowingly, OR recklessly",
+                "Only intentionally or knowingly",
+                "Only recklessly",
+                "Any mental state including criminal negligence"
+            ],
+            correct: 0,
+            explanation: "For bodily injury assault, the actor must act intentionally, knowingly, OR recklessly. Threats and offensive contact require only intentionally or knowingly.",
+            objective: "Understand mental states for assault",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq002",
+            mainCategory: "penal-code",
+            category: "theft-offenses",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "What is the punishment for theft of property valued at $25,000?",
+            options: [
+                "State jail felony",
+                "Class A misdemeanor",
+                "Felony of the third degree",
+                "Class B misdemeanor"
+            ],
+            correct: 0,
+            explanation: "$25,000 falls in the $2,500 to under $30,000 range, making it a state jail felony.",
+            objective: "Apply theft punishment ranges",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq003",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "What is the punishment for killing an assistance animal under PC 42.091?",
+            options: [
+                "Felony of the third degree",
+                "State jail felony",
+                "Class A misdemeanor",
+                "Felony of the 2nd degree"
+            ],
+            correct: 0,
+            explanation: "PC 42.091(c)(3) - killing an assistance animal is a felony of the third degree.",
+            objective: "Know assistance animal protection penalties",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq004",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            difficulty: "advanced",
+            type: "scenario",
+            question: "Scenario: John owns fighting cocks and sells steel gaffs to other cock owners, knowing they will use them in cockfights. What offense has John committed?",
+            options: [
+                "PC 42.105(b)(5) - Class A misdemeanor for selling cockfighting equipment",
+                "PC 42.105(b)(1) - State jail felony for causing cocks to fight",
+                "PC 42.105(b)(4) - Class A misdemeanor for training cocks",
+                "No offense - selling equipment is not prohibited"
+            ],
+            correct: 0,
+            explanation: "PC 42.105(b)(5) prohibits selling gaffs or other implements designed for cockfighting with intent they be used in cockfighting - Class A misdemeanor.",
+            objective: "Apply cockfighting equipment laws",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq005",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "Purple paint marks for trespass notice must be placed how far apart?",
+            options: [
+                "100 feet apart on forest land; 1,000 feet apart on other land",
+                "1,000 feet apart on forest land; 100 feet apart on other land",
+                "500 feet apart on all land types",
+                "100 feet apart on all land types"
+            ],
+            correct: 0,
+            explanation: "PC 30.05(b)(2)(D) - purple paint marks must be no more than 100 feet apart on forest land or 1,000 feet apart on other land.",
+            objective: "Know trespass notice requirements",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq006",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            difficulty: "advanced",
+            type: "scenario",
+            question: "Scenario: Officer arrests suspect for criminal trespass at a chemical plant. The plant is surrounded by a 10-foot fence with razor wire. What enhancement applies?",
+            options: [
+                "Class A misdemeanor - critical infrastructure facility",
+                "Class B misdemeanor - basic trespass",
+                "Felony of third degree - smuggling enhancement",
+                "Class C misdemeanor - industrial property"
+            ],
+            correct: 0,
+            explanation: "Chemical manufacturing facility completely enclosed by obvious barrier is critical infrastructure under PC 30.05(d)(3)(A)(iii), making it Class A misdemeanor.",
+            objective: "Identify critical infrastructure enhancements",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq007",
+            mainCategory: "penal-code",
+            category: "firearms-laws",
+            difficulty: "intermediate",
+            type: "true-false",
+            question: "True or False: A concealed handgun license holder who receives oral notice to leave property must immediately depart or face Class A charges.",
+            options: ["False", "True"],
+            correct: 0,
+            explanation: "False. PC 30.06(g) provides a defense if the license holder 'promptly departed' after receiving oral notice. The offense is only Class A if they failed to depart after personal notice.",
+            objective: "Understand concealed carry trespass defenses",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq008",
+            mainCategory: "penal-code",
+            category: "firearms-laws",
+            difficulty: "advanced",
+            type: "scenario",
+            question: "Scenario: Licensed security guard openly carries handgun into apartment complex that has posted 30.07 signs. He is going to his apartment where he lives. Legal?",
+            options: [
+                "Legal - tenant defense under PC 30.07(e-2)",
+                "Illegal - no exceptions for posted properties",
+                "Legal - security guard exception",
+                "Illegal - open carry always prohibited on rental property"
+            ],
+            correct: 0,
+            explanation: "PC 30.07(e-2) provides defense for tenants carrying handguns in their rental unit, en route to/from unit, or in designated parking areas.",
+            objective: "Apply rental property firearm defenses",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq009",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "Under PC 42.10, attending a dog fight as a spectator is what level of offense?",
+            options: [
+                "Class A misdemeanor",
+                "State jail felony",
+                "Class B misdemeanor",
+                "Class C misdemeanor"
+            ],
+            correct: 0,
+            explanation: "PC 42.10(e) - attending as spectator under (a)(6) is a Class A misdemeanor. Only causing fights, earnings participation, or property use are state jail felonies.",
+            objective: "Distinguish dog fighting offense levels",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq010",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            difficulty: "advanced",
+            type: "scenario",
+            question: "Scenario: Utility worker enters private property to repair gas line during emergency. Property owner demands they leave and calls police. What applies?",
+            options: [
+                "Defense under PC 30.05(e)(2) - gas utility employee performing duties",
+                "Criminal trespass - no exceptions for utilities",
+                "Defense only if written consent obtained",
+                "Trespass unless exigent circumstances proven"
+            ],
+            correct: 0,
+            explanation: "PC 30.05(e)(2) provides defense for gas utility employees performing duties within scope of employment or agency.",
+            objective: "Apply utility worker defenses",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq011",
+            mainCategory: "penal-code",
+            category: "assault-offenses",
+            difficulty: "advanced",
+            type: "scenario",
+            question: "Scenario: During bar fight, defendant strikes victim with beer bottle causing deep lacerations requiring 15 stitches. What is the most appropriate charge?",
+            options: [
+                "Aggravated Assault - used deadly weapon (bottle)",
+                "Simple Assault - only caused bodily injury",
+                "Aggravated Assault - caused serious bodily injury",
+                "Cannot determine without intent analysis"
+            ],
+            correct: 0,
+            explanation: "Beer bottle used as weapon during assault constitutes 'uses or exhibits a deadly weapon' under PC 22.02(a)(2), making it Aggravated Assault regardless of injury severity.",
+            objective: "Apply deadly weapon enhancements",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq012",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "What is the punishment for trespass in a habitation under PC 30.05?",
+            options: [
+                "Class A misdemeanor",
+                "Class B misdemeanor", 
+                "State jail felony",
+                "Felony of the third degree"
+            ],
+            correct: 0,
+            explanation: "PC 30.05(d)(3)(A)(i) - trespass in a habitation is a Class A misdemeanor.",
+            objective: "Know habitation trespass penalties",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq013",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            difficulty: "advanced",
+            type: "multiple-choice",
+            question: "Under PC 21.09 Bestiality, what makes the offense a 2nd degree felony?",
+            options: [
+                "Committed in presence of child under 18 OR results in serious bodily injury/death to animal",
+                "Only if it results in death of the animal",
+                "Only if committed in presence of a child",
+                "If actor has prior conviction for similar offense"
+            ],
+            correct: 0,
+            explanation: "PC 21.09(b) - offense becomes 2nd degree felony if committed under (a)(9) in presence of child under 18 OR if it results in serious bodily injury or death of animal.",
+            objective: "Know bestiality enhancement factors",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq014",
+            mainCategory: "penal-code",
+            category: "firearms-laws",
+            difficulty: "intermediate",
+            type: "true-false",
+            question: "True or False: Carrying an openly carried handgun in a holster is a defense to PC 30.07 prosecution.",
+            options: ["False", "True"],
+            correct: 0,
+            explanation: "False. PC 30.07(f) specifically states 'It is NOT a defense to prosecution under this section that the handgun was carried in a holster.'",
+            objective: "Know open carry holster rule",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq015",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            difficulty: "advanced",
+            type: "scenario",
+            question: "Scenario: College student continues protesting on campus after being told to leave. They argue First Amendment protection. What penalty enhancement issue arises?",
+            options: [
+                "Defendant can raise First Amendment defense to prevent Class A enhancement",
+                "No First Amendment protections apply to trespass",
+                "First Amendment only applies to public property",
+                "Enhancement applies regardless of speech content"
+            ],
+            correct: 0,
+            explanation: "PC 30.05(d-2) allows defendant to raise First Amendment issue at punishment stage. If proven by preponderance, the Class A enhancement for higher education doesn't apply.",
+            objective: "Understand constitutional protections in trespass",
+            module: "Penal Code"
+        }
