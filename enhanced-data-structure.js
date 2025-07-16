@@ -149,6 +149,51 @@ const tcoleStudyData = {
             }
         },
         
+        "field-operations": {
+            name: "Field Operations & Procedures",
+            description: "Community policing, field interviews, constitutional law, and decision-making procedures",
+            icon: "fas fa-user-shield",
+            color: "#20c997",
+            modules: ["Community Policing", "Field Interviews", "Constitutional Law", "Decision Making", "De-escalation"],
+            subCategories: {
+                "community-policing": {
+                    name: "Community Policing",
+                    description: "Community resources, partnerships, and public relations",
+                    icon: "fas fa-handshake",
+                    color: "#28a745",
+                    module: "Community Policing"
+                },
+                "field-interviews": {
+                    name: "Field Interviews & Pedestrian Stops", 
+                    description: "Pedestrian contact procedures, field interview techniques, and safety tactics",
+                    icon: "fas fa-walking",
+                    color: "#17a2b8",
+                    module: "Field Interviews"
+                },
+                "constitutional-procedures": {
+                    name: "Constitutional Procedures",
+                    description: "4th Amendment, reasonable suspicion, probable cause, and police interactions",
+                    icon: "fas fa-balance-scale",
+                    color: "#dc3545",
+                    module: "Constitutional Law"
+                },
+                "decision-making": {
+                    name: "Critical Decision-Making Model",
+                    description: "CDM principles, de-escalation strategies, and tactical decision making",
+                    icon: "fas fa-brain",
+                    color: "#6f42c1",
+                    module: "Decision Making"
+                },
+                "exigent-circumstances": {
+                    name: "Exigent Circumstances",
+                    description: "Emergency doctrine, 4th Amendment exceptions, and urgent situations",
+                    icon: "fas fa-exclamation-triangle",
+                    color: "#ffc107",
+                    module: "Constitutional Law"
+                }
+            }
+        },
+        
         "general-topics": {
             name: "General Topics",
             description: "Report writing, patrol procedures, ethics, and professional standards",
@@ -197,6 +242,108 @@ const tcoleStudyData = {
     
     // Current Transportation Code data will be preserved here
     flashcards: [
+        // Field Operations & Procedures - Community Policing
+        {
+            id: "fo001",
+            mainCategory: "field-operations",
+            category: "community-policing",
+            difficulty: "basic",
+            question: "Name 5 community resources that can assist law enforcement during emergencies.",
+            answer: "1) Ambulance/EMS for injured, 2) Fire Department, 3) Salvation Army, 4) Shelters for Battered Spouses/Children, 5) Rape Crisis Centers, 6) United Way, 7) Animal Control Officials, 8) City Services, 9) Medical Examiner & Justice of the Peace.",
+            objective: "35.31 - Identify community resources for emergency assistance",
+            module: "Community Policing"
+        },
+        {
+            id: "fo002", 
+            mainCategory: "field-operations",
+            category: "field-interviews",
+            difficulty: "basic",
+            question: "What are the three classifications of interactions between peace officers and persons?",
+            answer: "1) Consensual Encounters - officers can approach/ask questions, persons can refuse to cooperate/walk away; 2) Investigatory Stops/Detentions - temporary seizure based on reasonable suspicion; 3) Arrests - taking into custody based on probable cause.",
+            objective: "10.2 - Discuss three classifications of police-citizen interactions",
+            module: "Field Interviews"
+        },
+        {
+            id: "fo003",
+            mainCategory: "field-operations", 
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What are the 4 Personal Contact Risk Zones officers should continuously scan?",
+            answer: "1) Face & Chest - friend/foe determination, facial expressions, intoxication signs; 2) Hands - what they're holding, in pockets, showing anxiety/anger; 3) Waistband - common weapon location, bulges, keeping hands away; 4) Stance - bobbing, rocking, bladed position, pacing.",
+            objective: "35.9 - Demonstrate field interview techniques and officer safety",
+            module: "Field Interviews"
+        },
+        {
+            id: "fo004",
+            mainCategory: "field-operations",
+            category: "constitutional-procedures", 
+            difficulty: "intermediate",
+            question: "What is the difference between 'reasonable suspicion' and 'probable cause'?",
+            answer: "Reasonable Suspicion - specific articulable facts that would lead a reasonable officer to believe criminal activity may be afoot (Terry stop level). Probable Cause - facts and circumstances that would lead a reasonable person to believe a crime has been/is being committed (arrest level).",
+            objective: "10.5 - Discuss reasonable suspicion vs probable cause",
+            module: "Constitutional Law"
+        },
+        {
+            id: "fo005",
+            mainCategory: "field-operations",
+            category: "decision-making",
+            difficulty: "basic", 
+            question: "What are the 5 steps of the Critical Decision-Making Model (CDM)?",
+            answer: "Step 1: Collect information; Step 2: Assess situation, threats, and risks; Step 3: Consider police powers and agency policy; Step 4: Identify options and determine best course of action; Step 5: Act, review, and re-assess.",
+            objective: "27.2 - Explain the five steps of the CDM",
+            module: "Decision Making"
+        },
+        {
+            id: "fo006",
+            mainCategory: "field-operations",
+            category: "decision-making",
+            difficulty: "intermediate",
+            question: "What are the key principles (core) of the Critical Decision-Making Model?",
+            answer: "Police ethics, agency values, proportionality, and sanctity of human life. These form the moral compass that guides all decision-making - no CDM step should contradict these core principles.",
+            objective: "27.1 - Describe key principles of the CDM",
+            module: "Decision Making"
+        },
+        {
+            id: "fo007",
+            mainCategory: "field-operations",
+            category: "exigent-circumstances",
+            difficulty: "intermediate",
+            question: "What are the 5 accepted exigencies that justify 4th Amendment exceptions?",
+            answer: "1) Prevent serious injury and provide emergency aid; 2) Prevent imminent destruction/loss of evidence; 3) Hot/fresh pursuit of felony offense; 4) Imminent or immediate escape; 5) Hot pursuit of non-felony with reasonableness and/or another exigency.",
+            objective: "Review legal exigencies for 4th Amendment exceptions",
+            module: "Constitutional Law"
+        },
+        {
+            id: "fo008",
+            mainCategory: "field-operations",
+            category: "field-interviews",
+            difficulty: "advanced",
+            question: "What is the recommended field interview position and distance for officer safety?",
+            answer: "Gun side away from suspect, nothing in gun hand, offset stance, maintain at least 3-3.5 feet distance (arm's length or more), continually scan risk zones, position to allow movement and avoid being boxed in.",
+            objective: "35.9 - Demonstrate proper field interview positioning",
+            module: "Field Interviews"
+        },
+        {
+            id: "fo009",
+            mainCategory: "field-operations",
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What approach methods can be used for pedestrian stops and what are their advantages/disadvantages?",
+            answer: "Right Side (preferred - most people right-handed); Direct/Front (observe all movements but lose surprise); Rear (surprise but may provoke defense); Side (suspect off balance but can't see all movement). Two-officer V-formation for multiple subjects.",
+            objective: "35.8 - Demonstrate proper pedestrian stop approaches",
+            module: "Field Interviews"
+        },
+        {
+            id: "fo010",
+            mainCategory: "field-operations",
+            category: "community-policing",
+            difficulty: "basic",
+            question: "Why do officers conduct field inquiries and what can they learn?",
+            answer: "Learn About People: reaction to contact/questioning, develop citizen relationships, personal contact, learn socio-economic makeup. Learn About Places: building characteristics, unusual lights/activities, broken windows/locks, suspicious persons/vehicles, tire tracks.",
+            objective: "35.10 - Discuss the use of field inquiry",
+            module: "Community Policing"
+        },
+
         // Vehicle Traffic Stops - Basic Definitions
         {
             id: "vts001",
@@ -500,6 +647,188 @@ const tcoleStudyData = {
         }
     ], // Will be populated from existing data
     practiceQuestions: [
+        // Field Operations & Procedures Practice Questions
+        {
+            id: "foq001",
+            mainCategory: "field-operations",
+            category: "field-interviews",
+            difficulty: "basic",
+            type: "multiple-choice",
+            question: "What are the three classifications of police-citizen interactions?",
+            options: [
+                "Consensual encounters, Investigatory stops, Arrests",
+                "Traffic stops, Field interviews, Arrests", 
+                "Voluntary contacts, Detentions, Bookings",
+                "Casual contacts, Investigations, Prosecutions"
+            ],
+            correct: 0,
+            explanation: "The three classifications are: Consensual encounters (can refuse to cooperate), Investigatory stops/detentions (reasonable suspicion required), and Arrests (probable cause required).",
+            objective: "10.2 - Three classifications of interactions",
+            module: "Field Interviews"
+        },
+        {
+            id: "foq002",
+            mainCategory: "field-operations", 
+            category: "decision-making",
+            difficulty: "basic",
+            type: "multiple-choice",
+            question: "What is Step 1 of the Critical Decision-Making Model?",
+            options: [
+                "Collect information",
+                "Assess threats and risks",
+                "Consider police powers",
+                "Identify options"
+            ],
+            correct: 0,
+            explanation: "Step 1 is 'Collect information' - gathering facts from dispatch, witnesses, databases, and using training/experience to understand the situation.",
+            objective: "27.2 - Explain CDM steps",
+            module: "Decision Making"
+        },
+        {
+            id: "foq003",
+            mainCategory: "field-operations",
+            category: "constitutional-procedures",
+            difficulty: "intermediate", 
+            type: "scenario",
+            question: "Scenario: Officer observes subject looking into car windows in parking lot during school hours. Subject appears 14-16 years old. Subject tries car doors, then enters one vehicle and rummages inside. Claims it's his car but registration shows different owner. Do you have reasonable suspicion?",
+            options: [
+                "Yes - multiple articulable facts suggest possible vehicle burglary",
+                "No - just suspicious behavior without criminal evidence",
+                "Need more information before determining",
+                "Yes - but only because he's a juvenile during school hours"
+            ],
+            correct: 0,
+            explanation: "Multiple articulable facts: juvenile during school, trying multiple car doors, entering vehicle, conflicting ownership, suspicious behavior pattern - all point to possible auto burglary.",
+            objective: "Reasonable suspicion development",
+            module: "Constitutional Law"
+        },
+        {
+            id: "foq004",
+            mainCategory: "field-operations",
+            category: "exigent-circumstances",
+            difficulty: "intermediate",
+            type: "scenario", 
+            question: "Scenario: Officer dispatched to suicidal subject. Caller reports sister took pills and stopped talking. No answer at door but officer sees female on floor through window. What can officer do?",
+            options: [
+                "Enter to provide emergency aid - exigent circumstances exception",
+                "Must obtain warrant before entry",
+                "Can only enter if door is unlocked", 
+                "Must wait for EMS before taking action"
+            ],
+            correct: 0,
+            explanation: "Emergency aid exception allows entry to prevent serious injury/death. Officer has reasonable belief person needs immediate medical assistance.",
+            objective: "Emergency aid exigency",
+            module: "Constitutional Law"
+        },
+        {
+            id: "foq005",
+            mainCategory: "field-operations",
+            category: "field-interviews",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "What are the 4 Personal Contact Risk Zones officers should continuously monitor?",
+            options: [
+                "Face/Chest, Hands, Waistband, Stance",
+                "Head, Arms, Torso, Legs",
+                "Eyes, Mouth, Hands, Feet", 
+                "Expression, Posture, Movement, Clothing"
+            ],
+            correct: 0,
+            explanation: "The 4 risk zones are: Face & Chest (friend/foe, expressions), Hands (what they're doing/holding), Waistband (weapon location), and Stance (aggressive positioning).",
+            objective: "35.9 - Field interview safety techniques",
+            module: "Field Interviews"
+        },
+        {
+            id: "foq006",
+            mainCategory: "field-operations",
+            category: "decision-making",
+            difficulty: "basic",
+            type: "multiple-choice",
+            question: "What are the key principles that form the core of the Critical Decision-Making Model?",
+            options: [
+                "Police ethics, agency values, proportionality, sanctity of human life",
+                "Speed, efficiency, safety, compliance",
+                "Law, policy, training, experience",
+                "Assessment, planning, action, evaluation"
+            ],
+            correct: 0,
+            explanation: "The CDM core consists of police ethics, agency values, proportionality, and sanctity of human life - these guide all decision-making.",
+            objective: "27.1 - CDM key principles", 
+            module: "Decision Making"
+        },
+        {
+            id: "foq007",
+            mainCategory: "field-operations",
+            category: "community-policing",
+            difficulty: "basic",
+            type: "multiple-choice",
+            question: "Which of the following are community resources available for emergency assistance?",
+            options: [
+                "Salvation Army, shelters for battered spouses, rape crisis centers, United Way",
+                "Only police and fire departments",
+                "Just medical and fire services",
+                "Only government agencies"
+            ],
+            correct: 0,
+            explanation: "Community resources include Salvation Army, shelters, crisis centers, United Way, animal control, medical examiner, and many other organizations.",
+            objective: "35.31 - Community emergency resources",
+            module: "Community Policing"
+        },
+        {
+            id: "foq008",
+            mainCategory: "field-operations",
+            category: "constitutional-procedures",
+            difficulty: "advanced",
+            type: "scenario",
+            question: "Scenario: Officer Smith joins pursuit of armed robbery suspect that Officer Jones observed. Jones falls during pursuit. Smith continues chasing suspect into apartment. Can Smith legally enter the apartment?",
+            options: [
+                "Yes - hot pursuit of felony allows entry regardless of which officer observed initial crime",
+                "No - Smith didn't observe the original crime",
+                "Only if Smith gets warrant first",
+                "Only if other exigencies also present"
+            ],
+            correct: 0,
+            explanation: "Hot pursuit of felony offense is an established exigency. The pursuing officer doesn't need to be the same one who observed the initial crime.",
+            objective: "Hot pursuit exigency",
+            module: "Constitutional Law"
+        },
+        {
+            id: "foq009",
+            mainCategory: "field-operations",
+            category: "field-interviews",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "What is the recommended minimum distance for field interview positioning?",
+            options: [
+                "At least 3-3.5 feet (arm's length or more)",
+                "1-2 feet for better communication",
+                "6 feet minimum for safety",
+                "Distance doesn't matter if officer is alert"
+            ],
+            correct: 0,
+            explanation: "Field interview position should maintain at least 3-3.5 feet (arm's length) distance, gun side away, offset stance, with freedom of movement.",
+            objective: "35.9 - Field interview positioning",
+            module: "Field Interviews"
+        },
+        {
+            id: "foq010",
+            mainCategory: "field-operations",
+            category: "decision-making",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "What does the 'spinning model' concept of the CDM acknowledge?",
+            options: [
+                "Need for urgent or split-second decisions and ability to re-assess",
+                "Officers must follow steps in exact order",
+                "Decision-making is always linear",
+                "Only one decision per situation"
+            ],
+            correct: 0,
+            explanation: "The 'spinning model' acknowledges that officers may need to make urgent decisions and can 'spin' back to earlier steps or re-assess as situations change.",
+            objective: "27.2 - CDM flexibility",
+            module: "Decision Making"
+        },
+
         // Vehicle Traffic Stops Practice Questions
         {
             id: "vtsq001",
@@ -766,7 +1095,97 @@ const tcoleStudyData = {
             objective: "Curtilage search restrictions",
             module: "Module 2"
         },
-        // PENAL CODE FLASHCARDS - Comprehensive Coverage
+        // PENAL CODE PRACTICE QUESTIONS
+        {
+            id: "pcq001",
+            mainCategory: "penal-code",
+            category: "assault-offenses",
+            difficulty: "basic",
+            type: "multiple-choice",
+            question: "What mental states are required for causing bodily injury under PC 22.01 Assault?",
+            options: [
+                "Intentionally, knowingly, OR recklessly",
+                "Only intentionally or knowingly",
+                "Only recklessly",
+                "Any mental state including criminal negligence"
+            ],
+            correct: 0,
+            explanation: "For bodily injury assault, the actor must act intentionally, knowingly, OR recklessly. Threats and offensive contact require only intentionally or knowingly.",
+            objective: "Understand mental states for assault",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq002",
+            mainCategory: "penal-code",
+            category: "theft-offenses",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "What is the punishment for theft of property valued at $25,000?",
+            options: [
+                "State jail felony",
+                "Class A misdemeanor",
+                "Felony of the third degree",
+                "Class B misdemeanor"
+            ],
+            correct: 0,
+            explanation: "$25,000 falls in the $2,500 to under $30,000 range, making it a state jail felony.",
+            objective: "Apply theft punishment ranges",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq003",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "What is the punishment for killing an assistance animal under PC 42.091?",
+            options: [
+                "Felony of the third degree",
+                "State jail felony",
+                "Class A misdemeanor",
+                "Felony of the second degree"
+            ],
+            correct: 0,
+            explanation: "PC 42.091(c)(3) - killing an assistance animal is a felony of the third degree.",
+            objective: "Know assistance animal protection penalties",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq004",
+            mainCategory: "penal-code",
+            category: "animal-cruelty",
+            difficulty: "advanced",
+            type: "scenario",
+            question: "Scenario: John owns fighting cocks and sells steel gaffs to other cock owners, knowing they will use them in cockfights. What offense has John committed?",
+            options: [
+                "PC 42.105(b)(5) - Class A misdemeanor for selling cockfighting equipment",
+                "PC 42.105(b)(1) - State jail felony for causing cocks to fight",
+                "PC 42.105(b)(4) - Class A misdemeanor for training cocks",
+                "No offense - selling equipment is not prohibited"
+            ],
+            correct: 0,
+            explanation: "PC 42.105(b)(5) prohibits selling gaffs or other implements designed for cockfighting with intent they be used in cockfighting - Class A misdemeanor.",
+            objective: "Apply cockfighting equipment laws",
+            module: "Penal Code"
+        },
+        {
+            id: "pcq005",
+            mainCategory: "penal-code",
+            category: "property-crimes",
+            difficulty: "intermediate",
+            type: "multiple-choice",
+            question: "Purple paint marks for trespass notice must be placed how far apart?",
+            options: [
+                "100 feet apart on forest land; 1,000 feet apart on other land",
+                "1,000 feet apart on forest land; 100 feet apart on other land",
+                "500 feet apart on all land types",
+                "100 feet apart on all land types"
+            ],
+            correct: 0,
+            explanation: "PC 30.05(b)(2)(D) - purple paint marks must be no more than 100 feet apart on forest land or 1,000 feet apart on other land.",
+            objective: "Know trespass notice requirements",
+            module: "Penal Code"
+        },
         {
             id: "pc001",
             mainCategory: "penal-code",
@@ -1145,264 +1564,5 @@ if (typeof studyData !== 'undefined' && typeof tcoleStudyData !== 'undefined') {
     console.log('tcoleStudyData available:', typeof tcoleStudyData !== 'undefined');
 }
 
-// PENAL CODE PRACTICE QUESTIONS
-        {
-            id: "pcq001",
-            mainCategory: "penal-code",
-            category: "assault-offenses",
-            difficulty: "basic",
-            type: "multiple-choice",
-            question: "What mental states are required for causing bodily injury under PC 22.01 Assault?",
-            options: [
-                "Intentionally, knowingly, OR recklessly",
-                "Only intentionally or knowingly",
-                "Only recklessly",
-                "Any mental state including criminal negligence"
-            ],
-            correct: 0,
-            explanation: "For bodily injury assault, the actor must act intentionally, knowingly, OR recklessly. Threats and offensive contact require only intentionally or knowingly.",
-            objective: "Understand mental states for assault",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq002",
-            mainCategory: "penal-code",
-            category: "theft-offenses",
-            difficulty: "intermediate",
-            type: "multiple-choice",
-            question: "What is the punishment for theft of property valued at $25,000?",
-            options: [
-                "State jail felony",
-                "Class A misdemeanor",
-                "Felony of the third degree",
-                "Class B misdemeanor"
-            ],
-            correct: 0,
-            explanation: "$25,000 falls in the $2,500 to under $30,000 range, making it a state jail felony.",
-            objective: "Apply theft punishment ranges",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq003",
-            mainCategory: "penal-code",
-            category: "animal-cruelty",
-            difficulty: "intermediate",
-            type: "multiple-choice",
-            question: "What is the punishment for killing an assistance animal under PC 42.091?",
-            options: [
-                "Felony of the third degree",
-                "State jail felony",
-                "Class A misdemeanor",
-                "Felony of the 2nd degree"
-            ],
-            correct: 0,
-            explanation: "PC 42.091(c)(3) - killing an assistance animal is a felony of the third degree.",
-            objective: "Know assistance animal protection penalties",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq004",
-            mainCategory: "penal-code",
-            category: "animal-cruelty",
-            difficulty: "advanced",
-            type: "scenario",
-            question: "Scenario: John owns fighting cocks and sells steel gaffs to other cock owners, knowing they will use them in cockfights. What offense has John committed?",
-            options: [
-                "PC 42.105(b)(5) - Class A misdemeanor for selling cockfighting equipment",
-                "PC 42.105(b)(1) - State jail felony for causing cocks to fight",
-                "PC 42.105(b)(4) - Class A misdemeanor for training cocks",
-                "No offense - selling equipment is not prohibited"
-            ],
-            correct: 0,
-            explanation: "PC 42.105(b)(5) prohibits selling gaffs or other implements designed for cockfighting with intent they be used in cockfighting - Class A misdemeanor.",
-            objective: "Apply cockfighting equipment laws",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq005",
-            mainCategory: "penal-code",
-            category: "property-crimes",
-            difficulty: "intermediate",
-            type: "multiple-choice",
-            question: "Purple paint marks for trespass notice must be placed how far apart?",
-            options: [
-                "100 feet apart on forest land; 1,000 feet apart on other land",
-                "1,000 feet apart on forest land; 100 feet apart on other land",
-                "500 feet apart on all land types",
-                "100 feet apart on all land types"
-            ],
-            correct: 0,
-            explanation: "PC 30.05(b)(2)(D) - purple paint marks must be no more than 100 feet apart on forest land or 1,000 feet apart on other land.",
-            objective: "Know trespass notice requirements",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq006",
-            mainCategory: "penal-code",
-            category: "property-crimes",
-            difficulty: "advanced",
-            type: "scenario",
-            question: "Scenario: Officer arrests suspect for criminal trespass at a chemical plant. The plant is surrounded by a 10-foot fence with razor wire. What enhancement applies?",
-            options: [
-                "Class A misdemeanor - critical infrastructure facility",
-                "Class B misdemeanor - basic trespass",
-                "Felony of third degree - smuggling enhancement",
-                "Class C misdemeanor - industrial property"
-            ],
-            correct: 0,
-            explanation: "Chemical manufacturing facility completely enclosed by obvious barrier is critical infrastructure under PC 30.05(d)(3)(A)(iii), making it Class A misdemeanor.",
-            objective: "Identify critical infrastructure enhancements",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq007",
-            mainCategory: "penal-code",
-            category: "firearms-laws",
-            difficulty: "intermediate",
-            type: "true-false",
-            question: "True or False: A concealed handgun license holder who receives oral notice to leave property must immediately depart or face Class A charges.",
-            options: ["False", "True"],
-            correct: 0,
-            explanation: "False. PC 30.06(g) provides a defense if the license holder 'promptly departed' after receiving oral notice. The offense is only Class A if they failed to depart after personal notice.",
-            objective: "Understand concealed carry trespass defenses",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq008",
-            mainCategory: "penal-code",
-            category: "firearms-laws",
-            difficulty: "advanced",
-            type: "scenario",
-            question: "Scenario: Licensed security guard openly carries handgun into apartment complex that has posted 30.07 signs. He is going to his apartment where he lives. Legal?",
-            options: [
-                "Legal - tenant defense under PC 30.07(e-2)",
-                "Illegal - no exceptions for posted properties",
-                "Legal - security guard exception",
-                "Illegal - open carry always prohibited on rental property"
-            ],
-            correct: 0,
-            explanation: "PC 30.07(e-2) provides defense for tenants carrying handguns in their rental unit, en route to/from unit, or in designated parking areas.",
-            objective: "Apply rental property firearm defenses",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq009",
-            mainCategory: "penal-code",
-            category: "animal-cruelty",
-            difficulty: "intermediate",
-            type: "multiple-choice",
-            question: "Under PC 42.10, attending a dog fight as a spectator is what level of offense?",
-            options: [
-                "Class A misdemeanor",
-                "State jail felony",
-                "Class B misdemeanor",
-                "Class C misdemeanor"
-            ],
-            correct: 0,
-            explanation: "PC 42.10(e) - attending as spectator under (a)(6) is a Class A misdemeanor. Only causing fights, earnings participation, or property use are state jail felonies.",
-            objective: "Distinguish dog fighting offense levels",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq010",
-            mainCategory: "penal-code",
-            category: "property-crimes",
-            difficulty: "advanced",
-            type: "scenario",
-            question: "Scenario: Utility worker enters private property to repair gas line during emergency. Property owner demands they leave and calls police. What applies?",
-            options: [
-                "Defense under PC 30.05(e)(2) - gas utility employee performing duties",
-                "Criminal trespass - no exceptions for utilities",
-                "Defense only if written consent obtained",
-                "Trespass unless exigent circumstances proven"
-            ],
-            correct: 0,
-            explanation: "PC 30.05(e)(2) provides defense for gas utility employees performing duties within scope of employment or agency.",
-            objective: "Apply utility worker defenses",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq011",
-            mainCategory: "penal-code",
-            category: "assault-offenses",
-            difficulty: "advanced",
-            type: "scenario",
-            question: "Scenario: During bar fight, defendant strikes victim with beer bottle causing deep lacerations requiring 15 stitches. What is the most appropriate charge?",
-            options: [
-                "Aggravated Assault - used deadly weapon (bottle)",
-                "Simple Assault - only caused bodily injury",
-                "Aggravated Assault - caused serious bodily injury",
-                "Cannot determine without intent analysis"
-            ],
-            correct: 0,
-            explanation: "Beer bottle used as weapon during assault constitutes 'uses or exhibits a deadly weapon' under PC 22.02(a)(2), making it Aggravated Assault regardless of injury severity.",
-            objective: "Apply deadly weapon enhancements",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq012",
-            mainCategory: "penal-code",
-            category: "property-crimes",
-            difficulty: "intermediate",
-            type: "multiple-choice",
-            question: "What is the punishment for trespass in a habitation under PC 30.05?",
-            options: [
-                "Class A misdemeanor",
-                "Class B misdemeanor", 
-                "State jail felony",
-                "Felony of the third degree"
-            ],
-            correct: 0,
-            explanation: "PC 30.05(d)(3)(A)(i) - trespass in a habitation is a Class A misdemeanor.",
-            objective: "Know habitation trespass penalties",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq013",
-            mainCategory: "penal-code",
-            category: "animal-cruelty",
-            difficulty: "advanced",
-            type: "multiple-choice",
-            question: "Under PC 21.09 Bestiality, what makes the offense a 2nd degree felony?",
-            options: [
-                "Committed in presence of child under 18 OR results in serious bodily injury/death to animal",
-                "Only if it results in death of the animal",
-                "Only if committed in presence of a child",
-                "If actor has prior conviction for similar offense"
-            ],
-            correct: 0,
-            explanation: "PC 21.09(b) - offense becomes 2nd degree felony if committed under (a)(9) in presence of child under 18 OR if it results in serious bodily injury or death of animal.",
-            objective: "Know bestiality enhancement factors",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq014",
-            mainCategory: "penal-code",
-            category: "firearms-laws",
-            difficulty: "intermediate",
-            type: "true-false",
-            question: "True or False: Carrying an openly carried handgun in a holster is a defense to PC 30.07 prosecution.",
-            options: ["False", "True"],
-            correct: 0,
-            explanation: "False. PC 30.07(f) specifically states 'It is NOT a defense to prosecution under this section that the handgun was carried in a holster.'",
-            objective: "Know open carry holster rule",
-            module: "Penal Code"
-        },
-        {
-            id: "pcq015",
-            mainCategory: "penal-code",
-            category: "property-crimes",
-            difficulty: "advanced",
-            type: "scenario",
-            question: "Scenario: College student continues protesting on campus after being told to leave. They argue First Amendment protection. What penalty enhancement issue arises?",
-            options: [
-                "Defendant can raise First Amendment defense to prevent Class A enhancement",
-                "No First Amendment protections apply to trespass",
-                "First Amendment only applies to public property",
-                "Enhancement applies regardless of speech content"
-            ],
-            correct: 0,
-            explanation: "PC 30.05(d-2) allows defendant to raise First Amendment issue at punishment stage. If proven by preponderance, the Class A enhancement for higher education doesn't apply.",
-            objective: "Understand constitutional protections in trespass",
-            module: "Penal Code"
-        }
+// End of enhanced-data-structure.js
+// All practice questions have been integrated into the main tcoleStudyData structure above

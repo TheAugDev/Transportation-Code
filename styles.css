@@ -1,3 +1,15 @@
+/* CSS Variables for Theme Colors */
+:root {
+    --primary-color: #2a5298;
+    --secondary-color: #6c757d;
+    --secondary-hover: #5a6268;
+    --accent-color: #17a2b8;
+    --accent-hover: #138496;
+    --success-color: #28a745;
+    --success-hover: #218838;
+    --text-color: #333;
+}
+
 /* Reset and Base Styles - Mobile First */
 * {
     margin: 0;
@@ -3053,5 +3065,182 @@ body::-webkit-scrollbar-thumb:hover {
     .warning-message,
     .error-message {
         padding: 1.5rem;
+    }
+}
+
+/* Browse by Course - Topics View */
+.topics-header {
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: var(--secondary-hover);
+    transform: translateX(-2px);
+}
+
+.course-header {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.course-header i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.course-header h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.8rem;
+}
+
+.course-header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.topic-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.topic-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-color: var(--primary-color);
+}
+
+.topic-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.topic-header i {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+    color: var(--primary-color);
+    width: 32px;
+    text-align: center;
+}
+
+.topic-header h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.topic-card p {
+    color: #6c757d;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.topic-stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.topic-stats span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.topic-stats i {
+    font-size: 0.8rem;
+}
+
+.topic-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.study-btn, .test-btn {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.study-btn {
+    background: var(--success-color);
+    color: white;
+}
+
+.study-btn:hover {
+    background: var(--success-hover);
+    transform: translateY(-1px);
+}
+
+.test-btn {
+    background: var(--accent-color);
+    color: white;
+}
+
+.test-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+}
+
+/* Mobile responsiveness for topics view */
+@media (max-width: 768px) {
+    .topics-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .topic-card {
+        padding: 1rem;
+    }
+    
+    .course-header {
+        padding: 1rem;
+    }
+    
+    .course-header i {
+        font-size: 2rem;
+    }
+    
+    .course-header h3 {
+        font-size: 1.4rem;
     }
 }

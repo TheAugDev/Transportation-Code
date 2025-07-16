@@ -3370,6 +3370,368 @@ const studyData = {
             answer: "Offense levels by weight/volume: <5 lbs/5 gallons = Class C. >5 lbs but <500 lbs OR >5 gallons but <100 cubic feet = Class B. ≥500 lbs but <1000 lbs OR ≥100 but <200 cubic feet = Class A. ≥1000 lbs OR ≥200 cubic feet = State Jail Felony. Discarding lighted material causing fire = Class B. Prior conviction increases to next level.",
             objective: "22.5",
             module: "7"
+        },
+        
+        // Field Operations & Procedures Flashcards
+        {
+            id: 3001,
+            category: "community-policing",
+            difficulty: "basic",
+            question: "Name 5 community resources that can assist law enforcement during emergencies.",
+            answer: "1) Ambulance/EMS for injured, 2) Fire Department, 3) Salvation Army, 4) Shelters for Battered Spouses/Children, 5) Rape Crisis Centers, 6) United Way, 7) Animal Control Officials, 8) City Services, 9) Medical Examiner & Justice of the Peace.",
+            objective: "35.31 - Identify community resources for emergency assistance",
+            module: "Field Operations"
+        },
+        {
+            id: 3002, 
+            category: "field-interviews",
+            difficulty: "basic",
+            question: "What are the three classifications of interactions between peace officers and persons?",
+            answer: "1) Consensual Encounters - officers can approach/ask questions, persons can refuse to cooperate/walk away; 2) Investigatory Stops/Detentions - temporary seizure based on reasonable suspicion; 3) Arrests - taking into custody based on probable cause.",
+            objective: "10.2 - Discuss three classifications of police-citizen interactions",
+            module: "Field Operations"
+        },
+        {
+            id: 3003,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What are the 4 Personal Contact Risk Zones officers should continuously scan?",
+            answer: "1) Face & Chest - friend/foe determination, facial expressions, intoxication signs; 2) Hands - what they're holding, in pockets, showing anxiety/anger; 3) Waistband - common weapon location, bulges, keeping hands away; 4) Stance - bobbing, rocking, bladed position, pacing.",
+            objective: "35.9 - Demonstrate field interview techniques and officer safety",
+            module: "Field Operations"
+        },
+        {
+            id: 3004,
+            category: "constitutional-procedures", 
+            difficulty: "intermediate",
+            question: "What is the difference between 'reasonable suspicion' and 'probable cause'?",
+            answer: "Reasonable Suspicion - specific articulable facts that would lead a reasonable officer to believe criminal activity may be afoot (Terry stop level). Probable Cause - facts and circumstances that would lead a reasonable person to believe a crime has been/is being committed (arrest level).",
+            objective: "10.5 - Discuss reasonable suspicion vs probable cause",
+            module: "Field Operations"
+        },
+        {
+            id: 3005,
+            category: "decision-making",
+            difficulty: "basic", 
+            question: "What are the 5 steps of the Critical Decision-Making Model (CDM)?",
+            answer: "Step 1: Collect information; Step 2: Assess situation, threats, and risks; Step 3: Consider police powers and agency policy; Step 4: Identify options and determine best course of action; Step 5: Act, review, and re-assess.",
+            objective: "27.2 - Explain the five steps of the CDM",
+            module: "Field Operations"
+        },
+        {
+            id: 3006,
+            category: "decision-making",
+            difficulty: "intermediate",
+            question: "What are the key principles (core) of the Critical Decision-Making Model?",
+            answer: "Police ethics, agency values, proportionality, and sanctity of human life. These form the moral compass that guides all decision-making - no CDM step should contradict these core principles.",
+            objective: "27.1 - Describe key principles of the CDM",
+            module: "Field Operations"
+        },
+        {
+            id: 3007,
+            category: "exigent-circumstances",
+            difficulty: "intermediate",
+            question: "What are the 5 accepted exigencies that justify 4th Amendment exceptions?",
+            answer: "1) Prevent serious injury and provide emergency aid; 2) Prevent imminent destruction/loss of evidence; 3) Hot/fresh pursuit of felony offense; 4) Imminent or immediate escape; 5) Hot pursuit of non-felony with reasonableness and/or another exigency.",
+            objective: "Review legal exigencies for 4th Amendment exceptions",
+            module: "Field Operations"
+        },
+        {
+            id: 3008,
+            category: "field-interviews",
+            difficulty: "advanced",
+            question: "What is the recommended field interview position and distance for officer safety?",
+            answer: "Gun side away from suspect, nothing in gun hand, offset stance, maintain at least 3-3.5 feet distance (arm's length or more), continually scan risk zones, position to allow movement and avoid being boxed in.",
+            objective: "35.9 - Demonstrate proper field interview positioning",
+            module: "Field Operations"
+        },
+        {
+            id: 3009,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What approach methods can be used for pedestrian stops and what are their advantages/disadvantages?",
+            answer: "Right Side (preferred - most people right-handed); Direct/Front (observe all movements but lose surprise); Rear (surprise but may provoke defense); Side (suspect off balance but can't see all movement). Two-officer V-formation for multiple subjects.",
+            objective: "35.8 - Demonstrate proper pedestrian stop approaches",
+            module: "Field Operations"
+        },
+        {
+            id: 3010,
+            category: "community-policing",
+            difficulty: "basic",
+            question: "Why do officers conduct field inquiries and what can they learn?",
+            answer: "Learn About People: reaction to contact/questioning, develop citizen relationships, personal contact, learn socio-economic makeup. Learn About Places: building characteristics, unusual lights/activities, broken windows/locks, suspicious persons/vehicles, tire tracks.",
+            objective: "35.10 - Discuss the use of field inquiry",
+            module: "Field Operations"
+        },
+        {
+            id: 3011,
+            category: "decision-making",
+            difficulty: "intermediate",
+            question: "What are the key questions to ask in Step 2 of the CDM (Assess Situation, Threats, and Risks)?",
+            answer: "1) What is/are the threat or risk(s) and at what level? 2) Do I need immediate action? 3) Am I trained and equipped to handle this? 4) What is the source of the subject's malice/aggression? 5) Need supervisor, SWAT, negotiator?",
+            objective: "27.2 - CDM Step 2 assessment",
+            module: "Field Operations"
+        },
+        {
+            id: 3012,
+            category: "decision-making",
+            difficulty: "intermediate",
+            question: "What should officers consider when developing a working strategy during CDM Step 2?",
+            answer: "Assess threat level by: 1) Means (what weapons), 2) Ability (mental/emotional functioning), 3) Opportunity (can you reduce/avoid), 4) Intent (offensive vs defensive actions). Minimize risk to victim, public, scene, subject & officers.",
+            objective: "27.2 - CDM threat assessment strategy",
+            module: "Field Operations"
+        },
+        {
+            id: 3013,
+            category: "decision-making",
+            difficulty: "advanced",
+            question: "What are the key questions for Step 3 of the CDM (Consider Police Authority & Policy)?",
+            answer: "1) Under what legal authority am I here? 2) Is this even a matter for police? 3) What legal powers do I have to take action? 4) What agency policies control my response? 5) Are there others I should notify to respond?",
+            objective: "27.2 - CDM Step 3 authority consideration",
+            module: "Field Operations"
+        },
+        {
+            id: 3014,
+            category: "decision-making",
+            difficulty: "advanced",
+            question: "What factors should guide option selection in CDM Step 4?",
+            answer: "1) Which options fit core principles? 2) How proportional is response for totality? 3) Greatest likelihood of success vs least harm. 4) If time allows, use it effectively. 5) What are backup plans/contingencies? 'Why use sledgehammer to crack a nut?'",
+            objective: "27.2 - CDM Step 4 option selection",
+            module: "Field Operations"
+        },
+        {
+            id: 3015,
+            category: "decision-making",
+            difficulty: "basic",
+            question: "What characterizes the CDM as a 'spinning model'?",
+            answer: "CDM is circular & continuous process. 'Model Spinning' UP or BACK may occur at any point as things change quickly. Officers can spin back to collect more info or forward to take action based on situation development.",
+            objective: "27.2 - CDM spinning model concept",
+            module: "Field Operations"
+        },
+        {
+            id: 3016,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What specific facial signs indicate intoxication during field interviews?",
+            answer: "Eyes: red, droopy, glassy, dilated or constricted pupils. Look for paraphernalia around subject. Also check for anxious/disinterest signs: dropping head, checking texts/time, looking away, rolling eyes, avoiding eye contact.",
+            objective: "35.9 - Field interview observation techniques",
+            module: "Field Operations"
+        },
+        {
+            id: 3017,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What facial signs indicate anger or danger during field interviews?",
+            answer: "Anger: 1000-yard stare/glare, profanity use. Danger: breaks stare to look for targets (body/weapons), facial color pales, head drops forward (protect throat), eyebrows drop (protect eyes), growling/screaming, lips tighten over teeth.",
+            objective: "35.9 - Threat recognition during field interviews",
+            module: "Field Operations"
+        },
+        {
+            id: 3018,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What hand behaviors indicate anxiety, disinterest, or aggression?",
+            answer: "Anxiety/Disinterest: crossing arms, tapping fingers/keys, rubbing neck/ears/eyes, grooming behaviors, facial wipe. Anger/Aggression: fist making, flailing hands, hands raised above waist. Always watch if hands go to pockets or out of sight.",
+            objective: "35.9 - Hand behavior recognition",
+            module: "Field Operations"
+        },
+        {
+            id: 3019,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What stance behaviors indicate potential threats during field contacts?",
+            answer: "Bobbing up & down, rocking back & forth, bladed shoulders (shifted & tense), standing tall to maximize height, kicking ground, pacing/backing/walking away, start & stop behavior, becoming very still, exaggerated movements, lowering body before attack.",
+            objective: "35.9 - Stance threat indicators",
+            module: "Field Operations"
+        },
+        {
+            id: 3020,
+            category: "field-interviews",
+            difficulty: "advanced",
+            question: "What are the specific procedures for one officer with multiple persons during field interviews?",
+            answer: "Assume FI position for observation & control. Interview separately and away from each other. Get backup before ANY non-emergency actions. Move as needed to prevent being closed in or surrounded. Maintain overall observation.",
+            objective: "35.9 - Multiple person field interview procedures",
+            module: "Field Operations"
+        },
+        {
+            id: 3021,
+            category: "field-interviews",
+            difficulty: "advanced",
+            question: "What are the specific procedures for two officers conducting field interviews?",
+            answer: "Use V-formation approach, plan contact & communicate. One officer in charge assumes FI position & gathers info. Cover officer takes tactical L position (right or left rear) to avoid crossfire. Cover maintains maximum visibility, avoids lengthy conversations.",
+            objective: "35.9 - Two-officer field interview procedures",
+            module: "Field Operations"
+        },
+        {
+            id: 3022,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What are the cover officer's duties during field interviews?",
+            answer: "Cover is NOT the contact officer's servant. Keep position of maximum visibility of ALL involved. Avoid lengthy conversations that detract from cover duty. Communicate or handle any threat observations to primary officer.",
+            objective: "35.9 - Cover officer responsibilities",
+            module: "Field Operations"
+        },
+        {
+            id: 3023,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "When should officers NOT pursue a fleeing suspect?",
+            answer: "NO if alone with multiple subjects (broadcast description & direction). NO if pursuit leaves partner in unsafe situation. Otherwise YES if safe & within departmental policy. Consider officer safety first.",
+            objective: "35.9 - Pursuit decision making",
+            module: "Field Operations"
+        },
+        {
+            id: 3024,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What are the key radio procedures during foot pursuit?",
+            answer: "Radio in loud, calm, controlled voice: call sign, foot pursuit, direction and location. Follow with suspect description. If can't catch, keep in sight & radio updates. Watch for ambushes, don't cut corners without 'pie-ing' them.",
+            objective: "35.9 - Foot pursuit procedures",
+            module: "Field Operations"
+        },
+        {
+            id: 3025,
+            category: "constitutional-procedures",
+            difficulty: "intermediate",
+            question: "What key court cases establish the three classifications of police-citizen interactions?",
+            answer: "Consensual Encounters: Florida v. Royer, 460 U.S. 491 (1983). Investigatory Stops: Terry v. Ohio, 392 U.S. 1 (1968). Arrests: U.S. v. Mendenhall, 446 U.S. 544 (1980).",
+            objective: "10.2 - Legal foundations for police interactions",
+            module: "Field Operations"
+        },
+        {
+            id: 3026,
+            category: "constitutional-procedures",
+            difficulty: "intermediate",
+            question: "Can anonymous tips provide reasonable suspicion for investigatory stops?",
+            answer: "Yes - An anonymous tip providing descriptive and predictive information, if sufficiently corroborated by additional police investigation, can provide reasonable suspicion. (Alabama v. White case law)",
+            objective: "Constitutional law - anonymous tips",
+            module: "Field Operations"
+        },
+        {
+            id: 3027,
+            category: "constitutional-procedures",
+            difficulty: "advanced",
+            question: "What factors must be considered when building reasonable suspicion?",
+            answer: "Articulable facts + suspect's actions + appearance + training/experience. Consider: area type, time of day, suspect description, anonymous vs known caller info, hearsay factors, and reasonable list of potential offenses.",
+            objective: "Constitutional law - reasonable suspicion elements",
+            module: "Field Operations"
+        },
+        {
+            id: 3028,
+            category: "constitutional-procedures",
+            difficulty: "advanced",
+            question: "What did the Supreme Court say about probable cause in Illinois v. Gates?",
+            answer: "'Probable cause is a practical, non-technical conception dealing with probabilities. These are factual and practical considerations of everyday life on which reasonable and prudent officers, not legal technicians, act.' Courts examine totality of circumstances.",
+            objective: "Constitutional law - Illinois v. Gates probable cause standard",
+            module: "Field Operations"
+        },
+        {
+            id: 3029,
+            category: "field-interviews",
+            difficulty: "basic",
+            question: "What should officers observe when pedestrians are acting suspiciously?",
+            answer: "Carrying something suspicious, acting strangely, stopping other people on street, staying in same place for extended time. Until reasonable suspicion develops, it remains a consensual stop where person can walk away.",
+            objective: "35.8 - Pedestrian stop indicators",
+            module: "Field Operations"
+        },
+        {
+            id: 3030,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What location factors should be considered when performing pedestrian stops?",
+            answer: "Note escape routes, gauge officer safety, assess number of people who could be hurt if incident occurs, choose place with least potential hostages, always report location to dispatcher for backup awareness.",
+            objective: "35.8 - Pedestrian stop location selection",
+            module: "Field Operations"
+        },
+        {
+            id: 3031,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What are the proper verbal and approach techniques for pedestrian stops?",
+            answer: "Use effective verbal communications, maintain visual contact with suspicious person, approach on right side (most people right-handed), watch for furtive movements or fleeing attempts, establish early eye contact, be aware of surroundings.",
+            objective: "35.8 - Pedestrian stop approach techniques",
+            module: "Field Operations"
+        },
+        {
+            id: 3032,
+            category: "field-interviews",
+            difficulty: "advanced",
+            question: "How should officers handle hands that have been in pockets too long during field interviews?",
+            answer: "Check the pocket before they remove hands. Always frisk from behind with proper tactics. Consider having suspect kneel before frisking, or prone position if very high risk situation develops.",
+            objective: "35.9 - Field interview safety procedures for concealed hands",
+            module: "Field Operations"
+        },
+        {
+            id: 3033,
+            category: "decision-making",
+            difficulty: "basic",
+            question: "What sources should officers use for information collection in CDM Step 1?",
+            answer: "1) Dispatch, 2) Supervisors/other officers, 3) Computer networks/databases, 4) Family/friends of subjects, 5) Witnesses/neighbors. Consider assumptions, bias, and actions while clarifying information.",
+            objective: "27.2 - CDM Step 1 information sources",
+            module: "Field Operations"
+        },
+        {
+            id: 3034,
+            category: "decision-making",
+            difficulty: "intermediate",
+            question: "What specific information should officers gather about subjects, victims, and locations in CDM Step 1?",
+            answer: "Who called & why (proper context)? Weapons, children, animals on scene? History: previous calls, mental health issues, drug use, violence, arrests? Location dynamics: security/containment issues? Training/experience applications?",
+            objective: "27.2 - CDM Step 1 specific information gathering",
+            module: "Field Operations"
+        },
+        {
+            id: 3035,
+            category: "decision-making",
+            difficulty: "intermediate",
+            question: "What legal analysis should occur during CDM Step 1?",
+            answer: "Do the 'legal math' in your head while collecting info. Do the facts equal reasonable suspicion, probable cause, or nothing at all? This helps determine what level of police action is legally justified.",
+            objective: "27.2 - CDM Step 1 legal analysis",
+            module: "Field Operations"
+        },
+        {
+            id: 3036,
+            category: "decision-making",
+            difficulty: "advanced",
+            question: "What emotional and tactical considerations are important in CDM Step 2?",
+            answer: "Keep complacency & emotions in check, model desired behavior. Avoid malice transfer onto you or others. Identify anything that could make situation worse or better. Determine if you need supervisor, SWAT, negotiator, etc.",
+            objective: "27.2 - CDM Step 2 emotional and tactical awareness",
+            module: "Field Operations"
+        },
+        {
+            id: 3037,
+            category: "exigent-circumstances",
+            difficulty: "advanced",
+            question: "In a robbery scenario where Officer Smith continues pursuit after Officer Jones falls, can Smith legally enter apartment?",
+            answer: "Yes - hot pursuit of felony offense creates exigent circumstances. Officer Smith can legally continue chase and enter apartment even though he didn't personally observe initial offense, based on communication from Officer Jones.",
+            objective: "Exigent circumstances - hot pursuit continuation",
+            module: "Field Operations"
+        },
+        {
+            id: 3038,
+            category: "exigent-circumstances",
+            difficulty: "intermediate",
+            question: "Officers hear yelling inside apartment, knock but get no answer and silence. What can they do?",
+            answer: "Depends on totality of circumstances. If yelling suggested violence/emergency, may have exigent circumstances for entry. However, silence after knocking may indicate resolved situation. Need additional indicators of ongoing emergency.",
+            objective: "Exigent circumstances - disturbance response",
+            module: "Field Operations"
+        },
+        {
+            id: 3039,
+            category: "exigent-circumstances",
+            difficulty: "intermediate",
+            question: "Officers see drug cooking through window, suspect sees officers and runs to back. What can officers do?",
+            answer: "Plain view doctrine allows observation of criminal activity. Suspect fleeing to back may create exigent circumstances for evidence destruction. Officers may have authority to prevent destruction of evidence through entry.",
+            objective: "Exigent circumstances - evidence preservation",
+            module: "Field Operations"
+        },
+        {
+            id: 3040,
+            category: "constitutional-procedures",
+            difficulty: "advanced",
+            question: "Can officers stop and question Hispanic elderly couples at train stations based on DEA intel about drug couriers?",
+            answer: "No - This would constitute racial profiling and is unconstitutional. Cannot use race/ethnicity alone or as primary factor for stops. Need specific, articulable, individualized suspicion beyond demographic characteristics.",
+            objective: "Constitutional law - racial profiling prohibition",
+            module: "Field Operations"
         }
     ],
 
@@ -6148,6 +6510,88 @@ const studyData = {
             explanation: "Per HSC 365.012, offense level based on weight or volume: <5 lbs/5 gal = Class C, 5-500 lbs or 5-100 cubic feet = Class B, 500-1000 lbs or 100-200 cubic feet = Class A, ≥1000 lbs or ≥200 cubic feet = State Jail Felony.",
             objective: "22.5",
             module: "7"
+        },
+        
+        // Field Operations & Procedures Practice Questions
+        {
+            id: 755,
+            category: "field-interviews",
+            difficulty: "basic",
+            question: "What are the three classifications of police-citizen interactions?",
+            options: [
+                "Consensual encounters, Investigatory stops, Arrests",
+                "Traffic stops, Field interviews, Arrests", 
+                "Voluntary contacts, Detentions, Bookings",
+                "Casual contacts, Investigations, Prosecutions"
+            ],
+            correct: 0,
+            explanation: "The three classifications are: Consensual encounters (can refuse to cooperate), Investigatory stops/detentions (reasonable suspicion required), and Arrests (probable cause required).",
+            objective: "10.2 - Three classifications of interactions",
+            module: "Field Operations"
+        },
+        {
+            id: 756,
+            category: "decision-making",
+            difficulty: "basic",
+            question: "What is Step 1 of the Critical Decision-Making Model?",
+            options: [
+                "Collect information",
+                "Assess threats and risks",
+                "Consider police powers",
+                "Identify options"
+            ],
+            correct: 0,
+            explanation: "Step 1 is 'Collect information' - gathering facts from dispatch, witnesses, databases, and using training/experience to understand the situation.",
+            objective: "27.2 - Explain CDM steps",
+            module: "Field Operations"
+        },
+        {
+            id: 757,
+            category: "constitutional-procedures",
+            difficulty: "intermediate",
+            question: "Officer observes subject looking into car windows during school hours, appears juvenile, tries car doors, enters vehicle. Registration shows different owner. Do you have reasonable suspicion?",
+            options: [
+                "Yes - multiple articulable facts suggest possible vehicle burglary",
+                "No - just suspicious behavior without criminal evidence",
+                "Need more information before determining",
+                "Yes - but only because he's a juvenile during school hours"
+            ],
+            correct: 0,
+            explanation: "Multiple articulable facts: juvenile during school, trying multiple car doors, entering vehicle, conflicting ownership, suspicious behavior pattern - all point to possible auto burglary.",
+            objective: "Reasonable suspicion development",
+            module: "Field Operations"
+        },
+        {
+            id: 758,
+            category: "exigent-circumstances",
+            difficulty: "intermediate",
+            question: "Officer dispatched to suicidal subject who took pills. No answer at door but officer sees female on floor through window. What can officer do?",
+            options: [
+                "Enter to provide emergency aid - exigent circumstances exception",
+                "Must obtain warrant before entry",
+                "Can only enter if door is unlocked", 
+                "Must wait for EMS before taking action"
+            ],
+            correct: 0,
+            explanation: "Emergency aid exception allows entry to prevent serious injury/death. Officer has reasonable belief person needs immediate medical assistance.",
+            objective: "Emergency aid exigency",
+            module: "Field Operations"
+        },
+        {
+            id: 759,
+            category: "field-interviews",
+            difficulty: "intermediate",
+            question: "What are the 4 Personal Contact Risk Zones officers should continuously monitor?",
+            options: [
+                "Face/Chest, Hands, Waistband, Stance",
+                "Head, Arms, Torso, Legs",
+                "Eyes, Mouth, Hands, Feet", 
+                "Expression, Posture, Movement, Clothing"
+            ],
+            correct: 0,
+            explanation: "The 4 risk zones are: Face & Chest (friend/foe, expressions), Hands (what they're doing/holding), Waistband (weapon location), and Stance (aggressive positioning).",
+            objective: "35.9 - Field interview safety techniques",
+            module: "Field Operations"
         }
     ],
 
@@ -6346,6 +6790,37 @@ const studyData = {
             description: "TRC 601 - Motor vehicle insurance and financial responsibility requirements",
             icon: "fas fa-shield-alt",
             color: "#007bff"
+        },
+        // Field Operations & Procedures Categories
+        "community-policing": {
+            name: "Community Policing",
+            description: "Community resources, partnerships, and public relations",
+            icon: "fas fa-handshake",
+            color: "#28a745"
+        },
+        "field-interviews": {
+            name: "Field Interviews & Pedestrian Stops",
+            description: "Pedestrian contact procedures, field interview techniques, and safety tactics",
+            icon: "fas fa-walking",
+            color: "#17a2b8"
+        },
+        "constitutional-procedures": {
+            name: "Constitutional Procedures",
+            description: "4th Amendment, reasonable suspicion, probable cause, and police interactions",
+            icon: "fas fa-balance-scale",
+            color: "#dc3545"
+        },
+        "decision-making": {
+            name: "Critical Decision-Making Model",
+            description: "CDM principles, de-escalation strategies, and tactical decision making",
+            icon: "fas fa-brain",
+            color: "#6f42c1"
+        },
+        "exigent-circumstances": {
+            name: "Exigent Circumstances",
+            description: "Emergency doctrine, 4th Amendment exceptions, and urgent situations",
+            icon: "fas fa-exclamation-triangle",
+            color: "#ffc107"
         },
         "size-weight": {
             name: "Size and Weight",

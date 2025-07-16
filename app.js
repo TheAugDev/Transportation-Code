@@ -44,6 +44,13 @@ class TransportationCodeApp {
     init() {
         console.log('🔧 Running init method...');
         
+        // Debug: Check flashcard count immediately
+        console.log('📊 DEBUG: Initial flashcard count check:');
+        console.log('- studyData available:', typeof studyData !== 'undefined');
+        console.log('- studyData.flashcards length:', studyData?.flashcards?.length || 'undefined');
+        console.log('- penalCodeData available:', typeof penalCodeData !== 'undefined');
+        console.log('- tcoleStudyData available:', typeof tcoleStudyData !== 'undefined');
+        
         // Validate that studyData is available
         if (typeof studyData === 'undefined' || !studyData.flashcards || !studyData.practiceQuestions) {
             console.error('Study data not loaded properly');
@@ -126,13 +133,11 @@ class TransportationCodeApp {
         document.getElementById('mainCategorySelect').addEventListener('change', () => this.updateSubCategories());
         document.getElementById('categorySelect').addEventListener('change', () => this.applyFilters());
         document.getElementById('difficultySelect').addEventListener('change', () => this.applyFilters());
-
-        // Practice test controls
-        document.getElementById('startTestBtn').addEventListener('click', () => this.startPracticeTest());
-        document.getElementById('nextQuestion').addEventListener('click', () => this.nextTestQuestion());
-        document.getElementById('prevQuestion').addEventListener('click', () => this.previousTestQuestion());
-        document.getElementById('flagQuestion').addEventListener('click', () => this.flagQuestion());
-        document.getElementById('retakeTestBtn').addEventListener('click', () => this.retakeTest());
+        document.getElementById('testMainCategory').addEventListener('change', () => this.populatePracticeTestCategories());
+        document.getElementById('testCategory').addEventListener('change', () => this.applyTestFilters());
+        
+        // Browse by course functionality
+        this.setupBrowseByCourseEvents();
 
         // Search functionality
         document.getElementById('searchBtn').addEventListener('click', () => this.performSearch());
@@ -142,6 +147,13 @@ class TransportationCodeApp {
 
         // Statistics functionality
         document.getElementById('loadSampleDataBtn').addEventListener('click', () => this.addSampleStatistics());
+
+        // Practice Test functionality - MISSING EVENT LISTENERS ADDED
+        document.getElementById('startTestBtn').addEventListener('click', () => this.startPracticeTest());
+        document.getElementById('nextQuestion').addEventListener('click', () => this.nextTestQuestion());
+        document.getElementById('prevQuestion').addEventListener('click', () => this.previousTestQuestion());
+        document.getElementById('flagQuestion').addEventListener('click', () => this.flagQuestion());
+        document.getElementById('retakeTestBtn').addEventListener('click', () => this.retakeTest());
 
         // Category cards
         document.querySelectorAll('.category-card').forEach(card => {
@@ -247,7 +259,13 @@ class TransportationCodeApp {
     }
 
     loadFlashcards() {
+        console.log('📇 Loading flashcards...');
+        console.log('📊 studyData.flashcards length before copy:', studyData?.flashcards?.length || 'undefined');
+        
         this.filteredFlashcards = [...studyData.flashcards];
+        
+        console.log('📊 filteredFlashcards length after copy:', this.filteredFlashcards.length);
+        
         this.studySession.startTime = Date.now();
         
         // Initialize category filters
@@ -255,9 +273,17 @@ class TransportationCodeApp {
     }
 
     applyFilters() {
-        const mainCategory = document.getElementById('mainCategorySelect').value;
-        const category = document.getElementById('categorySelect').value;
-        const difficulty = document.getElementById('difficultySelect').value;
+        const mainCategory = document.getElementById('mainCategorySelect')?.value || 'all';
+        const category = document.getElementById('categorySelect')?.value || 'all';
+        const difficulty = document.getElementById('difficultySelect')?.value || 'all';
+
+        if (!studyData || !studyData.flashcards) {
+            console.warn('StudyData not available for filtering');
+            this.filteredFlashcards = [];
+            this.updateFlashcardDisplay();
+            this.updateFilterStatus();
+            return;
+        }
 
         this.filteredFlashcards = studyData.flashcards.filter(card => {
             // Check main category match
@@ -274,7 +300,9 @@ class TransportationCodeApp {
 
     updateFilterStatus() {
         const statusElement = document.getElementById('filterStatus');
-        const total = studyData.flashcards.length;
+        if (!statusElement) return;
+
+        const total = studyData && studyData.flashcards ? studyData.flashcards.length : 0;
         const filtered = this.filteredFlashcards.length;
         
         if (filtered === total) {
@@ -307,24 +335,47 @@ class TransportationCodeApp {
         this.applyFilters();
     }
 
+    populatePracticeTestCategories() {
+        const mainCategory = document.getElementById('testMainCategory').value;
+        const categorySelect = document.getElementById('testCategory');
+        
+        // Clear existing options
+        categorySelect.innerHTML = '<option value="all">All Focus Areas</option>';
+        
+        if (mainCategory === 'all') {
+            // Show all categories from all main categories
+            this.populateAllPracticeTestCategories(categorySelect);
+        } else {
+            // Show only categories from selected main category
+            this.populatePracticeTestSubCategoriesForMain(categorySelect, mainCategory);
+        }
+    }
+
     populateAllCategories(selectElement) {
         // Add all categories from studyData
         const allCategories = new Set();
-        studyData.flashcards.forEach(card => {
-            if (card.category && !allCategories.has(card.category)) {
-                allCategories.add(card.category);
-                const categoryName = studyData.categories[card.category]?.name || this.formatCategoryName(card.category);
-                const option = document.createElement('option');
-                option.value = card.category;
-                option.textContent = categoryName;
-                selectElement.appendChild(option);
-            }
-        });
+        if (studyData && studyData.flashcards) {
+            studyData.flashcards.forEach(card => {
+                if (card.category && !allCategories.has(card.category)) {
+                    allCategories.add(card.category);
+                    const categoryName = studyData.categories && studyData.categories[card.category] 
+                        ? studyData.categories[card.category].name 
+                        : this.formatCategoryName(card.category);
+                    const option = document.createElement('option');
+                    option.value = card.category;
+                    option.textContent = categoryName;
+                    selectElement.appendChild(option);
+                }
+            });
+        }
     }
 
     populateSubCategoriesForMain(selectElement, mainCategory) {
         // Use enhanced data structure if available
-        if (typeof tcoleStudyData !== 'undefined' && tcoleStudyData.mainCategories[mainCategory]) {
+        if (typeof tcoleStudyData !== 'undefined' && 
+            tcoleStudyData.mainCategories && 
+            tcoleStudyData.mainCategories[mainCategory] &&
+            tcoleStudyData.mainCategories[mainCategory].subCategories) {
             const subCategories = tcoleStudyData.mainCategories[mainCategory].subCategories;
             Object.keys(subCategories).forEach(key => {
                 const subCategory = subCategories[key];
@@ -334,29 +385,252 @@ class TransportationCodeApp {
                 selectElement.appendChild(option);
             });
         } else {
-            // Fallback to existing categories that match the main category
-            this.populateAllCategories(selectElement);
+            // Filter categories to only show those that belong to the selected main category
+            const categoriesForMainCategory = new Set();
+            studyData.flashcards.forEach(card => {
+                if (card.category && this.getMainCategoryForCard(card) === mainCategory) {
+                    categoriesForMainCategory.add(card.category);
+                }
+            });
+            
+            // Add only the filtered categories
+            categoriesForMainCategory.forEach(categoryKey => {
+                const categoryName = studyData.categories[categoryKey]?.name || this.formatCategoryName(categoryKey);
+                const option = document.createElement('option');
+                option.value = categoryKey;
+                option.textContent = categoryName;
+                selectElement.appendChild(option);
+            });
+        }
+    }
+
+    populateAllPracticeTestCategories(selectElement) {
+        // Add all categories from practice test data
+        const allCategories = new Set();
+        if (studyData && studyData.practiceQuestions) {
+            studyData.practiceQuestions.forEach(question => {
+                if (question.category && !allCategories.has(question.category)) {
+                    allCategories.add(question.category);
+                    const categoryName = studyData.categories && studyData.categories[question.category]
+                        ? studyData.categories[question.category].name
+                        : this.formatCategoryName(question.category);
+                    const option = document.createElement('option');
+                    option.value = question.category;
+                    option.textContent = categoryName;
+                    selectElement.appendChild(option);
+                }
+            });
+        }
+    }
+
+    populatePracticeTestSubCategoriesForMain(selectElement, mainCategory) {
+        // Filter categories to only show those that belong to the selected main category
+        const categoriesForMainCategory = new Set();
+        if (studyData && studyData.practiceQuestions) {
+            studyData.practiceQuestions.forEach(question => {
+                if (question.category && this.getMainCategoryForQuestion(question) === mainCategory) {
+                    categoriesForMainCategory.add(question.category);
+                }
+            });
+        }
+        
+        // Add only the filtered categories
+        categoriesForMainCategory.forEach(categoryKey => {
+            const categoryName = studyData.categories && studyData.categories[categoryKey]
+                ? studyData.categories[categoryKey].name
+                : this.formatCategoryName(categoryKey);
+            const option = document.createElement('option');
+            option.value = categoryKey;
+            option.textContent = categoryName;
+            selectElement.appendChild(option);
+        });
+    }
+
+    applyTestFilters() {
+        // This method can be used to apply additional filtering logic for practice tests
+        // For now, it doesn't need to do anything specific since the test setup
+        // already handles filtering when starting a test, but we need this method
+        // to exist so the event listener doesn't throw an error
+        console.log('Test filters applied - categories updated');
+        
+        // Optionally, you could add logic here to update UI indicators
+        // showing how many questions are available with current filters
+        const testMainCategory = document.getElementById('testMainCategory')?.value || 'all';
+        const testCategory = document.getElementById('testCategory')?.value || 'all';
+        
+        // Count available questions based on current filters
+        let availableQuestions = studyData?.practiceQuestions || [];
+        
+        if (testMainCategory !== 'all') {
+            availableQuestions = availableQuestions.filter(q => 
+                this.getMainCategoryForQuestion(q) === testMainCategory
+            );
+        }
+        
+        if (testCategory !== 'all') {
+            availableQuestions = availableQuestions.filter(q => 
+                q.category === testCategory
+            );
+        }
+        
+        // Update UI to show available question count
+        const testLengthSelect = document.getElementById('testLength');
+        if (testLengthSelect && availableQuestions.length > 0) {
+            // Update max value of test length based on available questions
+            const maxQuestions = Math.min(50, availableQuestions.length);
+            const currentValue = parseInt(testLengthSelect.value);
+            
+            // Clear existing options
+            testLengthSelect.innerHTML = '';
+            
+            // Add new options up to available questions
+            const lengths = [5, 10, 15, 20, 25, 30, 40, 50].filter(len => len <= maxQuestions);
+            lengths.forEach(length => {
+                const option = document.createElement('option');
+                option.value = length;
+                option.textContent = `${length} Questions`;
+                testLengthSelect.appendChild(option);
+            });
+            
+            // Restore previous value if still valid, otherwise select the closest
+            if (currentValue <= maxQuestions) {
+                testLengthSelect.value = currentValue;
+            } else {
+                testLengthSelect.value = lengths[lengths.length - 1];
+            }
+        }
+        
+        // Update status indicator if it exists
+        const statusElement = document.getElementById('testFilterStatus');
+        if (statusElement) {
+            statusElement.textContent = `${availableQuestions.length} questions available`;
         }
     }
 
     getMainCategoryForCard(card) {
         // Map card categories to main categories
         const categoryMapping = {
+            // Penal Code categories
             'penal-code': 'penal-code',
             'assault-offenses': 'penal-code',
             'theft-offenses': 'penal-code',
+            'animal-cruelty': 'penal-code',
+            'property-crimes': 'penal-code',
+            'firearms-laws': 'penal-code',
+            'criminal-types': 'penal-code',
             'drug-offenses': 'penal-code',
             'dwi-offenses': 'penal-code',
+            // Criminal Procedure categories
             'search-seizure': 'criminal-procedure',
             'arrest-procedures': 'criminal-procedure',
             'evidence-rules': 'criminal-procedure',
             'vehicle-traffic-stops': 'criminal-procedure',
+            // Field Operations categories
+            'community-policing': 'field-operations',
+            'field-interviews': 'field-operations',
+            'constitutional-procedures': 'field-operations',
+            'decision-making': 'field-operations',
+            'exigent-circumstances': 'field-operations',
+            // General Topics categories
             'report-writing': 'general-topics',
             'patrol-procedures': 'general-topics',
             'ethics-professionalism': 'general-topics'
         };
         
         return categoryMapping[card.category] || 'transportation-code';
+    }
+
+    getMainCategoryForQuestion(question) {
+        // Map question categories to main categories (same mapping as cards)
+        const categoryMapping = {
+            // Penal Code categories
+            'penal-code': 'penal-code',
+            'assault-offenses': 'penal-code',
+            'theft-offenses': 'penal-code',
+            'animal-cruelty': 'penal-code',
+            'property-crimes': 'penal-code',
+            'firearms-laws': 'penal-code',
+            'criminal-types': 'penal-code',
+            'drug-offenses': 'penal-code',
+            'dwi-offenses': 'penal-code',
+            'public-order': 'penal-code',
+            'weapons-laws': 'penal-code',
+            'family-violence': 'penal-code',
+            'fraud-offenses': 'penal-code',
+            'juvenile-law': 'penal-code',
+            'public-intoxication': 'penal-code',
+            'disorderly-conduct': 'penal-code',
+            'gambling': 'penal-code',
+            'harassment': 'penal-code',
+            'obstruction': 'penal-code',
+            'perjury': 'penal-code',
+            'prostitution': 'penal-code',
+            'robbery': 'penal-code',
+            'sexual-offenses': 'penal-code',
+            'terroristic-threat': 'penal-code',
+            'trespass': 'penal-code',
+            
+            // Criminal Procedure categories
+            'arrest-procedures': 'criminal-procedure',
+            'search-seizure': 'criminal-procedure',
+            'miranda-rights': 'criminal-procedure',
+            'evidence-handling': 'criminal-procedure',
+            'court-procedures': 'criminal-procedure',
+            'warrants': 'criminal-procedure',
+            'interrogation': 'criminal-procedure',
+            'chain-of-custody': 'criminal-procedure',
+            'booking-procedures': 'criminal-procedure',
+            'constitutional-law': 'criminal-procedure',
+            'due-process': 'criminal-procedure',
+            'identification-procedures': 'criminal-procedure',
+            'crime-scene': 'criminal-procedure',
+            'witness-interviews': 'criminal-procedure',
+            'vehicle-traffic-stops': 'criminal-procedure',
+            
+            // Field Operations categories
+            'community-policing': 'field-operations',
+            'field-interviews': 'field-operations',
+            'constitutional-procedures': 'field-operations',
+            'decision-making': 'field-operations',
+            'exigent-circumstances': 'field-operations',
+            
+            // Vehicle/Traffic Stops categories
+            'traffic-enforcement': 'vehicle-traffic-stops',
+            'vehicle-codes': 'vehicle-traffic-stops',
+            'traffic-stops': 'vehicle-traffic-stops',
+            'vehicle-searches': 'vehicle-traffic-stops',
+            'dwi-detection': 'vehicle-traffic-stops',
+            'citation-procedures': 'vehicle-traffic-stops',
+            'vehicle-impound': 'vehicle-traffic-stops',
+            'license-violations': 'vehicle-traffic-stops',
+            'commercial-vehicles': 'vehicle-traffic-stops',
+            'accident-investigation': 'vehicle-traffic-stops',
+            'pursuit-policies': 'vehicle-traffic-stops',
+            'vehicle-registration': 'vehicle-traffic-stops',
+            'roadside-safety': 'vehicle-traffic-stops',
+            
+            // General Topics categories
+            'report-writing': 'general-topics',
+            'community-policing': 'general-topics',
+            'ethics': 'general-topics',
+            'use-of-force': 'general-topics',
+            'emergency-response': 'general-topics',
+            'radio-communications': 'general-topics',
+            'patrol-procedures': 'general-topics',
+            'officer-safety': 'general-topics',
+            'cultural-diversity': 'general-topics',
+            'mental-health': 'general-topics',
+            'domestic-violence': 'general-topics',
+            'crisis-intervention': 'general-topics',
+            'firearms-training': 'general-topics',
+            'physical-fitness': 'general-topics',
+            'legal-updates': 'general-topics',
+            'technology': 'general-topics',
+            'leadership': 'general-topics',
+            'stress-management': 'general-topics'
+        };
+        
+        return categoryMapping[question.category] || 'general-topics';
     }
 
     formatCategoryName(categoryKey) {
@@ -380,7 +654,9 @@ class TransportationCodeApp {
         }
 
         const card = this.filteredFlashcards[this.currentFlashcard];
-        const category = studyData.categories[card.category];
+        const category = studyData.categories && studyData.categories[card.category] 
+            ? studyData.categories[card.category] 
+            : { name: this.formatCategoryName(card.category) };
 
         // Update card content
         document.getElementById('questionText').textContent = card.question;
@@ -488,13 +764,24 @@ class TransportationCodeApp {
     // Practice Test Methods
     startPracticeTest() {
         const testLength = parseInt(document.getElementById('testLength').value);
+        const testMainCategory = document.getElementById('testMainCategory').value;
         const testCategory = document.getElementById('testCategory').value;
         const testMode = document.getElementById('testMode').value;
 
-        // Filter questions based on category
-        let availableQuestions = testCategory === 'all' 
-            ? [...studyData.practiceQuestions]
-            : studyData.practiceQuestions.filter(q => q.category === testCategory);
+        // Filter questions based on main category and specific category
+        let availableQuestions = [...studyData.practiceQuestions];
+        
+        // Filter by main category first
+        if (testMainCategory !== 'all') {
+            availableQuestions = availableQuestions.filter(q => {
+                return this.getMainCategoryForCard(q) === testMainCategory;
+            });
+        }
+        
+        // Then filter by specific category
+        if (testCategory !== 'all') {
+            availableQuestions = availableQuestions.filter(q => q.category === testCategory);
+        }
 
         // Shuffle and select questions
         this.practiceTest.questions = this.shuffleArray(availableQuestions).slice(0, testLength);
@@ -1133,215 +1420,169 @@ class TransportationCodeApp {
     }
 
     retakeTest() {
-        // Clear any existing timer
-        if (this.testTimer) {
-            clearInterval(this.testTimer);
-            this.testTimer = null;
-        }
-        
         document.getElementById('testResults').style.display = 'none';
         document.getElementById('testSetup').style.display = 'block';
+        
+        // Reset test state
+        this.practiceTest = {
+            questions: [],
+            currentQuestion: 0,
+            answers: {},
+            startTime: null,
+            flagged: new Set()
+        };
     }
 
     startTestTimer() {
-        const startTime = this.practiceTest.startTime;
+        // Clear any existing timer
+        if (this.testTimer) {
+            clearInterval(this.testTimer);
+        }
         
+        // Start new timer
         this.testTimer = setInterval(() => {
-            const elapsed = Math.floor((new Date() - startTime) / 1000);
-            document.getElementById('timeDisplay').textContent = this.formatTime(elapsed);
+            const elapsed = Math.floor((new Date() - this.practiceTest.startTime) / 1000);
+            document.getElementById('testTimer').textContent = this.formatTime(elapsed);
         }, 1000);
     }
 
+    // Statistics Methods
+    updateStatistics() {
+        // Initialize statistics object if needed
+        if (!this.statistics) {
+            this.statistics = {};
+        }
+
+        // Update basic statistics
+        this.statistics.totalFlashcards = studyData.flashcards ? studyData.flashcards.length : 0;
+        this.statistics.totalPracticeQuestions = studyData.practiceQuestions ? studyData.practiceQuestions.length : 0;
+        this.statistics.lastUpdated = new Date().toISOString();
+
+        // Initialize counters if they don't exist
+        if (!this.statistics.cardsStudied) this.statistics.cardsStudied = 0;
+        if (!this.statistics.testsCompleted) this.statistics.testsCompleted = 0;
+        if (!this.statistics.totalStudyTime) this.statistics.totalStudyTime = 0;
+
+        // Save to localStorage
+        this.saveToLocalStorage('transportationStats', this.statistics);
+    }
+
+    saveTestStatistics() {
+        if (!this.practiceTest.results) return;
+        
+        const testResult = {
+            date: new Date().toISOString(),
+            score: this.practiceTest.results.correct,
+            total: this.practiceTest.results.total,
+            percentage: this.practiceTest.results.percentage,
+            timeTaken: this.practiceTest.results.timeTaken,
+            categories: this.analyzeCategoryPerformance(this.practiceTest.results.details)
+        };
+        
+        if (!this.statistics.testResults) {
+            this.statistics.testResults = [];
+        }
+        
+        this.statistics.testResults.push(testResult);
+        this.statistics.testsCompleted = (this.statistics.testsCompleted || 0) + 1;
+        this.statistics.lastTestDate = testResult.date;
+        
+        // Calculate average score
+        const scores = this.statistics.testResults.map(r => r.percentage);
+        this.statistics.averageScore = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+        
+        this.saveToLocalStorage('transportationStats', this.statistics);
+        this.updateStatistics();
+    }
+    
     formatTime(seconds) {
         const minutes = Math.floor(seconds / 60);
         const remainingSeconds = seconds % 60;
-        return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+        return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
     }
 
-    // Search Methods
-    performSearch() {
-        const query = document.getElementById('searchInput').value.toLowerCase().trim();
-        const category = document.getElementById('searchCategory').value;
+    formatTimeLong(seconds) {
+        const hours = Math.floor(seconds / 3600);
+        const minutes = Math.floor((seconds % 3600) / 60);
+        const secs = seconds % 60;
         
-        if (!query) {
-            this.showBrowseCategories();
-            return;
+        if (hours > 0) {
+            return `${hours}h ${minutes}m ${secs}s`;
+        } else if (minutes > 0) {
+            return `${minutes}m ${secs}s`;
+        } else {
+            return `${secs}s`;
         }
-
-        const results = this.searchContent(query, category);
-        this.displaySearchResults(results, query);
     }
 
-    searchContent(query, category) {
-        let results = [];
-
-        // Search flashcards
-        studyData.flashcards.forEach(card => {
-            if (category !== 'all' && card.category !== category) return;
-            
-            const searchText = `${card.question} ${card.answer}`.toLowerCase();
-            if (searchText.includes(query)) {
-                results.push({
-                    type: 'flashcard',
-                    title: card.question,
-                    content: card.answer,
-                    category: card.category,
-                    relevance: this.calculateRelevance(searchText, query)
-                });
-            }
-        });
-
-        // Search practice questions
-        studyData.practiceQuestions.forEach(question => {
-            if (category !== 'all' && question.category !== category) return;
-            
-            const searchText = `${question.question} ${question.options.join(' ')} ${question.explanation || ''}`.toLowerCase();
-            if (searchText.includes(query)) {
-                results.push({
-                    type: 'question',
-                    title: question.question,
-                    content: question.explanation || 'Practice question',
-                    category: question.category,
-                    relevance: this.calculateRelevance(searchText, query)
-                });
-            }
-        });
-
-        // Sort by relevance
-        return results.sort((a, b) => b.relevance - a.relevance);
-    }
-
-    calculateRelevance(text, query) {
-        const queryWords = query.split(' ');
-        let score = 0;
-        
-        queryWords.forEach(word => {
-            const occurrences = (text.match(new RegExp(word, 'g')) || []).length;
-            score += occurrences;
-        });
-        
-        return score;
-    }
-
-    displaySearchResults(results, query) {
-        const container = document.getElementById('searchResults');
-        
-        if (results.length === 0) {
-            container.innerHTML = `
-                <div class="no-results">
-                    <i class="fas fa-search"></i>
-                    <h3>No results found for "${query}"</h3>
-                    <p>Try adjusting your search terms or browse categories below.</p>
-                </div>
-            `;
-            this.showBrowseCategories();
-            return;
+    saveToLocalStorage(key, data) {
+        try {
+            localStorage.setItem(key, JSON.stringify(data));
+        } catch (e) {
+            console.warn(`Failed to save ${key} to localStorage:`, e);
         }
-
-        container.innerHTML = `
-            <div class="search-results-header">
-                <h3>Search Results for "${query}" (${results.length} found)</h3>
-            </div>
-            <div class="results-list">
-                ${results.map(result => this.createResultItem(result)).join('')}
-            </div>
-        `;
     }
 
-    createResultItem(result) {
-        const category = studyData.categories[result.category];
-        return `
-            <div class="result-item">
-                <div class="result-type">${result.type.toUpperCase()}</div>
-                <div class="result-category" style="color: ${category.color}">
-                    <i class="${category.icon}"></i> ${category.name}
-                </div>
-                <h4>${result.title}</h4>
-                <p>${result.content}</p>
-            </div>
-        `;
+    loadFromLocalStorage(key, defaultValue = null) {
+        try {
+            const data = localStorage.getItem(key);
+            return data ? JSON.parse(data) : defaultValue;
+        } catch (e) {
+            console.warn(`Failed to load ${key} from localStorage:`, e);
+            return defaultValue;
+        }
     }
 
-    showBrowseCategories() {
-        document.getElementById('searchResults').innerHTML = `
-            <div class="browse-categories">
-                <h3>Browse by Category</h3>
-                <div class="category-grid">
-                    ${Object.entries(studyData.categories).map(([key, category]) => `
-                        <div class="category-card" data-category="${key}">
-                            <i class="${category.icon}" style="color: ${category.color}"></i>
-                            <h4>${category.name}</h4>
-                            <p>${category.description}</p>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        `;
-
-        // Re-attach event listeners to category cards
-        document.querySelectorAll('.category-card').forEach(card => {
-            card.addEventListener('click', (e) => this.browseCategory(e.currentTarget.dataset.category));
-        });
+    // Performance testing for development
+    performanceTest() {
+        console.log('🚀 Running performance test...');
+        const startTime = performance.now();
+        
+        // Test data loading
+        console.log(`📊 Total flashcards: ${studyData?.flashcards?.length || 0}`);
+        console.log(`📊 Total practice questions: ${studyData?.practiceQuestions?.length || 0}`);
+        
+        // Test filtering
+        const filterStart = performance.now();
+        this.applyFilters();
+        const filterTime = performance.now() - filterStart;
+        console.log(`⚡ Filter operation took: ${filterTime.toFixed(2)}ms`);
+        
+        const totalTime = performance.now() - startTime;
+        console.log(`✅ Performance test completed in: ${totalTime.toFixed(2)}ms`);
     }
 
-    browseCategory(categoryKey) {
-        // Filter flashcards by category
-        const categoryFlashcards = studyData.flashcards.filter(card => card.category === categoryKey);
-        const category = studyData.categories[categoryKey];
-
-        const container = document.getElementById('searchResults');
-        container.innerHTML = `
-            <div class="category-browse">
-                <div class="category-header">
-                    <i class="${category.icon}" style="color: ${category.color}"></i>
-                    <h3>${category.name}</h3>
-                    <p>${category.description}</p>
-                </div>
-                <div class="category-content">
-                    <h4>${categoryFlashcards.length} Study Items Available</h4>
-                    <div class="content-list">
-                        ${categoryFlashcards.map(card => `
-                            <div class="content-item">
-                                <h5>${card.question}</h5>
-                                <p class="difficulty">${card.difficulty.charAt(0).toUpperCase() + card.difficulty.slice(1)} Level</p>
-                                <p class="objective">Learning Objective: ${card.objective}</p>
-                            </div>
-                        `).join('')}
-                    </div>
-                    <button class="primary-btn study-category-btn" onclick="app.studyCategory('${categoryKey}')">
-                        <i class="fas fa-play"></i> Study This Category
-                    </button>
-                </div>
-            </div>
-        `;
+    retakeTest() {
+        document.getElementById('testResults').style.display = 'none';
+        document.getElementById('testSetup').style.display = 'block';
+        
+        // Reset test state
+        this.practiceTest = {
+            questions: [],
+            currentQuestion: 0,
+            answers: {},
+            startTime: null,
+            flagged: new Set()
+        };
     }
 
-    studyCategory(categoryKey) {
-        // Switch to flashcards tab and filter by category
-        this.showTab('flashcards');
-        const categorySelect = document.getElementById('categorySelect');
-        if (categorySelect) {
-            categorySelect.value = categoryKey;
-            this.applyFilters();
+    startTestTimer() {
+        // Clear any existing timer
+        if (this.testTimer) {
+            clearInterval(this.testTimer);
         }
         
-        // Show notification
-        this.showNotification('Switched to flashcards for focused study of this topic!', 'info');
-    }
-
-    filterResults(filter) {
-        const resultItems = document.querySelectorAll('.result-item');
-        resultItems.forEach(item => {
-            if (filter === 'all') {
-                item.style.display = 'block';
-            } else {
-                item.style.display = item.dataset.filter === filter ? 'block' : 'none';
-            }
-        });
+        // Start new timer
+        this.testTimer = setInterval(() => {
+            const elapsed = Math.floor((new Date() - this.practiceTest.startTime) / 1000);
+            document.getElementById('testTimer').textContent = this.formatTime(elapsed);
+        }, 1000);
     }
 
     studyTopic(categoryKey) {
-        this.showTab('flashcards');
+        // Switch to flashcards and filter by category
+        this.switchTab('flashcards');
+        
         const categorySelect = document.getElementById('categorySelect');
         if (categorySelect) {
             categorySelect.value = categoryKey;
@@ -1350,159 +1591,158 @@ class TransportationCodeApp {
     }
 
     handleViewportChange() {
-        // Update responsive state
         this.isSmallScreen = window.innerWidth <= 768;
         
-        // Refresh charts if statistics tab is active and viewport changed significantly
+        // Adjust charts if statistics tab is active
         if (this.currentTab === 'statistics') {
             setTimeout(() => this.updateCharts(), 100);
         }
     }
 
-    // Statistics Methods
-    updateStatistics() {
-        // Update statistics display
-        if (document.getElementById('totalCardsStudied')) {
-            document.getElementById('totalCardsStudied').textContent = this.statistics.cardsStudied || 0;
-        }
-        if (document.getElementById('testsTaken')) {
-            document.getElementById('testsTaken').textContent = this.statistics.testsTaken || 0;
-        }
-        if (document.getElementById('averageScore')) {
-            document.getElementById('averageScore').textContent = this.statistics.averageScore ? `${this.statistics.averageScore}%` : '0%';
-        }
-        if (document.getElementById('totalStudyTime')) {
-            const totalMinutes = this.statistics.totalStudyTime || 0;
-            const hours = Math.floor(totalMinutes / 60);
-            const minutes = totalMinutes % 60;
-            document.getElementById('totalStudyTime').textContent = `${hours}h ${minutes}m`;
-        }
-    }
-
-    updateCharts() {
-        if (this.currentTab !== 'statistics') return;
-        
-        console.log('📊 Creating charts for statistics display...');
-        
-        // Check if canvases exist and are visible
-        const progressCanvas = document.getElementById('progressChart');
-        const categoryCanvas = document.getElementById('categoryChart');
-        
-        if (!progressCanvas || !categoryCanvas) {
-            console.warn('Chart canvases not found');
+    handleKeyboardShortcuts(e) {
+        // Only handle shortcuts when not typing in inputs
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
             return;
         }
 
-        // Create sample data for charts
-        this.createProgressChart();
-        this.createCategoryChart();
-    }
-
-    createProgressChart() {
-        const canvas = document.getElementById('progressChart');
-        if (!canvas) return;
-
-        const ctx = canvas.getContext('2d');
-        
-        // Destroy existing chart if it exists
-        if (this.progressChart) {
-            this.progressChart.destroy();
-        }
-
-        this.progressChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
-                datasets: [{
-                    label: 'Cards Studied',
-                    data: [12, 19, 25, 32],
-                    borderColor: '#2a5298',
-                    backgroundColor: 'rgba(42, 82, 152, 0.1)',
-                    tension: 0.3
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
+        switch (e.key) {
+            case 'ArrowLeft':
+                e.preventDefault();
+                if (this.currentTab === 'flashcards') {
+                    this.previousCard();
+                } else if (this.currentTab === 'practice-tests') {
+                    this.previousTestQuestion();
                 }
-            }
-        });
-    }
-
-    createCategoryChart() {
-        const canvas = document.getElementById('categoryChart');
-        if (!canvas) return;
-
-        const ctx = canvas.getContext('2d');
-        
-        // Destroy existing chart if it exists
-        if (this.categoryChart) {
-            this.categoryChart.destroy();
+                break;
+            case 'ArrowRight':
+                e.preventDefault();
+                if (this.currentTab === 'flashcards') {
+                    this.nextCard();
+                } else if (this.currentTab === 'practice-tests') {
+                    this.nextTestQuestion();
+                }
+                break;
+            case ' ':
+                e.preventDefault();
+                if (this.currentTab === 'flashcards') {
+                    this.flipCard();
+                }
+                break;
+            case '1':
+                if (this.currentTab === 'flashcards') {
+                    e.preventDefault();
+                    this.markDifficulty('easy');
+                }
+                break;
+            case '2':
+                if (this.currentTab === 'flashcards') {
+                    e.preventDefault();
+                    this.markDifficulty('medium');
+                }
+                break;
+            case '3':
+                if (this.currentTab === 'flashcards') {
+                    e.preventDefault();
+                    this.markDifficulty('hard');
+                }
+                break;
         }
-
-        this.categoryChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Traffic Laws', 'Parking', 'Speed Limits', 'Equipment'],
-                datasets: [{
-                    data: [30, 25, 25, 20],
-                    backgroundColor: [
-                        '#2a5298',
-                        '#007bff',
-                        '#17a2b8',
-                        '#28a745'
-                    ]
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false
-            }
-        });
     }
 
-    // Notes Methods
-    renderNotes() {
-        const notesList = document.getElementById('notesList');
-        if (!notesList) return;
+    setupBrowseByCourseEvents() {
+        // Browse by Course button
+        const browseByCourseBtn = document.getElementById('browseByCourseBtn');
+        if (browseByCourseBtn) {
+            browseByCourseBtn.addEventListener('click', () => this.showBrowseByCourse());
+        }
+        // Course selection handlers
+        document.querySelectorAll('.course-option').forEach(option => {
+            option.addEventListener('click', (e) => {
+                const course = e.currentTarget.dataset.course;
+                this.selectCourse(course);
+            });
+        });
+        // Back to browse button
+        const backToBrowseBtn = document.getElementById('backToBrowseBtn');
+        if (backToBrowseBtn) {
+            backToBrowseBtn.addEventListener('click', () => this.showBrowseByCourse());
+        }
+    }
 
-        if (this.notes.length === 0) {
-            notesList.innerHTML = `
-                <div class="notes-placeholder">
-                    <i class="fas fa-sticky-note"></i>
-                    <p>No notes yet. Add your first note to get started!</p>
-                </div>
-            `;
+    showBrowseByCourse() {
+        // Switch to flashcards tab and show browse interface
+        this.switchTab('flashcards');
+        const browseInterface = document.getElementById('browseInterface');
+        const flashcardInterface = document.getElementById('flashcardInterface');
+        if (browseInterface && flashcardInterface) {
+            browseInterface.style.display = 'block';
+            flashcardInterface.style.display = 'none';
+        }
+    }
+
+    selectCourse(course) {
+        // Set the main category filter
+        const mainCategorySelect = document.getElementById('mainCategorySelect');
+        if (mainCategorySelect) {
+            mainCategorySelect.value = course;
+            this.updateSubCategories();
+        }
+        // Show flashcard interface
+        const browseInterface = document.getElementById('browseInterface');
+        const flashcardInterface = document.getElementById('flashcardInterface');
+        if (browseInterface && flashcardInterface) {
+            browseInterface.style.display = 'none';
+            flashcardInterface.style.display = 'block';
+        }
+        // Apply filters
+        this.applyFilters();
+    }
+
+    browseCategory(category) {
+        // Legacy method for category cards
+        this.switchTab('flashcards');
+        const categorySelect = document.getElementById('categorySelect');
+        if (categorySelect) {
+            categorySelect.value = category;
+            this.applyFilters();
+        }
+    }
+
+    // Search functionality
+    performSearch() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+        if (!searchTerm) {
+            // Reset to show all cards if search is empty
+            this.filteredFlashcards = [...studyData.flashcards];
+            this.currentFlashcard = 0;
+            this.updateFlashcardDisplay();
+            this.updateFilterStatus();
             return;
         }
 
-        notesList.innerHTML = this.notes.map(note => `
-            <div class="note-item">
-                <div class="note-header">
-                    <h4>${note.title}</h4>
-                    <div class="note-actions">
-                        <button onclick="app.editNote('${note.id}')">Edit</button>
-                        <button onclick="app.deleteNote('${note.id}')">Delete</button>
-                    </div>
-                </div>
-                <div class="note-content">${note.content}</div>
-                <div class="note-meta">
-                    <span class="note-category">${note.category}</span>
-                    <span class="note-date">${new Date(note.date).toLocaleDateString()}</span>
-                </div>
-            </div>
-        `).join('');
+        // Filter flashcards based on search term
+        this.filteredFlashcards = studyData.flashcards.filter(card => {
+            return card.question.toLowerCase().includes(searchTerm) ||
+                   card.answer.toLowerCase().includes(searchTerm) ||
+                   (studyData.categories[card.category]?.name || '').toLowerCase().includes(searchTerm);
+        });
+
+        this.currentFlashcard = 0;
+        this.updateFlashcardDisplay();
+        this.updateFilterStatus();
+        
+        // Visual feedback
+        const searchBtn = document.getElementById('searchBtn');
+        searchBtn.style.transform = 'scale(0.95)';
+        setTimeout(() => searchBtn.style.transform = '', 150);
     }
 
+    // Notes functionality
     showNoteModal() {
         document.getElementById('noteModal').style.display = 'flex';
         document.getElementById('noteTitle').value = '';
         document.getElementById('noteContent').value = '';
-        document.getElementById('noteCategory').value = '';
+        document.getElementById('noteTitle').focus();
     }
 
     hideNoteModal() {
@@ -1510,21 +1750,20 @@ class TransportationCodeApp {
     }
 
     saveNote() {
-        const title = document.getElementById('noteTitle').value;
-        const content = document.getElementById('noteContent').value;
-        const category = document.getElementById('noteCategory').value;
-
+        const title = document.getElementById('noteTitle').value.trim();
+        const content = document.getElementById('noteContent').value.trim();
+        
         if (!title || !content) {
-            alert('Please fill in both title and content');
+            alert('Please enter both title and content for the note.');
             return;
         }
 
         const note = {
-            id: Date.now().toString(),
-            title,
-            content,
-            category,
-            date: new Date().toISOString()
+            id: Date.now(),
+            title: title,
+            content: content,
+            date: new Date().toISOString(),
+            category: document.getElementById('categorySelect').value || 'general'
         };
 
         this.notes.push(note);
@@ -1533,377 +1772,194 @@ class TransportationCodeApp {
         this.hideNoteModal();
     }
 
+    renderNotes() {
+        const container = document.getElementById('notesList');
+        if (!container) return;
+
+        if (this.notes.length === 0) {
+            container.innerHTML = `
+                <div class="empty-state">
+                    <i class="fas fa-sticky-note"></i>
+                    <p>No notes yet. Create your first note to get started!</p>
+                </div>
+            `;
+            return;
+        }
+
+        container.innerHTML = this.notes.map(note => `
+            <div class="note-card" data-id="${note.id}">
+                <div class="note-header">
+                    <h3>${note.title}</h3>
+                    <div class="note-actions">
+                        <button onclick="app.editNote(${note.id})" class="edit-btn">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button onclick="app.deleteNote(${note.id})" class="delete-btn">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="note-content">${note.content}</div>
+                <div class="note-meta">
+                    <span class="note-date">${new Date(note.date).toLocaleDateString()}</span>
+                    <span class="note-category">${note.category}</span>
+                </div>
+            </div>
+        `).join('');
+    }
+
     editNote(noteId) {
-        // Implementation for editing notes
-        console.log('Edit note:', noteId);
+        const note = this.notes.find(n => n.id === noteId);
+        if (note) {
+            document.getElementById('noteTitle').value = note.title;
+            document.getElementById('noteContent').value = note.content;
+            document.getElementById('noteModal').style.display = 'flex';
+            
+            // Update save button to edit mode
+            const saveBtn = document.getElementById('saveNoteBtn');
+            saveBtn.textContent = 'Update Note';
+            saveBtn.onclick = () => this.updateNote(noteId);
+        }
+    }
+
+    updateNote(noteId) {
+        const title = document.getElementById('noteTitle').value.trim();
+        const content = document.getElementById('noteContent').value.trim();
+        
+        if (!title || !content) {
+            alert('Please enter both title and content for the note.');
+            return;
+        }
+
+        const noteIndex = this.notes.findIndex(n => n.id === noteId);
+        if (noteIndex !== -1) {
+            this.notes[noteIndex] = {
+                ...this.notes[noteIndex],
+                title: title,
+                content: content,
+                date: new Date().toISOString()
+            };
+            
+            this.saveToLocalStorage('transportationNotes', this.notes);
+            this.renderNotes();
+            this.hideNoteModal();
+            
+            // Reset save button
+            const saveBtn = document.getElementById('saveNoteBtn');
+            saveBtn.textContent = 'Save Note';
+            saveBtn.onclick = () => this.saveNote();
+        }
     }
 
     deleteNote(noteId) {
         if (confirm('Are you sure you want to delete this note?')) {
-            this.notes = this.notes.filter(note => note.id !== noteId);
+            this.notes = this.notes.filter(n => n.id !== noteId);
             this.saveToLocalStorage('transportationNotes', this.notes);
             this.renderNotes();
         }
     }
 
-    // Test Methods
-    saveTestStatistics() {
-        const results = this.practiceTest.results;
-        
-        // Update global statistics
-        this.statistics.testsTaken = (this.statistics.testsTaken || 0) + 1;
-        this.statistics.lastScore = results.percentage;
-        
-        // Calculate average score
-        const scores = this.statistics.scores || [];
-        scores.push(results.percentage);
-        this.statistics.scores = scores;
-        this.statistics.averageScore = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
-        
-        this.saveToLocalStorage('transportationStats', this.statistics);
-        this.updateStatistics();
-    }
-
-    addSampleStatistics() {
-        this.statistics = {
-            cardsStudied: 45,
-            testsTaken: 3,
-            averageScore: 82,
-            totalStudyTime: 180,
-            scores: [75, 82, 89]
-        };
-        
-        this.saveToLocalStorage('transportationStats', this.statistics);
-        this.updateStatistics();
-        this.updateCharts();
-        
-        this.showNotification('Sample data loaded successfully!', 'success');
-    }
-
-    saveFlashcardSession() {
-        // Save current study session data
-        const sessionData = {
-            cardsStudied: Array.from(this.studySession.cardsStudied),
-            difficulty: this.studySession.difficulty,
-            startTime: this.studySession.startTime,
-            endTime: new Date()
-        };
-        
-        console.log('Flashcard session saved:', sessionData);
-    }
-
-    // Utility Methods
-    saveToLocalStorage(key, data) {
-        try {
-            localStorage.setItem(key, JSON.stringify(data));
-        } catch (e) {
-            console.warn('Failed to save to localStorage:', e);
-        }
-    }
-
-    handleKeyboardShortcuts(e) {
-        if (e.key === 'ArrowLeft' && this.currentTab === 'flashcards') {
-            this.previousCard();
-        } else if (e.key === 'ArrowRight' && this.currentTab === 'flashcards') {
-            this.nextCard();
-        } else if (e.key === ' ' && this.currentTab === 'flashcards') {
-            e.preventDefault();
-            this.flipCard();
-        }
-    }
-
-    showNotification(message, type = 'info') {
-        // Simple notification system
-        const notification = document.createElement('div');
-        notification.className = `notification ${type}`;
-        notification.textContent = message;
-        notification.style.cssText = `
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 1rem;
-            background: ${type === 'success' ? '#28a745' : type === 'error' ? '#dc3545' : '#007bff'};
-            color: white;
-            border-radius: 8px;
-            z-index: 10000;
-            animation: slideIn 0.3s ease;
-        `;
-        
-        document.body.appendChild(notification);
-        
-        setTimeout(() => {
-            notification.remove();
-        }, 3000);
-    }
-
-    shuffleArray(array) {
-        const shuffled = [...array];
-        for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-        }
-        return shuffled;
-    }
-
-    performanceTest() {
-        console.log('🧪 Running Transportation Code App Performance Test...');
-        
-        // Check for required elements
-        const requiredElements = [
-            'questionText', 'answerText', 'currentFlashcard',
-            'testInterface', 'testResults', 'notesList'
-        ];
-        
-        const missingElements = requiredElements.filter(id => !document.getElementById(id));
-        
-        if (missingElements.length === 0) {
-            console.log('✅ All required elements present');
-        } else {
-            console.warn('⚠️ Missing elements:', missingElements);
-        }
-    }
-
-    // Content Loading Methods
-    showContentModal() {
-        document.getElementById('contentModal').classList.add('show');
-    }
-
-    hideContentModal() {
-        document.getElementById('contentModal').classList.remove('show');
-        // Clear any loading status
-        document.getElementById('loadingStatus').style.display = 'none';
-        document.getElementById('loadingResults').style.display = 'none';
-    }
-
-    async loadContentFromFile(fileType, filePath) {
-        try {
-            console.log('🔄 Loading content from:', filePath, 'Type:', fileType);
-            
-            // Show loading status
-            document.getElementById('loadingStatus').style.display = 'block';
-            document.getElementById('loadingResults').style.display = 'none';
-            
-            // Initialize content parser if not already done
-            if (!this.contentParser) {
-                this.contentParser = new TCOLEContentParser();
-                console.log('📝 Content parser initialized');
-            }
-            
-            // For local file loading, we'll use preset content as a workaround
-            // since browsers can't fetch local files due to CORS restrictions
-            let result;
-            
-            if (fileType === 'vehicle-traffic-stops') {
-                console.log('🚗 Loading vehicle traffic stops preset content...');
-                result = await this.contentParser.loadPresetContent('vehicle-traffic-stops');
-            } else {
-                console.log('🔍 Attempting to load file:', filePath);
-                result = await this.contentParser.loadFromFile(filePath, fileType);
-            }
-            
-            console.log('📊 Parse result:', result);
-            
-            // Hide loading status
-            document.getElementById('loadingStatus').style.display = 'none';
-            
-            if (result.flashcards.length > 0 || result.practiceQuestions.length > 0) {
-                console.log('✅ Content found! Adding to study data...');
-                console.log('📇 Before adding - Total flashcards:', studyData.flashcards.length);
-                console.log('📇 New flashcards to add:', result.flashcards.length);
-                console.log('❓ New questions to add:', result.practiceQuestions.length);
-                
-                // Log a sample of the new flashcards for debugging
-                if (result.flashcards.length > 0) {
-                    console.log('📋 Sample flashcard:', result.flashcards[0]);
-                }
-                
-                // Add new content to existing study data
-                studyData.flashcards.push(...result.flashcards);
-                studyData.practiceQuestions.push(...result.practiceQuestions);
-                
-                console.log('📇 After adding - Total flashcards:', studyData.flashcards.length);
-                console.log('❓ After adding - Total questions:', studyData.practiceQuestions.length);
-                
-                // Update categories if needed
-                result.flashcards.forEach(card => {
-                    if (card.category && !studyData.categories[card.category]) {
-                        studyData.categories[card.category] = {
-                            name: this.formatCategoryName(card.category),
-                            description: `${fileType} content`
-                        };
-                        console.log('📂 Added new category:', card.category);
-                    }
-                });
-                
-                // Refresh the application
-                console.log('🔄 Refreshing application...');
-                this.loadFlashcards();
-                this.populatePracticeTestCategories();
-                this.updateStatistics();
-                
-                // Show success message
-                const resultsDiv = document.getElementById('loadingResults');
-                resultsDiv.innerHTML = `
-                    <div class="success-message">
-                        <i class="fas fa-check-circle"></i>
-                        <h4>Content Loaded Successfully!</h4>
-                        <p>Added ${result.flashcards.length} flashcards and ${result.practiceQuestions.length} practice questions</p>
-                        <p>Course: <strong>${this.formatCategoryName(fileType)}</strong></p>
-                    </div>
-                `;
-                resultsDiv.style.display = 'block';
-                
-                // Auto-hide success message after 5 seconds
-                setTimeout(() => {
-                    this.hideContentModal();
-                }, 5000);
-                
-            } else {
-                console.log('⚠️ No content found in parsing result');
-                // Show no content message
-                const resultsDiv = document.getElementById('loadingResults');
-                resultsDiv.innerHTML = `
-                    <div class="warning-message">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <h4>No Content Found</h4>
-                        <p>Please add your study content to the file and try again.</p>
-                        <p>Make sure to paste content after the "PASTE YOUR STUDY HANDOUT CONTENT BELOW:" line</p>
-                    </div>
-                `;
-                resultsDiv.style.display = 'block';
-            }
-            
-        } catch (error) {
-            console.error('❌ Error loading content:', error);
-            
-            // Hide loading status
-            document.getElementById('loadingStatus').style.display = 'none';
-            
-            // Show error message
-            const resultsDiv = document.getElementById('loadingResults');
-            resultsDiv.innerHTML = `
-                <div class="error-message">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <h4>Loading Error</h4>
-                    <p>Failed to load content from file: ${filePath}</p>
-                    <p>Error: ${error.message}</p>
-                </div>
-            `;
-            resultsDiv.style.display = 'block';
-        }
-    }
-
-    // Settings Modal Methods
+    // Settings functionality
     showSettingsModal() {
-        document.getElementById('settingsModal').classList.add('show');
-        this.loadCurrentSettings();
+        document.getElementById('settingsModal').style.display = 'flex';
+        this.loadSettings();
     }
 
     hideSettingsModal() {
-        document.getElementById('settingsModal').classList.remove('show');
+        document.getElementById('settingsModal').style.display = 'none';
     }
 
-    switchSettingsTab(tab) {
-        // Remove active class from all tabs and panels
-        document.querySelectorAll('.settings-tab').forEach(t => t.classList.remove('active'));
-        document.querySelectorAll('.settings-panel').forEach(p => p.classList.remove('active'));
+    loadSettings() {
+        // Load current settings and populate the form
+        const settings = this.loadFromLocalStorage('transportationSettings', {});
         
-        // Add active class to clicked tab and corresponding panel
-        document.querySelector(`[data-tab="${tab}"]`).classList.add('active');
-        document.getElementById(`${tab}-panel`).classList.add('active');
-    }
-
-    loadCurrentSettings() {
-        try {
-            const settings = JSON.parse(localStorage.getItem('tcoleSettings') || '{}');
-            
-            // Load current settings into the form
-            document.getElementById('themeSelect').value = settings.theme || 'default';
-            document.getElementById('fontSizeSelect').value = settings.fontSize || 'medium';
-            document.getElementById('animationsToggle').checked = settings.animations !== false;
-            document.getElementById('autoFlipTime').value = settings.autoFlipTime || '0';
-            document.getElementById('cardsPerSession').value = settings.cardsPerSession || '0';
-            document.getElementById('defaultDifficulty').value = settings.defaultDifficulty || '';
-            document.getElementById('shuffleOnStart').checked = settings.shuffleOnStart !== false;
-        } catch (error) {
-            console.warn('Failed to load settings:', error);
-        }
+        // Set default values or loaded values
+        const autoFlip = document.getElementById('autoFlipCards');
+        if (autoFlip) autoFlip.checked = settings.autoFlip || false;
+        
+        const showTimer = document.getElementById('showTimer');
+        if (showTimer) showTimer.checked = settings.showTimer !== false;
+        
+        const darkMode = document.getElementById('darkMode');
+        if (darkMode) darkMode.checked = settings.darkMode || false;
     }
 
     saveSettings() {
-        try {
-            const settings = {
-                theme: document.getElementById('themeSelect').value,
-                fontSize: document.getElementById('fontSizeSelect').value,
-                animations: document.getElementById('animationsToggle').checked,
-                autoFlipTime: parseInt(document.getElementById('autoFlipTime').value),
-                cardsPerSession: parseInt(document.getElementById('cardsPerSession').value),
-                defaultDifficulty: document.getElementById('defaultDifficulty').value,
-                shuffleOnStart: document.getElementById('shuffleOnStart').checked
-            };
+        const settings = {
+            autoFlip: document.getElementById('autoFlipCards')?.checked || false,
+            showTimer: document.getElementById('showTimer')?.checked !== false,
+            darkMode: document.getElementById('darkMode')?.checked || false,
+            savedAt: new Date().toISOString()
+        };
+        
+        this.saveToLocalStorage('transportationSettings', settings);
+        this.applySettings(settings);
+        this.hideSettingsModal();
+        
+        // Show confirmation
+        this.showToast('Settings saved successfully!');
+    }
 
-            localStorage.setItem('tcoleSettings', JSON.stringify(settings));
-            this.applySettings(settings);
-            this.hideSettingsModal();
-            
-            // Show success message
-            this.showNotification('Settings saved successfully!', 'success');
-        } catch (error) {
-            console.error('Failed to save settings:', error);
-            this.showNotification('Failed to save settings', 'error');
-        }
+    loadAndApplySettings() {
+        const settings = this.loadFromLocalStorage('transportationSettings', {});
+        this.applySettings(settings);
     }
 
     applySettings(settings) {
-        // Apply theme
-        document.body.className = document.body.className.replace(/theme-\w+/g, '');
-        if (settings.theme && settings.theme !== 'default') {
-            document.body.classList.add(`theme-${settings.theme}`);
-        }
-
-        // Apply font size
-        document.body.className = document.body.className.replace(/font-\w+/g, '');
-        document.body.classList.add(`font-${settings.fontSize}`);
-
-        // Apply animations
-        if (!settings.animations) {
-            document.body.classList.add('no-animations');
+        // Apply dark mode
+        if (settings.darkMode) {
+            document.body.classList.add('dark-mode');
         } else {
-            document.body.classList.remove('no-animations');
+            document.body.classList.remove('dark-mode');
         }
-
-        // Apply study settings (these will be used during study sessions)
+        
+        // Apply timer visibility
+        const timerElements = document.querySelectorAll('.timer-display');
+        timerElements.forEach(el => {
+            el.style.display = settings.showTimer !== false ? 'block' : 'none';
+        });
+        
+        // Store settings for app use
         this.settings = settings;
     }
 
+    switchSettingsTab(tabName) {
+        // Remove active class from all settings tabs
+        document.querySelectorAll('.settings-tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        document.querySelectorAll('.settings-content').forEach(content => {
+            content.classList.remove('active');
+        });
+        
+        // Add active class to selected tab
+        document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+        document.getElementById(`${tabName}Settings`).classList.add('active');
+    }
+
+    // Data management
     exportData() {
-        try {
-            const exportData = {
-                statistics: this.statistics,
-                notes: this.notes,
-                settings: JSON.parse(localStorage.getItem('tcoleSettings') || '{}'),
-                exportDate: new Date().toISOString(),
-                version: '1.0'
-            };
-
-            const blob = new Blob([JSON.stringify(exportData, null, 2)], {
-                type: 'application/json'
-            });
-            
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `tcole-study-data-${new Date().toISOString().split('T')[0]}.json`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-
-            this.showNotification('Data exported successfully!', 'success');
-        } catch (error) {
-            console.error('Export failed:', error);
-            this.showNotification('Failed to export data', 'error');
-        }
+        const exportData = {
+            notes: this.notes,
+            statistics: this.statistics,
+            settings: this.loadFromLocalStorage('transportationSettings', {}),
+            exportDate: new Date().toISOString(),
+            version: '1.0'
+        };
+        
+        const dataStr = JSON.stringify(exportData, null, 2);
+        const dataBlob = new Blob([dataStr], {type: 'application/json'});
+        
+        const url = URL.createObjectURL(dataBlob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `transportation-code-data-${new Date().toISOString().split('T')[0]}.json`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+        
+        this.showToast('Data exported successfully!');
     }
 
     importData() {
@@ -1913,126 +1969,321 @@ class TransportationCodeApp {
     handleImportFile(event) {
         const file = event.target.files[0];
         if (!file) return;
-
+        
         const reader = new FileReader();
         reader.onload = (e) => {
             try {
-                const importedData = JSON.parse(e.target.result);
+                const importData = JSON.parse(e.target.result);
                 
-                if (confirm('This will replace your current data. Are you sure?')) {
-                    if (importedData.statistics) {
-                        this.statistics = importedData.statistics;
-                        localStorage.setItem('transportationStats', JSON.stringify(this.statistics));
-                    }
-                    
-                    if (importedData.notes) {
-                        this.notes = importedData.notes;
-                        localStorage.setItem('transportationNotes', JSON.stringify(this.notes));
+                if (confirm('This will replace your current data. Are you sure you want to continue?')) {
+                    if (importData.notes) {
+                        this.notes = importData.notes;
+                        this.saveToLocalStorage('transportationNotes', this.notes);
                         this.renderNotes();
                     }
                     
-                    if (importedData.settings) {
-                        localStorage.setItem('tcoleSettings', JSON.stringify(importedData.settings));
-                        this.applySettings(importedData.settings);
+                    if (importData.statistics) {
+                        this.statistics = importData.statistics;
+                        this.saveToLocalStorage('transportationStats', this.statistics);
+                        this.updateStatistics();
                     }
-
-                    this.updateStatistics();
-                    this.showNotification('Data imported successfully!', 'success');
+                    
+                    if (importData.settings) {
+                        this.saveToLocalStorage('transportationSettings', importData.settings);
+                        this.loadAndApplySettings();
+                    }
+                    
+                    this.showToast('Data imported successfully!');
                 }
             } catch (error) {
-                console.error('Import failed:', error);
-                this.showNotification('Failed to import data - invalid file format', 'error');
+                alert('Error importing data: Invalid file format');
             }
         };
         reader.readAsText(file);
     }
 
     resetAllData() {
-        if (confirm('Are you sure? This will permanently delete ALL your study progress, notes, and settings. This action cannot be undone.')) {
-            if (confirm('Last chance! Click OK to permanently delete everything.')) {
-                // Clear all localStorage data
-                localStorage.removeItem('transportationStats');
+        if (confirm('This will delete ALL your data including notes, statistics, and settings. This cannot be undone. Are you sure?')) {
+            if (confirm('Are you absolutely sure? This action is permanent.')) {
                 localStorage.removeItem('transportationNotes');
-                localStorage.removeItem('tcoleSettings');
+                localStorage.removeItem('transportationStats');
+                localStorage.removeItem('transportationSettings');
                 
-                // Reset app state
-                this.statistics = {};
                 this.notes = [];
-                this.settings = {};
+                this.statistics = {};
                 
-                // Reset UI
-                this.updateStatistics();
                 this.renderNotes();
-                document.body.className = 'font-medium'; // Reset to default
+                this.updateStatistics();
+                this.loadAndApplySettings();
                 
-                this.showNotification('All data has been reset', 'success');
-                this.hideSettingsModal();
+                this.showToast('All data has been reset');
             }
         }
     }
 
-    showNotification(message, type = 'info') {
-        // Create notification element
-        const notification = document.createElement('div');
-        notification.className = `notification ${type}`;
-        notification.innerHTML = `
-            <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
-            ${message}
+    // Content loading
+    showContentModal() {
+        document.getElementById('contentModal').style.display = 'flex';
+    }
+
+    hideContentModal() {
+        document.getElementById('contentModal').style.display = 'none';
+    }
+
+    loadContentFromFile(fileName, filePath) {
+        fetch(filePath)
+            .then(response => response.text())
+            .then(content => {
+                this.processContentFile(fileName, content);
+                this.showToast(`${fileName} content loaded successfully!`);
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+                this.showToast(`Error loading ${fileName} content`, 'error');
+            });
+    }
+
+    processContentFile(fileName, content) {
+        // Process different types of content files
+        const lines = content.split('\n').filter(line => line.trim());
+        
+        lines.forEach(line => {
+            if (line.includes('Q:') && line.includes('A:')) {
+                const [question, answer] = line.split('A:');
+                const newCard = {
+                    id: Date.now() + Math.random(),
+                    question: question.replace('Q:', '').trim(),
+                    answer: answer.trim(),
+                    category: fileName.toLowerCase().replace(/[^a-z]/g, '-'),
+                    difficulty: 'medium'
+                };
+                studyData.flashcards.push(newCard);
+            }
+        });
+        
+        // Refresh the flashcard display
+        this.loadFlashcards();
+    }
+
+    // Sample statistics for testing
+    addSampleStatistics() {
+        const sampleStats = {
+            cardsStudied: 150,
+            testsCompleted: 8,
+            averageScore: 85,
+            totalStudyTime: 7200, // 2 hours in seconds
+            studySessions: [
+                { date: new Date(Date.now() - 86400000).toISOString(), cardsStudied: 25, sessionTime: 1800 },
+                { date: new Date(Date.now() - 172800000).toISOString(), cardsStudied: 30, sessionTime: 2100 },
+                { date: new Date(Date.now() - 259200000).toISOString(), cardsStudied: 20, sessionTime: 1500 }
+            ],
+            testResults: [
+                { date: new Date(Date.now() - 86400000).toISOString(), score: 88, total: 25 },
+                { date: new Date(Date.now() - 172800000).toISOString(), score: 82, total: 25 },
+                { date: new Date(Date.now() - 259200000).toISOString(), score: 90, total: 25 }
+            ]
+        };
+        
+        // Merge with existing statistics
+        this.statistics = { ...this.statistics, ...sampleStats };
+        this.saveToLocalStorage('transportationStats', this.statistics);
+        this.updateStatistics();
+        this.showToast('Sample statistics added!');
+    }
+
+    // Charts and statistics display
+    updateCharts() {
+        if (this.currentTab !== 'statistics') return;
+        
+        try {
+            this.createStudyProgressChart();
+            this.createTestScoresChart();
+            this.createCategoryPerformanceChart();
+        } catch (error) {
+            console.warn('Charts not available:', error);
+        }
+    }
+
+    createStudyProgressChart() {
+        const canvas = document.getElementById('studyProgressChart');
+        if (!canvas || typeof Chart === 'undefined') return;
+        
+        const ctx = canvas.getContext('2d');
+        const sessions = this.statistics.studySessions || [];
+        
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: sessions.map(s => new Date(s.date).toLocaleDateString()),
+                datasets: [{
+                    label: 'Cards Studied',
+                    data: sessions.map(s => s.cardsStudied),
+                    borderColor: '#2a5298',
+                    backgroundColor: 'rgba(42, 82, 152, 0.1)',
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+
+    createTestScoresChart() {
+        const canvas = document.getElementById('testScoresChart');
+        if (!canvas || typeof Chart === 'undefined') return;
+        
+        const ctx = canvas.getContext('2d');
+        const results = this.statistics.testResults || [];
+        
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: results.map((r, i) => `Test ${i + 1}`),
+                datasets: [{
+                    label: 'Score %',
+                    data: results.map(r => Math.round((r.score / r.total) * 100)),
+                    backgroundColor: '#28a745',
+                    borderColor: '#1e7e34',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+    }
+
+    createCategoryPerformanceChart() {
+        const canvas = document.getElementById('categoryChart');
+        if (!canvas || typeof Chart === 'undefined') return;
+        
+        const ctx = canvas.getContext('2d');
+        
+        // Mock category data for demonstration
+        const categories = ['Speed Limits', 'Parking', 'Right of Way', 'DUI/DWI', 'Commercial'];
+        const performance = [85, 92, 78, 88, 95];
+        
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: categories,
+                datasets: [{
+                    data: performance,
+                    backgroundColor: [
+                        '#2a5298',
+                        '#28a745', 
+                        '#ffc107',
+                        '#dc3545',
+                        '#6f42c1'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    }
+
+    showToast(message, type = 'success') {
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${type}`;
+        toast.innerHTML = `
+            <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i>
+            <span>${message}</span>
         `;
         
-        // Add to page
-        document.body.appendChild(notification);
+        document.body.appendChild(toast);
         
-        // Remove after 3 seconds
         setTimeout(() => {
-            notification.remove();
+            toast.classList.add('show');
+        }, 100);
+        
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => {
+                document.body.removeChild(toast);
+            }, 300);
         }, 3000);
     }
 
-    // Load settings on app initialization
-    loadAndApplySettings() {
-        try {
-            const settings = JSON.parse(localStorage.getItem('tcoleSettings') || '{}');
-            this.applySettings(settings);
-        } catch (error) {
-            console.warn('Failed to load settings:', error);
-        }
-    }
-
-    populatePracticeTestCategories() {
-        console.log('🧪 Populating practice test categories...');
-        const testCategorySelect = document.getElementById('testCategory');
+    // Test results methods
+    saveTestStatistics() {
+        if (!this.practiceTest.results) return;
         
-        if (!testCategorySelect) {
-            console.warn('Test category select element not found');
-            return;
+        const testResult = {
+            date: new Date().toISOString(),
+            score: this.practiceTest.results.correct,
+            total: this.practiceTest.results.total,
+            percentage: this.practiceTest.results.percentage,
+            timeTaken: this.practiceTest.results.timeTaken,
+            categories: this.analyzeCategoryPerformance(this.practiceTest.results.details)
+        };
+        
+        if (!this.statistics.testResults) {
+            this.statistics.testResults = [];
         }
         
-        // Clear existing options except "All Categories"
-        testCategorySelect.innerHTML = '<option value="all">All Categories</option>';
+        this.statistics.testResults.push(testResult);
+        this.statistics.testsCompleted = (this.statistics.testsCompleted || 0) + 1;
+        this.statistics.lastTestDate = testResult.date;
         
-        // Get unique categories from practice questions
-        const categories = new Set();
-        studyData.practiceQuestions.forEach(question => {
-            if (question.category) {
-                categories.add(question.category);
-            }
-        });
+        // Calculate average score
+        const scores = this.statistics.testResults.map(r => r.percentage);
+        this.statistics.averageScore = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
         
-        // Sort categories and add them to the dropdown
-        const sortedCategories = Array.from(categories).sort();
-        sortedCategories.forEach(category => {
-            const categoryName = studyData.categories[category]?.name || this.formatCategoryName(category);
-            const option = document.createElement('option');
-            option.value = category;
-            option.textContent = categoryName;
-            testCategorySelect.appendChild(option);
-        });
-        
-        console.log(`✅ Added ${sortedCategories.length} practice test categories:`, sortedCategories);
+        this.saveToLocalStorage('transportationStats', this.statistics);
+        this.updateStatistics();
     }
 }
 
-// Initialize the app and create global reference
-const app = new TransportationCodeApp();
-window.app = app;
+// Global app instance and initialization
+let app;
+
+function initializeApp() {
+    console.log('🚀 Starting app initialization...');
+    
+    // Debug: Log data availability
+    console.log('📊 Data availability check:');
+    console.log('- studyData:', typeof studyData !== 'undefined' ? '✅' : '❌');
+    console.log('- penalCodeData:', typeof penalCodeData !== 'undefined' ? '✅' : '❌');
+    console.log('- tcoleStudyData:', typeof tcoleStudyData !== 'undefined' ? '✅' : '❌');
+    
+    // Check flashcard counts
+    if (typeof studyData !== 'undefined' && studyData.flashcards) {
+        console.log('📊 studyData flashcards:', studyData.flashcards.length);
+    }
+    if (typeof tcoleStudyData !== 'undefined' && tcoleStudyData.flashcards) {
+        console.log('📊 tcoleStudyData flashcards:', tcoleStudyData.flashcards.length);
+    }
+    if (typeof penalCodeData !== 'undefined' && penalCodeData.flashcards) {
+        console.log('📊 penalCodeData flashcards:', penalCodeData.flashcards.length);
+    }
+    
+    try {
+        app = new TransportationCodeApp();
+        console.log('✅ App initialized successfully!');
+    } catch (error) {
+        console.error('❌ Failed to initialize app:', error);
+    }
+}
+
+// Initialize the app with a delay to ensure all data files are loaded
+console.log('⏳ Scheduling app initialization...');
+setTimeout(initializeApp, 250);
