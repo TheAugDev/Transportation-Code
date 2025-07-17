@@ -3732,6 +3732,728 @@ const studyData = {
             answer: "No - This would constitute racial profiling and is unconstitutional. Cannot use race/ethnicity alone or as primary factor for stops. Need specific, articulable, individualized suspicion beyond demographic characteristics.",
             objective: "Constitutional law - racial profiling prohibition",
             module: "Field Operations"
+        },
+        
+        // Weapons Offenses Flashcards - PC Chapter 46
+        {
+            id: 4001,
+            category: "weapon-definitions",
+            difficulty: "basic",
+            question: "Define 'Club' under PC 46.01.",
+            answer: "An instrument specially designed, made, or adapted for inflicting serious bodily injury or death by striking a person. Includes blackjack, nightstick, mace, and tomahawk.",
+            objective: "8.30 - Define prohibited weapons",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4002,
+            category: "weapon-definitions",
+            difficulty: "basic",
+            question: "What is a 'Chemical dispensing device' under PC 46.01?",
+            answer: "A device (other than small commercial personal protection dispensers) designed, made, or adapted to dispense a substance capable of causing adverse psychological or physiological effects on humans.",
+            objective: "8.30 - Define chemical devices",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4003,
+            category: "weapon-definitions",
+            difficulty: "intermediate",
+            question: "Define 'Explosive weapon' under PC 46.01.",
+            answer: "Any explosive or incendiary bomb, grenade, rocket, or mine designed to inflict serious bodily injury, death, or substantial property damage, OR to cause loud reports causing public alarm or terror. Includes delivery devices.",
+            objective: "8.30 - Define explosive weapons",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4004,
+            category: "weapon-definitions",
+            difficulty: "intermediate",
+            question: "What constitutes an 'Improvised explosive device' (IED)?",
+            answer: "A completed and operational bomb designed to cause serious bodily injury, death, or substantial property damage, fabricated in improvised manner using nonmilitary components. EXCLUDES unassembled legal components and exploding targets for firearms practice sold in kits.",
+            objective: "8.30 - Define IED",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4005,
+            category: "weapon-definitions",
+            difficulty: "basic",
+            question: "Define 'Hoax bomb' under PC 46.01.",
+            answer: "A device that reasonably appears to be an explosive or incendiary device, OR by its design causes alarm or reaction by officials of public safety agencies or volunteer emergency organizations.",
+            objective: "8.30 - Define hoax bomb",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4006,
+            category: "weapon-definitions",
+            difficulty: "basic",
+            question: "What is a 'Firearm' under PC 46.01?",
+            answer: "Any device designed, made, or adapted to expel a projectile through a barrel using energy from explosion or burning substance, or any device readily convertible to that use. Excludes antique/curio firearms manufactured before 1899.",
+            objective: "8.30 - Define firearm",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4007,
+            category: "weapon-definitions",
+            difficulty: "basic",
+            question: "Define 'Handgun' under PC 46.01.",
+            answer: "Any firearm designed, made, or adapted to be fired with one hand.",
+            objective: "8.30 - Define handgun",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4008,
+            category: "weapon-definitions",
+            difficulty: "intermediate",
+            question: "What is a 'Zip gun'?",
+            answer: "A device or combination of devices that was not originally a firearm and is adapted to expel a projectile through a smooth-bore or rifled-bore barrel using energy from explosion or burning substance.",
+            objective: "8.30 - Define zip gun",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4009,
+            category: "weapon-definitions",
+            difficulty: "intermediate",
+            question: "Define 'Machine gun' under PC 46.01.",
+            answer: "Any firearm capable of shooting more than two shots automatically, without manual reloading, by a single function of the trigger.",
+            objective: "8.30 - Define machine gun",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4010,
+            category: "weapon-definitions",
+            difficulty: "intermediate",
+            question: "What constitutes a 'Short-barrel firearm'?",
+            answer: "A rifle with barrel length less than 16 inches OR a shotgun with barrel length less than 18 inches, OR any weapon made from shotgun/rifle if altered to have overall length less than 26 inches.",
+            objective: "8.30 - Define short-barrel firearm",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4011,
+            category: "weapon-definitions",
+            difficulty: "intermediate",
+            question: "Define 'Armor-piercing ammunition'.",
+            answer: "Handgun ammunition designed primarily for penetrating metal or body armor and to be used principally in pistols and revolvers.",
+            objective: "8.30 - Define armor-piercing ammunition",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4012,
+            category: "weapon-definitions",
+            difficulty: "intermediate",
+            question: "What is a 'Tire deflation device'?",
+            answer: "A device (including caltrop or spike strip) that, when driven over, impedes or stops wheeled vehicle movement by puncturing tires. Excludes traffic control devices with clear prohibition signs.",
+            objective: "8.30 - Define tire deflation device",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4013,
+            category: "weapon-definitions",
+            difficulty: "basic",
+            question: "Who qualifies as 'Volunteer emergency services personnel'?",
+            answer: "Volunteer firefighters, emergency medical services volunteers (HSC 773.003), and individuals who volunteer services for general public during emergencies. EXCLUDES peace officers performing law enforcement duties.",
+            objective: "8.30 - Define volunteer emergency personnel",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4014,
+            category: "weapon-definitions",
+            difficulty: "basic",
+            question: "Define 'First responder' under PC 46.01.",
+            answer: "Public safety employee whose duties include responding rapidly to emergencies. Includes fire protection personnel (GC 419.021) and emergency medical services personnel (HSC 773.003). EXCLUDES volunteers and peace officers performing law enforcement.",
+            objective: "8.30 - Define first responder",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4015,
+            category: "weapon-definitions",
+            difficulty: "basic",
+            question: "Distinguish between 'Knife' and 'Location-restricted knife'.",
+            answer: "Knife: Any bladed hand instrument capable of inflicting serious bodily injury or death by cutting/stabbing. Location-restricted knife: A knife with blade over five and one-half inches.",
+            objective: "8.30 - Define knife types",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4016,
+            category: "unlawful-possession",
+            difficulty: "advanced",
+            question: "When can a convicted felon possess a firearm under PC 46.04(a)?",
+            answer: "After 5th anniversary of release from confinement/supervision/parole (whichever later) AND only at premises where person lives. Before 5th anniversary OR outside residence = offense.",
+            objective: "8.30 - Felon firearm possession",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4017,
+            category: "unlawful-possession",
+            difficulty: "intermediate",
+            question: "What constitutes unlawful handgun possession by gang members under PC 46.04(a-1)?",
+            answer: "Criminal street gang member (PC 71.01) who intentionally, knowingly, or recklessly carries handgun on/about person in motor vehicle or watercraft. Class A misdemeanor.",
+            objective: "8.30 - Gang member firearm restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4018,
+            category: "unlawful-possession",
+            difficulty: "intermediate",
+            question: "When does family violence conviction prohibit firearm possession?",
+            answer: "Person convicted of PC 22.01 Class A assault involving family/household member cannot possess firearm before 5th anniversary of release from confinement OR community supervision (whichever later).",
+            objective: "8.30 - Family violence firearm restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4019,
+            category: "unlawful-possession",
+            difficulty: "intermediate",
+            question: "How do protective orders affect firearm possession under PC 46.04(c)?",
+            answer: "Person subject to protective order (FC 6.504, Chapter 85, CCP 17.292, Subchapter A Chapter 7B, or FC Chapter 88) cannot possess firearm after receiving notice and before expiration. EXCLUDES active sworn full-time peace officers.",
+            objective: "8.30 - Protective order firearm restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4020,
+            category: "unlawful-possession",
+            difficulty: "advanced",
+            question: "What determines if an out-of-state conviction constitutes a 'felony' for PC 46.04 purposes?",
+            answer: "Offense is felony if: (1) designated as felony by Texas law, (2) contains all elements of Texas felony, OR (3) punishable by 1+ years in penitentiary. NOT felony if doesn't meet BOTH conditions under subsection (g).",
+            objective: "8.30 - Out-of-state conviction analysis",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4021,
+            category: "unlawful-carrying",
+            difficulty: "advanced",
+            question: "When can someone under 21 legally carry a handgun under PC 46.02?",
+            answer: "ONLY when: (A) on own premises/under control, OR (B) inside/directly en route to motor vehicle/watercraft owned/under control. Cannot carry if convicted of specified offenses in past 5 years.",
+            objective: "8.30 - Under-21 carrying restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4022,
+            category: "unlawful-carrying",
+            difficulty: "advanced",
+            question: "When is handgun in plain view legal in own vehicle under PC 46.02(a-1)?",
+            answer: "Legal if: (1) person is 21+ OR licensed to carry AND handgun in holster, AND (2) not engaged in criminal activity (except Class C traffic/boating), AND (3) not prohibited from possessing firearms.",
+            objective: "8.30 - Vehicle handgun visibility rules",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4023,
+            category: "unlawful-carrying",
+            difficulty: "intermediate",
+            question: "What does PC 46.02(a-5) prohibit regarding handgun display?",
+            answer: "Prohibits carrying handgun and intentionally displaying in plain view of another in public place. EXCEPTION: Handgun partially/wholly visible but carried in holster is not violation.",
+            objective: "8.30 - Public handgun display restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4024,
+            category: "unlawful-carrying",
+            difficulty: "intermediate",
+            question: "When does intoxication prohibit handgun carrying under PC 46.02(a-6)?",
+            answer: "Cannot carry while intoxicated UNLESS: (A) on own property/under control or private property with consent, OR (B) inside/en route to own vehicle/watercraft or with owner/operator consent.",
+            objective: "8.30 - Intoxicated carrying restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4025,
+            category: "unlawful-carrying",
+            difficulty: "advanced",
+            question: "What are penalties for PC 46.02(a-7) violations by prohibited persons?",
+            answer: "2nd degree felony with 5-year minimum if prohibited under PC 46.04(a). 3rd degree felony if prohibited under PC 46.04(b) or (c). Can be prosecuted under both (a-7) and other provisions.",
+            objective: "8.30 - Enhanced penalties for prohibited persons",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4026,
+            category: "unlawful-carrying",
+            difficulty: "intermediate",
+            question: "When can minors carry location-restricted knives under PC 46.02(a-4)?",
+            answer: "Under 18 cannot carry location-restricted knife (blade >5.5 inches) UNLESS: (A) own premises/under control, (B) own vehicle/watercraft, OR (C) under direct parent/guardian supervision. Class C offense.",
+            objective: "8.30 - Minor knife carrying restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4027,
+            category: "prohibited-places",
+            difficulty: "intermediate",
+            question: "What are weapon prohibitions in schools under PC 46.03(a)(1)?",
+            answer: "Prohibited on school/postsecondary premises, grounds, sponsored activity locations, or transportation vehicles. EXCEPTIONS: (A) written authorization, OR (B) licensed concealed handgun at postsecondary (no other weapons).",
+            objective: "8.30 - School weapon prohibitions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4028,
+            category: "prohibited-places",
+            difficulty: "basic",
+            question: "Where are weapons prohibited on election days under PC 46.03(a)(2)?",
+            answer: "On premises of polling places during election day or while early voting is in progress.",
+            objective: "8.30 - Election polling place restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4029,
+            category: "prohibited-places",
+            difficulty: "basic",
+            question: "What locations are covered by PC 46.03(a)(3) court prohibitions?",
+            answer: "On premises of any government court OR offices utilized by the court, unless pursuant to written regulations or authorization of the court.",
+            objective: "8.30 - Court weapon prohibitions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4030,
+            category: "prohibited-places",
+            difficulty: "basic",
+            question: "Are weapons prohibited at racetracks under PC 46.03(a)(4)?",
+            answer: "Yes, weapons are prohibited on premises of racetracks. Defense available for security officers with distinctive uniforms and weapons in plain view.",
+            objective: "8.30 - Racetrack weapon prohibitions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4031,
+            category: "prohibited-places",
+            difficulty: "advanced",
+            question: "Define 'secured area' for airport restrictions under PC 46.03(a)(5).",
+            answer: "Airport terminal building with controlled access under federal law OR aircraft parking used by common carriers (not general aviation) with controlled access. EXCLUDES baggage claim, parking, pickup/dropoff areas.",
+            objective: "8.30 - Airport secured area definition",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4032,
+            category: "prohibited-places",
+            difficulty: "advanced",
+            question: "What are execution site restrictions under PC 46.03(a)(6)?",
+            answer: "Within 1,000 feet of TDCJ execution premises on day sentence of death is set AND person received notice of prohibition. EXCEPTIONS: vehicles on public roads and actor's residence/workplace.",
+            objective: "8.30 - Execution site restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4033,
+            category: "prohibited-places",
+            difficulty: "intermediate",
+            question: "What constitutes a '51% establishment' under PC 46.03(a)(7)?",
+            answer: "Business with TABC permit/license deriving 51%+ income from alcoholic beverage sales for ON-PREMISES consumption, as determined by TABC under Alcoholic Beverage Code Section 104.06.",
+            objective: "8.30 - 51% establishment definition",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4034,
+            category: "prohibited-places",
+            difficulty: "intermediate",
+            question: "What sporting events are covered by PC 46.03(a)(8)?",
+            answer: "High school, collegiate, or professional sporting events OR interscholastic events. EXCEPTION: participants using weapons in the event. Weapons prohibited on premises where events take place.",
+            objective: "8.30 - Sporting event restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4035,
+            category: "prohibited-places",
+            difficulty: "basic",
+            question: "Are weapons prohibited at correctional and civil commitment facilities?",
+            answer: "Yes. PC 46.03(a)(9) prohibits weapons on correctional facility premises. PC 46.03(a)(10) prohibits weapons on civil commitment facility premises. Both are Class A misdemeanors.",
+            objective: "8.30 - Institutional facility restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4036,
+            category: "prohibited-places",
+            difficulty: "intermediate",
+            question: "When are weapons prohibited in hospitals under PC 46.03(a)(11) and (12)?",
+            answer: "Prohibited in licensed hospitals/nursing facilities (Chapter 241/242 HSC) and mental hospitals (HSC 571.003) WITHOUT written authorization from administration. Class A misdemeanor offense.",
+            objective: "8.30 - Healthcare facility restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4037,
+            category: "prohibited-places",
+            difficulty: "advanced",
+            question: "Define 'amusement park' under PC 46.03(a)(13).",
+            answer: "Permanent facility with rides in 1M+ population county, 75+ acres, controlled entries, open 120+ days/year, security guards at all times. EXCLUDES parking and public areas. Class A misdemeanor.",
+            objective: "8.30 - Amusement park definition",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4038,
+            category: "prohibited-places",
+            difficulty: "intermediate",
+            question: "When are weapons prohibited in government meetings under PC 46.03(a)(14)?",
+            answer: "In room(s) where governmental entity meeting is held, if meeting is open under Government Code Chapter 551 AND entity provided required notice. Class A misdemeanor.",
+            objective: "8.30 - Government meeting restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4039,
+            category: "prohibited-places",
+            difficulty: "advanced",
+            question: "What does PC 46.03(a-2) prohibit at higher education institutions?",
+            answer: "License holder commits Class A offense if carries partially/wholly visible handgun and intentionally displays in plain view at higher education premises/parking areas, regardless of holster.",
+            objective: "8.30 - Higher education display restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4040,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "When does the 'prompt departure' defense apply under PC 46.15(m)?",
+            answer: "Available if: (1) carried handgun where prohibited, (2) personally received notice from owner/authority, (3) promptly departed. NOT available if proper signs posted OR actor knew carrying was prohibited.",
+            objective: "8.30 - Prompt departure defense",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4041,
+            category: "exemptions-defenses",
+            difficulty: "advanced",
+            question: "When does disaster area handgun carrying apply under PC 46.15(k)?",
+            answer: "While evacuating from declared disaster area OR reentering after evacuation, within 168 hours of declaration (governor may extend), and not federally prohibited from possessing firearms.",
+            objective: "8.30 - Disaster area exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4042,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "What are emergency shelter handgun exemptions under PC 46.15(l)?",
+            answer: "PC 46.02 and 46.03(a)(1)-(4) don't apply if: (1) carrying at emergency shelter during declared disaster, (2) owner/authority authorized carrying, (3) complies with shelter rules, (4) not federally prohibited.",
+            objective: "8.30 - Emergency shelter exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4043,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "Which prohibited places don't apply to license holders without effective notice?",
+            answer: "PC 46.03(a)(7) (51% establishments), (a)(11) (hospitals), and (a)(13) (amusement parks) don't apply to license holders without effective 30.06, 30.07, or GC 411.204 notice.",
+            objective: "8.30 - License holder exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4044,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "What are historical reenactment exemptions under PC 46.15(j)?",
+            answer: "PC 46.02 and 46.03(a)(7), (a-2), (a-3), (a-4) don't apply to individuals carrying handguns as participants in historical reenactments performed under Texas Alcoholic Beverage Commission rules.",
+            objective: "8.30 - Historical reenactment exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4045,
+            category: "exemptions-defenses",
+            difficulty: "advanced",
+            question: "When do first responder exemptions apply under PC 46.15(r)?",
+            answer: "PC 46.02 and 46.03 don't apply to first responders who: (1) carried concealed or in shoulder/belt holster, (2) hold unexpired GC 411.1883 certificate, (3) engaged in actual duty discharge, (4) employed/supervised by applicable municipality/county.",
+            objective: "8.30 - First responder exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4046,
+            category: "prohibited-weapons",
+            difficulty: "intermediate",
+            question: "What weapons are prohibited under PC 46.05(a)(1)?",
+            answer: "Explosive weapons, machine guns, short-barrel firearms UNLESS registered in National Firearms Registration and Transfer Record (ATFE), not subject to registration requirement, OR classified as curio/relic by U.S. Department of Justice.",
+            objective: "8.30 - Prohibited weapons registration",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4047,
+            category: "prohibited-weapons",
+            difficulty: "basic",
+            question: "List the prohibited items under PC 46.05(a)(2)-(6).",
+            answer: "Armor-piercing ammunition, chemical dispensing device, zip gun, tire deflation device, improvised explosive device. 3rd degree felony except state jail felony for tire deflation device.",
+            objective: "8.30 - Prohibited weapons list",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4048,
+            category: "prohibited-weapons",
+            difficulty: "intermediate",
+            question: "What are defenses for prohibited weapons under PC 46.05(b) and (d)?",
+            answer: "Defense for official duties of armed forces, national guard, government law enforcement, or correctional facilities. Affirmative defense for dealing with items as antiques/curios or making available to authorized persons.",
+            objective: "8.30 - Prohibited weapons defenses",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4049,
+            category: "prohibited-weapons",
+            difficulty: "intermediate",
+            question: "Who can legally possess chemical dispensing devices under PC 46.05(f)?",
+            answer: "Security officers under Occupations Code 1702 WITH proper use training by: (1) TCOLE OR (2) program approved by Texas Private Security Board of DPS.",
+            objective: "8.30 - Chemical device exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4050,
+            category: "unlawful-transfer",
+            difficulty: "intermediate",
+            question: "When is handgun transfer unlawful under PC 46.06(a)(1)?",
+            answer: "Selling, renting, leasing, loaning, or giving handgun to person knowing recipient intends to use it unlawfully or in commission of unlawful act. Class A misdemeanor offense.",
+            objective: "8.30 - Unlawful handgun transfer",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4051,
+            category: "unlawful-transfer",
+            difficulty: "basic",
+            question: "What does PC 46.06(a)(2) prohibit regarding minors?",
+            answer: "Intentionally or knowingly selling, renting, leasing, giving, or offering to give any firearm, club, or location-restricted knife to anyone under 18. State jail felony for handgun transfer.",
+            objective: "8.30 - Minor weapon transfer prohibition",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4052,
+            category: "unlawful-transfer",
+            difficulty: "intermediate",
+            question: "When is selling firearms to intoxicated persons prohibited?",
+            answer: "PC 46.06(a)(3) prohibits intentionally, knowingly, or recklessly selling firearm/ammunition to intoxicated person. 'Intoxicated' means substantial mental/physical impairment from any substance.",
+            objective: "8.30 - Intoxicated person sales prohibition",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4053,
+            category: "unlawful-transfer",
+            difficulty: "advanced",
+            question: "When can firearms be sold to convicted felons under PC 46.06(a)(4)?",
+            answer: "Cannot knowingly sell firearm/ammunition to felon before 5th anniversary of later date: (A) release from confinement following conviction OR (B) release from community supervision/parole/mandatory supervision.",
+            objective: "8.30 - Felon firearm sales prohibition",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4054,
+            category: "unlawful-transfer",
+            difficulty: "intermediate",
+            question: "How do protective orders affect handgun transfers under PC 46.06(a)(5) and (6)?",
+            answer: "Cannot sell/rent/lease/loan/give handgun to person with active protective order OR knowingly purchase/receive handgun while subject to active protective order. Excludes temporary orders before hearings.",
+            objective: "8.30 - Protective order transfer restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4055,
+            category: "unlawful-transfer",
+            difficulty: "advanced",
+            question: "What constitutes false statement offense under PC 46.06(a)(7)?",
+            answer: "While prohibited from possessing firearms, knowingly making material false statement on required state/federal form submitted to licensed firearms dealer. Must be person prohibited under state/federal law.",
+            objective: "8.30 - False statement prohibition",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4056,
+            category: "unlawful-transfer",
+            difficulty: "intermediate",
+            question: "What is the affirmative defense for minor transfers under PC 46.06(c)?",
+            answer: "Transfer to minor is defense if: (1) parent/legal custodian gave written permission for sale OR (2) for non-sale transfer, parent/custodian gave effective consent.",
+            objective: "8.30 - Minor transfer defense",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4057,
+            category: "weapon-free-zones",
+            difficulty: "advanced",
+            question: "How does PC 46.11 enhance penalties in weapon-free school zones?",
+            answer: "Punishment increased to next highest category if offense committed within 300 feet of school premises OR at official school function/UIL event, and actor knew location. Doesn't apply to PC 46.03(a)(1).",
+            objective: "8.30 - Weapon-free school zone enhancements",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4058,
+            category: "weapon-free-zones",
+            difficulty: "intermediate",
+            question: "What constitutes a 'school' for weapon-free zone purposes?",
+            answer: "Private or public elementary or secondary school. Does not apply to higher education institutions under PC 46.03(a)(1).",
+            objective: "8.30 - School definition for weapon-free zones",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4059,
+            category: "firearm-accessibility",
+            difficulty: "advanced",
+            question: "What constitutes 'Making Firearm Accessible to Child' under PC 46.13?",
+            answer: "With criminal negligence, child gains access to readily dischargeable firearm and person: (1) failed to secure firearm OR (2) left it where knew/should have known child would access.",
+            objective: "8.30 - Child firearm accessibility",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4060,
+            category: "firearm-accessibility",
+            difficulty: "basic",
+            question: "Define key terms for PC 46.13 child accessibility offense.",
+            answer: "Child = under 17. Readily dischargeable firearm = loaded with ammunition (regardless of chamber). Secure = reasonable steps to prevent access by child, including locked container/trigger lock.",
+            objective: "8.30 - Child accessibility definitions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4061,
+            category: "firearm-accessibility",
+            difficulty: "intermediate",
+            question: "What are affirmative defenses for child firearm access under PC 46.13(c)?",
+            answer: "Child's access was: (1) supervised by 18+ for hunting/sporting/lawful purposes, (2) lawful defense of people/property, (3) gained by entering property illegally, OR (4) during agricultural enterprise.",
+            objective: "8.30 - Child access defenses",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4062,
+            category: "firearm-accessibility",
+            difficulty: "intermediate",
+            question: "What are penalties for PC 46.13 child accessibility offense?",
+            answer: "Class C misdemeanor unless child discharges firearm causing death/serious bodily injury (Class A). Peace officer cannot arrest family member before 7th day if child caused death/SBI to themselves.",
+            objective: "8.30 - Child accessibility penalties",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4063,
+            category: "firearm-accessibility",
+            difficulty: "basic",
+            question: "What warning sign must firearms dealers post under PC 46.13(g)?",
+            answer: "Conspicuous sign with block letters ≥1 inch: 'IT IS UNLAWFUL TO STORE, TRANSPORT, OR ABANDON AN UNSECURED FIREARM IN A PLACE WHERE CHILDREN ARE LIKELY TO BE AND CAN OBTAIN ACCESS TO THE FIREARM.'",
+            objective: "8.30 - Dealer warning requirements",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4064,
+            category: "firearm-smuggling",
+            difficulty: "advanced",
+            question: "What constitutes 'Firearm Smuggling' under PC 46.14?",
+            answer: "Knowingly engaging in business of transporting/transferring firearm knowing it was illegally acquired. 'Business' = more than one occasion OR for profit/remuneration. Doesn't apply to peace officers on duty.",
+            objective: "8.30 - Firearm smuggling elements",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4065,
+            category: "firearm-smuggling",
+            difficulty: "intermediate",
+            question: "What are penalties for firearm smuggling under PC 46.14?",
+            answer: "3rd degree felony unless involving 3+ firearms in single criminal episode (2nd degree felony). Can be stacked with other offenses. Peace officer exception for official duties.",
+            objective: "8.30 - Firearm smuggling penalties",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4066,
+            category: "body-armor",
+            difficulty: "basic",
+            question: "What is 'Unlawful Possession of Metal or Body Armor by Felon' under PC 46.041?",
+            answer: "Convicted felon possessing metal or body armor after conviction. 'Metal or body armor' = any body covering manifestly designed for protection against gunfire. 3rd degree felony.",
+            objective: "8.30 - Felon body armor prohibition",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4067,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "When do location-restricted knife exemptions apply under PC 46.15(e)?",
+            answer: "PC 46.02(a-4) doesn't apply to individual carrying location-restricted knife used in historical demonstration or ceremony where knife is significant to performance.",
+            objective: "8.30 - Historical knife exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4068,
+            category: "exemptions-defenses",
+            difficulty: "basic",
+            question: "Who is exempt from weapon restrictions as peace officers under PC 46.15(a)?",
+            answer: "Peace officers, special investigators (CCP 2A.002), and commissioned peace officers from recognized states. Doesn't prohibit carrying weapons regardless of whether engaged in official duties.",
+            objective: "8.30 - Peace officer exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4069,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "What are 'recognized state' requirements for out-of-state peace officers?",
+            answer: "State with which Texas attorney general (with governor approval) negotiated agreement after determining state has: (A) firearm proficiency requirements for peace officers AND (B) fully recognizes Texas peace officer carry rights.",
+            objective: "8.30 - Recognized state criteria",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4070,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "Who qualifies for attorney/judicial exemptions under PC 46.15(a)(6)-(11)?",
+            answer: "Licensed attorneys (AG, U.S., district, criminal district, county, municipal), their assistants (except municipal), bailiffs escorting judicial officers, juvenile probation officers, volunteer emergency personnel, retired judges/justices, district/county clerks.",
+            objective: "8.30 - Legal profession exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4071,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "When do public security officer exemptions apply under PC 46.15(d)?",
+            answer: "PC 46.02 doesn't apply to public security officer employed by adjutant general under GC 437.053 while performing official duties or traveling to/from duty location.",
+            objective: "8.30 - Public security exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4072,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "What are law enforcement student exemptions under PC 46.15(a)(8)?",
+            answer: "Student in law enforcement class engaging in required activity if weapon commonly used in activity and person is: (A) on immediate activity premises OR (B) en route to/from premises carrying weapon unloaded.",
+            objective: "8.30 - Law enforcement student exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4073,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "When do alcoholic beverage establishment exemptions apply?",
+            answer: "Person who holds alcoholic beverage permit/license or employee of holder, if supervising operation of permitted/licensed premises. Applies to PC 46.02 and certain PC 46.03 provisions.",
+            objective: "8.30 - Alcoholic beverage exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4074,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "What are animal control officer exemptions for clubs?",
+            answer: "PC 46.03 club restrictions don't apply to HSC certified animal control officers carrying instruments specifically for deterring animal bites while performing duties or traveling to/from duty.",
+            objective: "8.30 - Animal control exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4075,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "When do code enforcement officer exemptions apply?",
+            answer: "PC 46.03 club restrictions don't apply to Occupations Code 1952 registered code enforcement officers carrying instruments for deterring animal bites while performing duties or traveling to/from duty.",
+            objective: "8.30 - Code enforcement exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4076,
+            category: "prohibited-places",
+            difficulty: "advanced",
+            question: "What is effective notice for weapon prohibition signs under PC 46.15(o)?",
+            answer: "Sign at each entrance with language: 'Pursuant to Section 46.03, Penal Code (places weapons prohibited), a person may not carry a firearm or other weapon on this property' in English/Spanish, contrasting colors, 1+ inch block letters, conspicuously displayed.",
+            objective: "8.30 - Effective notice requirements",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4077,
+            category: "unlawful-carrying",
+            difficulty: "intermediate",
+            question: "Define 'premises' and 'watercraft' for PC 46.02 purposes.",
+            answer: "Premises includes real property and recreational vehicles used as living quarters (temporary/permanent): travel trailer, camping trailer, truck camper, motor home, horse trailer with living quarters. Watercraft = boat, motorboat, vessel, personal watercraft (not seaplane).",
+            objective: "8.30 - Premises and watercraft definitions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4078,
+            category: "prohibited-places",
+            difficulty: "intermediate",
+            question: "What higher education restrictions apply under PC 46.03(a-3) and (a-4)?",
+            answer: "(a-3) Licensed carry at private institutions with prohibitions and effective 30.06 notice. (a-4) Concealed carry on public institution portions with prohibitions and effective 30.06 notice for that portion.",
+            objective: "8.30 - Higher education specific restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4079,
+            category: "airport-security",
+            difficulty: "advanced",
+            question: "What are airport security checkpoint defenses under PC 46.03(e-1) and (e-2)?",
+            answer: "(e-1) Defense if license holder had handgun at checkpoint and immediately exited after screening/notification. (e-2) Peace officer cannot arrest unless advised of defense, given exit opportunity, and actor doesn't immediately exit.",
+            objective: "8.30 - Airport checkpoint procedures",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 4080,
+            category: "airport-security",
+            difficulty: "intermediate",
+            question: "What are other airport security defenses under PC 46.03(e)?",
+            answer: "Defense if actor: (1) checked all firearms as baggage per federal/state law before entering secured area OR (2) was authorized by federal agency/airport operator to possess firearm in secured area.",
+            objective: "8.30 - Airport authorized possession",
+            module: "Weapons Offenses"
         }
     ],
 
@@ -6592,6 +7314,328 @@ const studyData = {
             explanation: "The 4 risk zones are: Face & Chest (friend/foe, expressions), Hands (what they're doing/holding), Waistband (weapon location), and Stance (aggressive positioning).",
             objective: "35.9 - Field interview safety techniques",
             module: "Field Operations"
+        },
+        
+        // Weapons Offenses Practice Questions - Penal Code Chapter 46
+        {
+            id: 775,
+            category: "weapon-definitions",
+            difficulty: "basic",
+            question: "Which of the following is NOT included in the definition of 'Club' under PC 46.01?",
+            options: [
+                "Baseball bat",
+                "Blackjack", 
+                "Nightstick",
+                "Tomahawk"
+            ],
+            correct: 0,
+            explanation: "Club is specifically designed, made, or adapted for inflicting SBI/death. PC 46.01 specifically lists blackjack, nightstick, mace, and tomahawk as examples.",
+            objective: "8.30 - Define prohibited weapons",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 776,
+            category: "weapon-definitions",
+            difficulty: "intermediate",
+            question: "What distinguishes a 'Short-barrel firearm' from regular firearms?",
+            options: [
+                "Rifle barrel less than 16 inches OR shotgun barrel less than 18 inches",
+                "Rifle barrel less than 18 inches OR shotgun barrel less than 16 inches",
+                "Any firearm with overall length less than 20 inches",
+                "Any firearm that can be concealed"
+            ],
+            correct: 0,
+            explanation: "Short-barrel firearm = rifle with barrel < 16 inches OR shotgun with barrel < 18 inches OR any weapon made from shotgun/rifle with overall length < 26 inches.",
+            objective: "8.30 - Define short-barrel firearm",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 777,
+            category: "weapon-definitions",
+            difficulty: "intermediate",
+            question: "An 'Improvised explosive device' does NOT include:",
+            options: [
+                "Exploding targets for firearms practice in kit form with binary components",
+                "Homemade bombs using fertilizer",
+                "Pipe bombs made from common materials",
+                "Improvised grenades using household chemicals"
+            ],
+            correct: 0,
+            explanation: "IED specifically excludes: (A) unassembled legal components and (B) exploding targets for firearms practice sold in kit form with binary explosive components.",
+            objective: "8.30 - Define IED",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 778,
+            category: "weapon-definitions",
+            difficulty: "advanced",
+            question: "Which statement about 'Machine gun' definition is correct?",
+            options: [
+                "Capable of shooting more than two shots automatically by single trigger function",
+                "Capable of shooting more than three shots automatically by single trigger function", 
+                "Any firearm that can fire in burst mode",
+                "Any automatic firearm regardless of number of shots"
+            ],
+            correct: 0,
+            explanation: "Machine gun means firearm capable of shooting MORE THAN TWO shots automatically, without manual reloading, by single function of trigger.",
+            objective: "8.30 - Define machine gun",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 779,
+            category: "unlawful-possession",
+            difficulty: "advanced",
+            question: "Under PC 46.04(a), when can a felon possess a firearm?",
+            options: [
+                "After 5th anniversary, only at premises where person lives",
+                "After 10th anniversary anywhere",
+                "Never, regardless of time elapsed",
+                "After completing parole successfully"
+            ],
+            correct: 0,
+            explanation: "Felon can possess firearm: (1) after 5th anniversary of release from confinement/supervision/parole (whichever later) AND (2) only at premises where person lives.",
+            objective: "8.30 - Felon in possession restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 780,
+            category: "unlawful-possession",
+            difficulty: "intermediate",
+            question: "Criminal street gang member handgun possession under PC 46.04(a-1) applies to:",
+            options: [
+                "Intentionally, knowingly, or recklessly carrying handgun in motor vehicle or watercraft",
+                "Any firearm possession anywhere",
+                "Only carrying handgun in public places",
+                "Only while committing other crimes"
+            ],
+            correct: 0,
+            explanation: "PC 46.04(a-1): Gang member commits offense if intentionally, knowingly, or recklessly carries handgun on/about person in motor vehicle or watercraft.",
+            objective: "8.30 - Gang member firearm restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 781,
+            category: "unlawful-carrying",
+            difficulty: "advanced",
+            question: "An 18-year-old can legally carry a handgun:",
+            options: [
+                "On own premises/under control OR inside/en route to own motor vehicle/watercraft",
+                "Anywhere with parent permission",
+                "At shooting ranges only",
+                "Never under any circumstances"
+            ],
+            correct: 0,
+            explanation: "PC 46.02(a): Under 21 can carry ONLY: (A) on own premises/under control OR (B) inside/directly en route to motor vehicle/watercraft owned/under control.",
+            objective: "8.30 - Under-21 carrying restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 782,
+            category: "unlawful-carrying",
+            difficulty: "advanced",
+            question: "Handgun in plain view in own vehicle is legal when:",
+            options: [
+                "Person is 21+ OR licensed to carry AND handgun is in holster",
+                "Person has concealed carry license",
+                "Vehicle is registered to the person",
+                "Person is not committing any offense"
+            ],
+            correct: 0,
+            explanation: "PC 46.02(a-1): Plain view in own vehicle legal if: 21+ OR licensed to carry AND handgun in holster. Also cannot be engaged in criminal activity or prohibited from possessing firearms.",
+            objective: "8.30 - Vehicle handgun visibility rules",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 783,
+            category: "unlawful-carrying",
+            difficulty: "intermediate",
+            question: "Location-restricted knife carrying by minors under PC 46.02(a-4) is prohibited EXCEPT:",
+            options: [
+                "On own premises, in own vehicle, or under parent/guardian supervision",
+                "At school with teacher permission",
+                "For hunting purposes only",
+                "With written authorization"
+            ],
+            correct: 0,
+            explanation: "Under 18 cannot carry location-restricted knife (blade > 5.5 inches) UNLESS: (A) own premises/under control, (B) own vehicle/watercraft, or (C) under direct parent/guardian supervision.",
+            objective: "8.30 - Minor knife carrying restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 784,
+            category: "prohibited-places",
+            difficulty: "basic",
+            question: "Weapons are prohibited in schools under PC 46.03(a)(1) EXCEPT:",
+            options: [
+                "Written authorization OR licensed concealed handgun at postsecondary",
+                "School security personnel only",
+                "During school hours only",
+                "With principal approval"
+            ],
+            correct: 0,
+            explanation: "School prohibition exceptions: (A) pursuant to written regulations/authorization OR (B) licensed concealed handgun at postsecondary educational institution (no other weapon).",
+            objective: "8.30 - School weapons prohibitions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 785,
+            category: "prohibited-places",
+            difficulty: "intermediate",
+            question: "The 51% establishment prohibition under PC 46.03(a)(7) applies to businesses that:",
+            options: [
+                "Derive 51%+ income from on-premises alcoholic beverage sales as determined by TABC",
+                "Have any alcoholic beverage license",
+                "Serve alcohol after 10 PM",
+                "Allow intoxicated persons on premises"
+            ],
+            correct: 0,
+            explanation: "Prohibited at business with TABC permit/license deriving 51%+ income from alcoholic beverage sales for ON-PREMISES consumption, as determined by TABC under Section 104.06.",
+            objective: "8.30 - 51% establishments prohibition",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 786,
+            category: "prohibited-places",
+            difficulty: "advanced",
+            question: "Airport 'secured area' under PC 46.03(a)(5) includes:",
+            options: [
+                "Terminal building with controlled access AND aircraft parking for common carriers",
+                "Any area inside airport property",
+                "Baggage claim and pickup areas",
+                "All areas except public parking"
+            ],
+            correct: 0,
+            explanation: "Secured area = terminal building with controlled access under federal law OR aircraft parking used by common carriers (not general aviation). EXCLUDES baggage claim, parking, pickup/dropoff areas.",
+            objective: "8.30 - Airport secured area restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 787,
+            category: "prohibited-places",
+            difficulty: "intermediate",
+            question: "The execution site restriction under PC 46.03(a)(6) prohibits weapons:",
+            options: [
+                "Within 1000 feet of TDCJ execution site on execution day after notice",
+                "Within 500 feet of any courthouse",
+                "Within 1000 feet of any prison",
+                "Within 1 mile of execution site"
+            ],
+            correct: 0,
+            explanation: "Within 1000 feet of TDCJ-designated execution premises on day sentence of death is set AND person received notice of prohibition. Exceptions for vehicles on public roads and residence/workplace.",
+            objective: "8.30 - Execution site restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 788,
+            category: "prohibited-places",
+            difficulty: "basic",
+            question: "Which is NOT prohibited under PC 46.03 sporting event restrictions?",
+            options: [
+                "Recreational league games at public parks",
+                "High school football games",
+                "College basketball games", 
+                "Professional sporting events"
+            ],
+            correct: 0,
+            explanation: "PC 46.03(a)(8) prohibits weapons at high school, collegiate, or professional sporting events or interscholastic events. Recreational leagues not specifically covered.",
+            objective: "8.30 - Sporting event restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 789,
+            category: "prohibited-places",
+            difficulty: "intermediate",
+            question: "Amusement park definition under PC 46.03 requires:",
+            options: [
+                "75+ acres, 1M+ county population, controlled entries, 120+ days operation, security guards",
+                "50+ acres with rides and attractions",
+                "Any commercial entertainment facility",
+                "Permanent rides open to public"
+            ],
+            correct: 0,
+            explanation: "Amusement park = permanent facility with rides in 1M+ county, 75+ acres, controlled entries, open 120+ days/year, security guards at all times. Excludes parking and public areas.",
+            objective: "8.30 - Amusement park restrictions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 790,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "The 'prompt departure' defense under PC 46.15(m) does NOT apply when:",
+            options: [
+                "Proper signs were posted OR actor knew carrying was prohibited",
+                "Person was asked to leave verbally",
+                "No written notice was given",
+                "Person had a license to carry"
+            ],
+            correct: 0,
+            explanation: "Prompt departure defense not available if: (1) proper sign posted prominently at each entrance OR (2) actor knew carrying was prohibited. Must have personal notice from owner/authority and promptly depart.",
+            objective: "8.30 - Prompt departure defense",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 791,
+            category: "exemptions-defenses",
+            difficulty: "advanced",
+            question: "Disaster area handgun carrying under PC 46.15(k) is allowed:",
+            options: [
+                "While evacuating or reentering within 168 hours (extendable by governor)",
+                "For any declared emergency indefinitely",
+                "Only for law enforcement personnel",
+                "Within 72 hours of declaration"
+            ],
+            correct: 0,
+            explanation: "Allowed while: (A) evacuating from declared disaster area OR (B) reentering after evacuation. Must be within 168 hours of declaration (governor may extend) and not federally prohibited.",
+            objective: "8.30 - Disaster exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 792,
+            category: "exemptions-defenses",
+            difficulty: "intermediate",
+            question: "License holder exemptions under PC 46.15(p) apply to:",
+            options: [
+                "51% establishments, hospitals, amusement parks without effective 30.06/30.07 notice",
+                "All prohibited places with license",
+                "Schools and courts with license",
+                "Any location during emergencies"
+            ],
+            correct: 0,
+            explanation: "PC 46.03(a)(7), (11), (13) don't apply to license holders without effective notice under Section 30.06, 30.07, or GC 411.204. Covers 51% establishments, hospitals, amusement parks.",
+            objective: "8.30 - License holder exemptions",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 793,
+            category: "unlawful-carrying",
+            difficulty: "advanced",
+            question: "What is the punishment for PC 46.02(a-7) violation when actor was prohibited under PC 46.04(a)?",
+            options: [
+                "2nd degree felony with 5-year minimum imprisonment",
+                "3rd degree felony",
+                "Class A misdemeanor",
+                "1st degree felony"
+            ],
+            correct: 0,
+            explanation: "PC 46.02(e): Offense under (a-7) is 2nd degree felony with 5-year minimum if prohibited under 46.04(a), OR 3rd degree felony if prohibited under 46.04(b) or (c).",
+            objective: "8.30 - Enhanced punishment for prohibited persons",
+            module: "Weapons Offenses"
+        },
+        {
+            id: 794,
+            category: "prohibited-places",
+            difficulty: "advanced",
+            question: "Higher education handgun display under PC 46.03(a-2) prohibits:",
+            options: [
+                "Licensed holder intentionally displaying partially/wholly visible handgun in plain view",
+                "Any handgun possession on campus",
+                "Concealed carry by license holders",
+                "Handguns in vehicles on campus"
+            ],
+            correct: 0,
+            explanation: "PC 46.03(a-2): License holder commits Class A offense if carries partially/wholly visible handgun and intentionally displays in plain view at higher education institution premises/parking areas.",
+            objective: "8.30 - Higher education display restrictions",
+            module: "Weapons Offenses"
         }
     ],
 

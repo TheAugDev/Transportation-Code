@@ -194,6 +194,51 @@ const tcoleStudyData = {
             }
         },
         
+        "weapons-offenses": {
+            name: "Weapons Offenses",
+            description: "Penal Code Chapter 46 - Weapon definitions, carrying restrictions, prohibited places, and possession laws",
+            icon: "fas fa-shield-alt",
+            color: "#dc3545",
+            modules: ["Definitions", "Carrying Laws", "Prohibited Places", "Possession Restrictions", "Exemptions"],
+            subCategories: {
+                "weapon-definitions": {
+                    name: "Weapon Definitions",
+                    description: "PC 46.01 - Legal definitions of firearms, clubs, prohibited weapons, and related terms",
+                    icon: "fas fa-book",
+                    color: "#007bff",
+                    module: "Definitions"
+                },
+                "unlawful-carrying": {
+                    name: "Unlawful Carrying Weapons",
+                    description: "PC 46.02 - Handgun carrying restrictions, age requirements, and location exceptions",
+                    icon: "fas fa-hand-paper",
+                    color: "#28a745",
+                    module: "Carrying Laws"
+                },
+                "prohibited-places": {
+                    name: "Places Weapons Prohibited",
+                    description: "PC 46.03 - Schools, courts, airports, hospitals, and other restricted locations",
+                    icon: "fas fa-ban",
+                    color: "#dc3545",
+                    module: "Prohibited Places"
+                },
+                "unlawful-possession": {
+                    name: "Unlawful Possession",
+                    description: "PC 46.04 - Felon in possession, family violence, and protective order restrictions",
+                    icon: "fas fa-user-slash",
+                    color: "#6f42c1",
+                    module: "Possession Restrictions"
+                },
+                "exemptions-defenses": {
+                    name: "Exemptions & Defenses",
+                    description: "PC 46.15 - Law enforcement, military, and other statutory exemptions",
+                    icon: "fas fa-shield-virus",
+                    color: "#17a2b8",
+                    module: "Exemptions"
+                }
+            }
+        },
+        
         "general-topics": {
             name: "General Topics",
             description: "Report writing, patrol procedures, ethics, and professional standards",

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCOLE Study Tool - Filter Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-title {
+            color: #2a5298;
+            border-bottom: 2px solid #2a5298;
+            padding-bottom: 10px;
+        }
+        .status {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        button {
+            background: #2a5298;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover { background: #1e3c72; }
+        select {
+            padding: 8px;
+            margin: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 TCOLE Study Tool - Filter & Functionality Test</h1>
+    
+    <div class="test-section">
+        <h2 class="test-title">📊 Data Validation</h2>
+        <div id="dataStatus" class="status info">Checking data availability...</div>
+        <button onclick="testDataIntegrity()">Test Data Integrity</button>
+    </div>
+
+    <div class="test-section">
+        <h2 class="test-title">🔍 Filter Testing</h2>
+        <div>
+            <label>Main Category:</label>
+            <select id="testMainCategory" onchange="testCategoryFiltering()">
+                <option value="all">All Courses</option>
+                <option value="transportation-code">Transportation Code</option>
+                <option value="penal-code">Penal Code</option>
+                <option value="criminal-procedure">Criminal Procedure</option>
+                <option value="field-operations">Field Operations & Procedures</option>
+                <option value="weapons-offenses">Weapons Offenses</option>
+                <option value="general-topics">General Topics</option>
+            </select>
+            <select id="testSubCategory">
+                <option value="all">All Topics</option>
+            </select>
+        </div>
+        <div id="filterStatus" class="status info">Select a category to test filtering...</div>
+        <button onclick="testAllFilters()">Test All Filters</button>
+    </div>
+
+    <div class="test-section">
+        <h2 class="test-title">🧪 Practice Test Setup</h2>
+        <div>
+            <select id="testLength">
+                <option value="5">5 Questions (Test)</option>
+                <option value="10">10 Questions</option>
+                <option value="25">25 Questions</option>
+            </select>
+            <select id="practiceMainCategory">
+                <option value="all">All Courses</option>
+                <option value="weapons-offenses">Weapons Offenses</option>
+                <option value="penal-code">Penal Code</option>
+                <option value="field-operations">Field Operations</option>
+            </select>
+        </div>
+        <div id="practiceStatus" class="status info">Ready to test practice functionality...</div>
+        <button onclick="testPracticeSetup()">Test Practice Setup</button>
+    </div>
+
+    <div class="test-section">
+        <h2 class="test-title">📈 Statistics</h2>
+        <div id="statsDisplay" class="status info">Click to view current statistics...</div>
+        <button onclick="showStats()">Show Statistics</button>
+    </div>
+
+    <div class="test-section">
+        <h2 class="test-title">✅ Test Summary</h2>
+        <div id="testSummary" class="status info">Run tests above to see summary...</div>
+        <button onclick="runAllTests()">🚀 Run All Tests</button>
+    </div>
+
+    <!-- Load main application scripts -->
+    <script src="data.js"></script>
+    <script src="enhanced-data-structure.js"></script>
+    <script src="penal-code-data.js"></script>
+    
+    <script>
+        // Test functions
+        function testDataIntegrity() {
+            const statusEl = document.getElementById('dataStatus');
+            let tests = [];
+            
+            // Test data availability
+            tests.push({
+                name: 'Study Data Available',
+                result: typeof studyData !== 'undefined' && studyData.flashcards && studyData.practiceQuestions,
+                details: `Flashcards: ${studyData?.flashcards?.length || 0}, Questions: ${studyData?.practiceQuestions?.length || 0}`
+            });
+            
+            tests.push({
+                name: 'Enhanced Data Available',
+                result: typeof tcoleStudyData !== 'undefined',
+                details: `Categories: ${tcoleStudyData ? Object.keys(tcoleStudyData.mainCategories || {}).length : 0}`
+            });
+            
+            tests.push({
+                name: 'Penal Code Data Available',
+                result: typeof penalCodeData !== 'undefined',
+                details: `Available: ${typeof penalCodeData !== 'undefined'}`
+            });
+            
+            // Test weapons offenses content
+            const weaponsFlashcards = studyData?.flashcards?.filter(card => 
+                ['weapon-definitions', 'unlawful-carrying', 'prohibited-places', 'unlawful-possession', 'exemptions-defenses'].includes(card.category)
+            ).length || 0;
+            
+            tests.push({
+                name: 'Weapons Offenses Content',
+                result: weaponsFlashcards >= 75,
+                details: `Found ${weaponsFlashcards} weapons flashcards`
+            });
+            
+            // Display results
+            const passed = tests.filter(t => t.result).length;
+            const total = tests.length;
+            
+            statusEl.className = `status ${passed === total ? 'success' : 'error'}`;
+            statusEl.innerHTML = `
+                <strong>Data Tests: ${passed}/${total} passed</strong><br>
+                ${tests.map(t => `${t.result ? '✅' : '❌'} ${t.name}: ${t.details}`).join('<br>')}
+            `;
+        }
+        
+        function testCategoryFiltering() {
+            const mainCat = document.getElementById('testMainCategory').value;
+            const subSelect = document.getElementById('testSubCategory');
+            const statusEl = document.getElementById('filterStatus');
+            
+            // Simulate category filtering logic
+            subSelect.innerHTML = '<option value="all">All Topics</option>';
+            
+            let subCategories = [];
+            
+            if (mainCat === 'weapons-offenses') {
+                subCategories = ['weapon-definitions', 'unlawful-carrying', 'prohibited-places', 'unlawful-possession', 'exemptions-defenses'];
+            } else if (mainCat === 'penal-code') {
+                subCategories = ['assault-offenses', 'theft-offenses', 'animal-cruelty', 'property-crimes', 'firearms-laws'];
+            } else if (mainCat === 'field-operations') {
+                subCategories = ['community-policing', 'field-interviews', 'constitutional-procedures', 'decision-making', 'exigent-circumstances'];
+            }
+            
+            subCategories.forEach(cat => {
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                subSelect.appendChild(option);
+            });
+            
+            // Count available content
+            const cardCount = studyData?.flashcards?.filter(card => {
+                if (mainCat === 'all') return true;
+                const categoryMapping = {
+                    'weapon-definitions': 'weapons-offenses',
+                    'unlawful-carrying': 'weapons-offenses',
+                    'prohibited-places': 'weapons-offenses',
+                    'unlawful-possession': 'weapons-offenses',
+                    'exemptions-defenses': 'weapons-offenses',
+                    'assault-offenses': 'penal-code',
+                    'theft-offenses': 'penal-code',
+                    'animal-cruelty': 'penal-code',
+                    'property-crimes': 'penal-code',
+                    'firearms-laws': 'penal-code',
+                    'community-policing': 'field-operations',
+                    'field-interviews': 'field-operations',
+                    'constitutional-procedures': 'field-operations',
+                    'decision-making': 'field-operations',
+                    'exigent-circumstances': 'field-operations'
+                };
+                return categoryMapping[card.category] === mainCat;
+            }).length || 0;
+            
+            statusEl.className = `status ${cardCount > 0 ? 'success' : 'error'}`;
+            statusEl.innerHTML = `Selected: ${mainCat}<br>Subcategories: ${subCategories.length}<br>Available Cards: ${cardCount}`;
+        }
+        
+        function testAllFilters() {
+            const categories = ['weapons-offenses', 'penal-code', 'field-operations', 'criminal-procedure'];
+            let results = [];
+            
+            categories.forEach(cat => {
+                document.getElementById('testMainCategory').value = cat;
+                testCategoryFiltering();
+                const statusEl = document.getElementById('filterStatus');
+                results.push(`${cat}: ${statusEl.textContent.includes('Available Cards: 0') ? '❌' : '✅'}`);
+            });
+            
+            document.getElementById('filterStatus').innerHTML = `<strong>Filter Test Results:</strong><br>${results.join('<br>')}`;
+        }
+        
+        function testPracticeSetup() {
+            const mainCat = document.getElementById('practiceMainCategory').value;
+            const length = document.getElementById('testLength').value;
+            const statusEl = document.getElementById('practiceStatus');
+            
+            // Test question availability
+            let availableQuestions = studyData?.practiceQuestions || [];
+            
+            if (mainCat !== 'all') {
+                const categoryMapping = {
+                    'weapon-definitions': 'weapons-offenses',
+                    'unlawful-carrying': 'weapons-offenses',
+                    'prohibited-places': 'weapons-offenses',
+                    'unlawful-possession': 'weapons-offenses',
+                    'exemptions-defenses': 'weapons-offenses'
+                };
+                
+                availableQuestions = availableQuestions.filter(q => {
+                    return categoryMapping[q.category] === mainCat || q.category === mainCat;
+                });
+            }
+            
+            const canStart = availableQuestions.length >= parseInt(length);
+            
+            statusEl.className = `status ${canStart ? 'success' : 'error'}`;
+            statusEl.innerHTML = `
+                Category: ${mainCat}<br>
+                Test Length: ${length}<br>
+                Available Questions: ${availableQuestions.length}<br>
+                Can Start Test: ${canStart ? 'Yes ✅' : 'No ❌'}
+            `;
+        }
+        
+        function showStats() {
+            const statusEl = document.getElementById('statsDisplay');
+            const totalCards = studyData?.flashcards?.length || 0;
+            const totalQuestions = studyData?.practiceQuestions?.length || 0;
+            const weaponsCards = studyData?.flashcards?.filter(c => 
+                ['weapon-definitions', 'unlawful-carrying', 'prohibited-places', 'unlawful-possession', 'exemptions-defenses'].includes(c.category)
+            ).length || 0;
+            
+            statusEl.className = 'status success';
+            statusEl.innerHTML = `
+                <strong>Content Statistics:</strong><br>
+                Total Flashcards: ${totalCards}<br>
+                Total Practice Questions: ${totalQuestions}<br>
+                Weapons Offenses Cards: ${weaponsCards}<br>
+                Categories Available: ${Object.keys(studyData?.categories || {}).length}
+            `;
+        }
+        
+        function runAllTests() {
+            testDataIntegrity();
+            setTimeout(() => testAllFilters(), 500);
+            setTimeout(() => testPracticeSetup(), 1000);
+            setTimeout(() => showStats(), 1500);
+            setTimeout(() => {
+                document.getElementById('testSummary').className = 'status success';
+                document.getElementById('testSummary').innerHTML = '<strong>✅ All tests completed! Check results above.</strong>';
+            }, 2000);
+        }
+        
+        // Run initial data test on load
+        window.addEventListener('load', () => {
+            setTimeout(testDataIntegrity, 1000);
+        });
+    </script>
+</body>
+</html>

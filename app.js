@@ -70,6 +70,9 @@ class TransportationCodeApp {
             console.log('🧪 Populating practice test categories...');
             this.populatePracticeTestCategories();
             
+            console.log('🔍 Initializing search filters...');
+            this.initializeSearchFilters();
+            
             console.log('📊 Updating statistics...');
             this.updateStatistics();
             
@@ -144,6 +147,10 @@ class TransportationCodeApp {
         document.getElementById('searchInput').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') this.performSearch();
         });
+        
+        // Search filter functionality
+        document.getElementById('searchMainCategory').addEventListener('change', () => this.updateSearchSubCategories());
+        document.getElementById('searchCategory').addEventListener('change', () => this.performFilteredSearch());
 
         // Statistics functionality
         document.getElementById('loadSampleDataBtn').addEventListener('click', () => this.addSampleStatistics());
@@ -531,6 +538,12 @@ class TransportationCodeApp {
             'constitutional-procedures': 'field-operations',
             'decision-making': 'field-operations',
             'exigent-circumstances': 'field-operations',
+            // Weapons Offenses categories
+            'weapon-definitions': 'weapons-offenses',
+            'unlawful-carrying': 'weapons-offenses',
+            'prohibited-places': 'weapons-offenses',
+            'unlawful-possession': 'weapons-offenses',
+            'exemptions-defenses': 'weapons-offenses',
             // General Topics categories
             'report-writing': 'general-topics',
             'patrol-procedures': 'general-topics',
@@ -594,6 +607,13 @@ class TransportationCodeApp {
             'decision-making': 'field-operations',
             'exigent-circumstances': 'field-operations',
             
+            // Weapons Offenses categories
+            'weapon-definitions': 'weapons-offenses',
+            'unlawful-carrying': 'weapons-offenses',
+            'prohibited-places': 'weapons-offenses',
+            'unlawful-possession': 'weapons-offenses',
+            'exemptions-defenses': 'weapons-offenses',
+            
             // Vehicle/Traffic Stops categories
             'traffic-enforcement': 'vehicle-traffic-stops',
             'vehicle-codes': 'vehicle-traffic-stops',
@@ -608,6 +628,33 @@ class TransportationCodeApp {
             'pursuit-policies': 'vehicle-traffic-stops',
             'vehicle-registration': 'vehicle-traffic-stops',
             'roadside-safety': 'vehicle-traffic-stops',
+            
+            // Transportation Code categories
+            'warning-devices': 'transportation-code',
+            'registration': 'transportation-code',
+            'license-plates': 'transportation-code',
+            'vehicle-definitions': 'transportation-code',
+            'traffic-control': 'transportation-code',
+            'traffic-violations': 'transportation-code',
+            'speed-limits': 'transportation-code',
+            'parking-violations': 'transportation-code',
+            'vehicle-equipment': 'transportation-code',
+            'driver-license': 'transportation-code',
+            'vehicle-inspection': 'transportation-code',
+            'safety-requirements': 'transportation-code',
+            'motor-vehicle-laws': 'transportation-code',
+            'vehicle-size-weight': 'transportation-code',
+            'hazmat-transport': 'transportation-code',
+            'toll-roads': 'transportation-code',
+            'school-buses': 'transportation-code',
+            'emergency-vehicles': 'transportation-code',
+            'motorcycles': 'transportation-code',
+            'pedestrian-laws': 'transportation-code',
+            'bicycle-laws': 'transportation-code',
+            'railroad-crossings': 'transportation-code',
+            'work-zones': 'transportation-code',
+            'vehicle-titling': 'transportation-code',
+            'dealer-regulations': 'transportation-code',
             
             // General Topics categories
             'report-writing': 'general-topics',
@@ -630,7 +677,7 @@ class TransportationCodeApp {
             'stress-management': 'general-topics'
         };
         
-        return categoryMapping[question.category] || 'general-topics';
+        return categoryMapping[question.category] || 'transportation-code';
     }
 
     formatCategoryName(categoryKey) {
@@ -761,6 +808,16 @@ class TransportationCodeApp {
         }
     }
 
+    // Utility function to shuffle an array using Fisher-Yates algorithm
+    shuffleArray(array) {
+        const shuffled = [...array]; // Create a copy to avoid mutating original
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
     // Practice Test Methods
     startPracticeTest() {
         const testLength = parseInt(document.getElementById('testLength').value);
@@ -774,7 +831,7 @@ class TransportationCodeApp {
         // Filter by main category first
         if (testMainCategory !== 'all') {
             availableQuestions = availableQuestions.filter(q => {
-                return this.getMainCategoryForCard(q) === testMainCategory;
+                return this.getMainCategoryForQuestion(q) === testMainCategory;
             });
         }
         
@@ -783,8 +840,17 @@ class TransportationCodeApp {
             availableQuestions = availableQuestions.filter(q => q.category === testCategory);
         }
 
+        // Check if questions are available
+        if (availableQuestions.length === 0) {
+            alert('No questions available for the selected categories. Please adjust your filters and try again.');
+            return;
+        }
+
+        // Ensure we don't request more questions than available
+        const actualTestLength = Math.min(testLength, availableQuestions.length);
+
         // Shuffle and select questions
-        this.practiceTest.questions = this.shuffleArray(availableQuestions).slice(0, testLength);
+        this.practiceTest.questions = this.shuffleArray(availableQuestions).slice(0, actualTestLength);
         this.practiceTest.currentQuestion = 0;
         this.practiceTest.answers = {};
         this.practiceTest.startTime = new Date();
@@ -801,6 +867,20 @@ class TransportationCodeApp {
     }
 
     updateTestQuestion() {
+        // Check if we have questions available
+        if (!this.practiceTest.questions || this.practiceTest.questions.length === 0) {
+            console.error('No questions available in practice test');
+            this.returnToTestSetup();
+            return;
+        }
+
+        // Check if current question index is valid
+        if (this.practiceTest.currentQuestion >= this.practiceTest.questions.length) {
+            console.error('Current question index out of bounds');
+            this.returnToTestSetup();
+            return;
+        }
+
         const question = this.practiceTest.questions[this.practiceTest.currentQuestion];
         const questionNum = this.practiceTest.currentQuestion + 1;
         const totalQuestions = this.practiceTest.questions.length;
@@ -834,6 +914,9 @@ class TransportationCodeApp {
         const container = document.getElementById('answersContainer');
         container.innerHTML = '';
 
+        const currentQuestionIndex = this.practiceTest.currentQuestion;
+        const isAnswered = this.practiceTest.answers.hasOwnProperty(currentQuestionIndex);
+
         question.options.forEach((option, index) => {
             const optionDiv = document.createElement('div');
             optionDiv.className = 'answer-option';
@@ -844,19 +927,55 @@ class TransportationCodeApp {
                 <label for="option${index}">${String.fromCharCode(65 + index)}. ${option}</label>
             `;
 
-            optionDiv.addEventListener('click', () => this.selectAnswer(index));
+            // Add click event listener only if not answered or in exam mode
+            if (!isAnswered || this.practiceTest.mode === 'exam') {
+                optionDiv.addEventListener('click', () => this.selectAnswer(index));
+            } else {
+                // Already answered in practice mode - disable interaction
+                optionDiv.style.pointerEvents = 'none';
+                optionDiv.classList.add('disabled');
+            }
             
             // Restore previous answer if exists
-            if (this.practiceTest.answers[this.practiceTest.currentQuestion] === index) {
+            if (this.practiceTest.answers[currentQuestionIndex] === index) {
                 optionDiv.classList.add('selected');
                 optionDiv.querySelector('input').checked = true;
+                
+                // If in practice mode and answered, show the feedback
+                if (this.practiceTest.mode === 'practice' && isAnswered) {
+                    // Mark correct/incorrect answers
+                    if (index === question.correct) {
+                        optionDiv.classList.add('correct');
+                    } else {
+                        optionDiv.classList.add('incorrect');
+                    }
+                }
+            } else if (this.practiceTest.mode === 'practice' && isAnswered && index === question.correct) {
+                // Show correct answer even if not selected
+                optionDiv.classList.add('correct');
             }
 
             container.appendChild(optionDiv);
         });
+
+        // Show explanation if question was answered in practice mode
+        if (this.practiceTest.mode === 'practice' && isAnswered && question.explanation) {
+            const explanationDiv = document.createElement('div');
+            explanationDiv.className = 'explanation';
+            explanationDiv.innerHTML = `<strong>Explanation:</strong> ${question.explanation}`;
+            container.appendChild(explanationDiv);
+        }
     }
 
     selectAnswer(answerIndex) {
+        // Check if already answered in practice mode
+        const currentAnswered = this.practiceTest.answers.hasOwnProperty(this.practiceTest.currentQuestion);
+        
+        if (this.practiceTest.mode === 'practice' && currentAnswered) {
+            // In practice mode, don't allow re-selection after feedback is shown
+            return;
+        }
+
         // Clear previous selections
         document.querySelectorAll('.answer-option').forEach(opt => opt.classList.remove('selected'));
         
@@ -871,12 +990,27 @@ class TransportationCodeApp {
         // Show immediate feedback in practice mode
         if (this.practiceTest.mode === 'practice') {
             this.showAnswerFeedback();
+            this.disableAnswerOptions();
         }
+    }
+
+    disableAnswerOptions() {
+        // Remove click event listeners and add disabled class
+        document.querySelectorAll('.answer-option').forEach(opt => {
+            opt.style.pointerEvents = 'none';
+            opt.classList.add('disabled');
+        });
     }
 
     showAnswerFeedback() {
         const question = this.practiceTest.questions[this.practiceTest.currentQuestion];
         const userAnswer = this.practiceTest.answers[this.practiceTest.currentQuestion];
+
+        // Remove any existing explanation first
+        const existingExplanation = document.querySelector('.explanation');
+        if (existingExplanation) {
+            existingExplanation.remove();
+        }
 
         document.querySelectorAll('.answer-option').forEach((opt, index) => {
             if (index === question.correct) {
@@ -1433,6 +1567,30 @@ class TransportationCodeApp {
         };
     }
 
+    returnToTestSetup() {
+        // Clear any existing timer
+        if (this.testTimer) {
+            clearInterval(this.testTimer);
+            this.testTimer = null;
+        }
+
+        // Hide test interface and results
+        document.getElementById('testInterface').style.display = 'none';
+        document.getElementById('testResults').style.display = 'none';
+        document.getElementById('testSetup').style.display = 'block';
+        
+        // Reset test state
+        this.practiceTest = {
+            questions: [],
+            currentQuestion: 0,
+            answers: {},
+            startTime: null,
+            flagged: new Set()
+        };
+        
+        alert('Test has been reset due to an error or no available questions. Please adjust your filters and try again.');
+    }
+
     startTestTimer() {
         // Clear any existing timer
         if (this.testTimer) {
@@ -1735,6 +1893,160 @@ class TransportationCodeApp {
         const searchBtn = document.getElementById('searchBtn');
         searchBtn.style.transform = 'scale(0.95)';
         setTimeout(() => searchBtn.style.transform = '', 150);
+    }
+
+    // Search filter functionality
+    initializeSearchFilters() {
+        // Initialize the search category dropdown with all topics
+        this.updateSearchSubCategories();
+    }
+
+    updateSearchSubCategories() {
+        const mainCategory = document.getElementById('searchMainCategory').value;
+        const categorySelect = document.getElementById('searchCategory');
+        
+        // Clear existing options
+        categorySelect.innerHTML = '<option value="all">All Topics</option>';
+        
+        if (mainCategory === 'all') {
+            // Show all categories from all main categories
+            this.populateAllSearchCategories(categorySelect);
+        } else {
+            // Show only categories from selected main category
+            this.populateSearchSubCategoriesForMain(categorySelect, mainCategory);
+        }
+    }
+
+    populateAllSearchCategories(selectElement) {
+        // Add all categories from studyData
+        const allCategories = new Set();
+        if (studyData && studyData.flashcards) {
+            studyData.flashcards.forEach(card => {
+                if (card.category && !allCategories.has(card.category)) {
+                    allCategories.add(card.category);
+                    const categoryName = studyData.categories && studyData.categories[card.category] 
+                        ? studyData.categories[card.category].name 
+                        : this.formatCategoryName(card.category);
+                    const option = document.createElement('option');
+                    option.value = card.category;
+                    option.textContent = categoryName;
+                    selectElement.appendChild(option);
+                }
+            });
+        }
+    }
+
+    populateSearchSubCategoriesForMain(selectElement, mainCategory) {
+        // Filter categories to only show those that belong to the selected main category
+        const categoriesForMainCategory = new Set();
+        if (studyData && studyData.flashcards) {
+            studyData.flashcards.forEach(card => {
+                if (card.category && this.getMainCategoryForCard(card) === mainCategory) {
+                    categoriesForMainCategory.add(card.category);
+                }
+            });
+        }
+        
+        // Add only the filtered categories
+        categoriesForMainCategory.forEach(categoryKey => {
+            const categoryName = studyData.categories && studyData.categories[categoryKey]
+                ? studyData.categories[categoryKey].name
+                : this.formatCategoryName(categoryKey);
+            const option = document.createElement('option');
+            option.value = categoryKey;
+            option.textContent = categoryName;
+            selectElement.appendChild(option);
+        });
+    }
+
+    performFilteredSearch() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+        const mainCategory = document.getElementById('searchMainCategory').value;
+        const category = document.getElementById('searchCategory').value;
+
+        // Start with all flashcards
+        let results = [...studyData.flashcards];
+
+        // Apply text search filter
+        if (searchTerm) {
+            results = results.filter(card => {
+                return card.question.toLowerCase().includes(searchTerm) ||
+                       card.answer.toLowerCase().includes(searchTerm) ||
+                       (studyData.categories[card.category]?.name || '').toLowerCase().includes(searchTerm);
+            });
+        }
+
+        // Apply main category filter
+        if (mainCategory !== 'all') {
+            results = results.filter(card => {
+                return this.getMainCategoryForCard(card) === mainCategory;
+            });
+        }
+
+        // Apply specific category filter
+        if (category !== 'all') {
+            results = results.filter(card => card.category === category);
+        }
+
+        // Display the results
+        this.displaySearchResults(results, searchTerm);
+    }
+
+    displaySearchResults(results, searchTerm) {
+        const resultsContainer = document.getElementById('searchResults');
+        
+        if (results.length === 0) {
+            resultsContainer.innerHTML = `
+                <div class="no-results">
+                    <i class="fas fa-search"></i>
+                    <h3>No results found</h3>
+                    <p>Try adjusting your search terms or filters.</p>
+                </div>
+            `;
+            return;
+        }
+
+        // Create results HTML
+        let resultsHTML = `
+            <div class="search-results-header">
+                <h3>Search Results (${results.length} ${results.length === 1 ? 'result' : 'results'})</h3>
+                ${searchTerm ? `<p>Showing results for: "<strong>${searchTerm}</strong>"</p>` : ''}
+            </div>
+            <div class="search-results-grid">
+        `;
+
+        results.forEach((card, index) => {
+            const categoryName = studyData.categories[card.category]?.name || this.formatCategoryName(card.category);
+            
+            resultsHTML += `
+                <div class="search-result-card" onclick="app.showFlashcardFromSearch(${card.id})">
+                    <div class="result-category">${categoryName}</div>
+                    <div class="result-question">${this.highlightSearchTerm(card.question, searchTerm)}</div>
+                    <div class="result-answer">${this.highlightSearchTerm(card.answer, searchTerm)}</div>
+                </div>
+            `;
+        });
+
+        resultsHTML += '</div>';
+        resultsContainer.innerHTML = resultsHTML;
+    }
+
+    highlightSearchTerm(text, searchTerm) {
+        if (!searchTerm) return text;
+        
+        const regex = new RegExp(`(${searchTerm})`, 'gi');
+        return text.replace(regex, '<mark>$1</mark>');
+    }
+
+    showFlashcardFromSearch(cardId) {
+        // Find the card and switch to flashcards tab
+        const cardIndex = studyData.flashcards.findIndex(card => card.id === cardId);
+        if (cardIndex !== -1) {
+            this.filteredFlashcards = [...studyData.flashcards];
+            this.currentFlashcard = cardIndex;
+            this.switchTab('flashcards');
+            this.updateFlashcardDisplay();
+        }
     }
 
     // Notes functionality
