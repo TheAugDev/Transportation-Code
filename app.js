@@ -115,7 +115,12 @@ class TransportationCodeApp {
     setupEventListeners() {
         // Tab navigation
         document.querySelectorAll('.nav-tab').forEach(tab => {
-            tab.addEventListener('click', (e) => this.switchTab(e.target.dataset.tab));
+            tab.addEventListener('click', (e) => {
+                const tabElement = e.target.closest('.nav-tab');
+                if (tabElement && tabElement.dataset.tab) {
+                    this.switchTab(tabElement.dataset.tab);
+                }
+            });
         });
 
         // Flashcard controls
@@ -230,6 +235,8 @@ class TransportationCodeApp {
     }
 
     switchTab(tabName) {
+        console.log('🔄 Switching to tab:', tabName);
+        
         // Save current study session if leaving flashcards tab
         if (this.currentTab === 'flashcards' && tabName !== 'flashcards' && this.studySession.cardsStudied.size > 0) {
             this.saveFlashcardSession();
@@ -248,8 +255,21 @@ class TransportationCodeApp {
         document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
 
         // Add active class to selected tab and content
-        document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
-        document.getElementById(tabName).classList.add('active');
+        const tabButton = document.querySelector(`[data-tab="${tabName}"]`);
+        const tabContent = document.getElementById(tabName);
+        
+        if (!tabButton) {
+            console.error(`Tab button not found for: ${tabName}`);
+            return;
+        }
+        
+        if (!tabContent) {
+            console.error(`Tab content not found for: ${tabName}`);
+            return;
+        }
+        
+        tabButton.classList.add('active');
+        tabContent.classList.add('active');
 
         // Refresh charts if statistics tab is selected
         if (tabName === 'statistics') {
@@ -268,6 +288,18 @@ class TransportationCodeApp {
     loadFlashcards() {
         console.log('📇 Loading flashcards...');
         console.log('📊 studyData.flashcards length before copy:', studyData?.flashcards?.length || 'undefined');
+        
+        // Debug: Check for property-offenses flashcards
+        if (studyData && studyData.flashcards) {
+            const propertyFlashcards = studyData.flashcards.filter(card => 
+                card.mainCategory === 'property-offenses' || 
+                card.id?.toString().startsWith('po-flash')
+            );
+            console.log('📊 Property & Trespassing Offenses flashcards found:', propertyFlashcards.length);
+            if (propertyFlashcards.length > 0) {
+                console.log('📊 Sample property flashcard:', propertyFlashcards[0]);
+            }
+        }
         
         this.filteredFlashcards = [...studyData.flashcards];
         
@@ -515,6 +547,11 @@ class TransportationCodeApp {
     }
 
     getMainCategoryForCard(card) {
+        // First check if card has a direct mainCategory field
+        if (card.mainCategory) {
+            return card.mainCategory;
+        }
+        
         // Map card categories to main categories
         const categoryMapping = {
             // Penal Code categories
@@ -527,6 +564,22 @@ class TransportationCodeApp {
             'criminal-types': 'penal-code',
             'drug-offenses': 'penal-code',
             'dwi-offenses': 'penal-code',
+            
+            // Property & Trespassing Offenses categories
+            'criminal-types': 'property-offenses',
+            'property-definitions': 'property-offenses',
+            'pecuniary-loss': 'property-offenses',
+            'offense-levels': 'property-offenses',
+            'criminal-mischief': 'property-offenses',
+            'graffiti': 'property-offenses',
+            'reckless-damage': 'property-offenses',
+            'railroad-property': 'property-offenses',
+            'arson': 'property-offenses',
+            'animal-cruelty': 'property-offenses',
+            'police-service-animals': 'property-offenses',
+            'property-scenarios': 'property-offenses',
+            'property-damage': 'property-offenses',
+            
             // Criminal Procedure categories
             'search-seizure': 'criminal-procedure',
             'arrest-procedures': 'criminal-procedure',
@@ -554,6 +607,11 @@ class TransportationCodeApp {
     }
 
     getMainCategoryForQuestion(question) {
+        // First check if question has a direct mainCategory field
+        if (question.mainCategory) {
+            return question.mainCategory;
+        }
+        
         // Map question categories to main categories (same mapping as cards)
         const categoryMapping = {
             // Penal Code categories
@@ -582,6 +640,21 @@ class TransportationCodeApp {
             'sexual-offenses': 'penal-code',
             'terroristic-threat': 'penal-code',
             'trespass': 'penal-code',
+            
+            // Property & Trespassing Offenses categories
+            'criminal-types': 'property-offenses',
+            'property-definitions': 'property-offenses',
+            'pecuniary-loss': 'property-offenses',
+            'offense-levels': 'property-offenses',
+            'criminal-mischief': 'property-offenses',
+            'graffiti': 'property-offenses',
+            'reckless-damage': 'property-offenses',
+            'railroad-property': 'property-offenses',
+            'arson': 'property-offenses',
+            'animal-cruelty': 'property-offenses',
+            'police-service-animals': 'property-offenses',
+            'property-scenarios': 'property-offenses',
+            'property-damage': 'property-offenses',
             
             // Criminal Procedure categories
             'arrest-procedures': 'criminal-procedure',
@@ -831,8 +904,10 @@ class TransportationCodeApp {
         // Filter by main category first
         if (testMainCategory !== 'all') {
             availableQuestions = availableQuestions.filter(q => {
-                return this.getMainCategoryForQuestion(q) === testMainCategory;
+                const questionMainCategory = this.getMainCategoryForQuestion(q);
+                return questionMainCategory === testMainCategory;
             });
+            console.log(`Filtered by main category '${testMainCategory}': ${availableQuestions.length} questions found`);
         }
         
         // Then filter by specific category
